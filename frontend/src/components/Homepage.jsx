@@ -291,7 +291,7 @@ const Homepage = () => {
       </p>
     </div>
     <div className="h-64 md:h-auto bg-gray-200">
-      <img src="/images/area.jpg" alt="إقليم دار زغاوة" className="w-full h-full object-cover" />
+      <img src="/images/Flag.jpeg" alt="إقليم دار زغاوة" className="w-full h-full object-cover" />
     </div>
   </div>
 </div>
