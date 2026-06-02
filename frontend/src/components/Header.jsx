@@ -15,7 +15,9 @@ const Header = () => {
     const loadSiteSettings = async () => {
       try {
         const settings = await getSiteSettings();
-        setSiteSettings(settings);
+        if (settings && settings.site_title) {
+          setSiteSettings(settings);
+        }
       } catch (error) {
         console.log('Using default site settings');
       }
@@ -41,7 +43,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
 
-          {/* Hamburger - Left Side (Mobile) */}
+          {/* Hamburger - Left (Mobile) */}
           <button
             className="md:hidden text-gray-700 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -49,7 +51,7 @@ const Header = () => {
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          {/* Desktop Navigation - Left Side */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             {navigation.map((item) => (
               <Link
@@ -64,10 +66,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Logo + Title - Right Side */}
-          <div className="flex items-center gap-3">
+          {/* Logo + Title - Right Side (Stable Layout) */}
+          <div className="flex items-center gap-3 flex-shrink-0">
             <h1 
-              className="text-lg md:text-xl font-bold text-gray-800 text-right" 
+              className="text-base sm:text-lg md:text-xl font-bold text-gray-800 text-right leading-tight min-w-0"
               dir="rtl"
             >
               {siteSettings.site_title}
@@ -75,17 +77,17 @@ const Header = () => {
             <img 
               src="/images/logo-preview.png" 
               alt="شعار الجبهة" 
-              className="h-9 w-auto object-contain md:h-10"
+              className="h-8 sm:h-9 md:h-10 w-auto object-contain flex-shrink-0"
             />
           </div>
 
         </div>
 
-        {/* ==================== MOBILE MENU - Home First ==================== */}
+        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-white py-4 px-4 shadow-lg border-t border-gray-100">
             <div className="flex flex-col space-y-3">
-              {[...navigation].reverse().map((item) => (
+              {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
