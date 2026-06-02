@@ -523,34 +523,3 @@ feat(admin): add user role management
 fix(api): resolve authentication bug
 docs(readme): update deployment guide
 ```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Shield Foundation** for their dedication to community service
-- **Tech Mahindra Foundation** for partnership and support
-- **Open Source Community** for the amazing tools and libraries
-- **Contributors** who helped build and improve this project
-
-## 📞 Support & Contact
-
-- **Website**: [Shield Foundation Official](https://shield-foundation.org)
-- **Email**: contact@shield-foundation.org  
-- **Issues**: [GitHub Issues](https://github.com/shield-foundation/website/issues)
-- **Documentation**: [Full Documentation](https://docs.shield-foundation.org)
-
----
-
-<div align="center">
-
-**🛡️ Built with ❤️ for Shield Foundation**
-
-*Adding Life to Years*
-
-[![GitHub Stars](https://img.shields.io/github/stars/shield-foundation/website.svg?style=social&label=Star)](https://github.com/shield-foundation/website)
-[![GitHub Forks](https://img.shields.io/github/forks/shield-foundation/website.svg?style=social&label=Fork)](https://github.com/shield-foundation/website/fork)
-
-</div>
