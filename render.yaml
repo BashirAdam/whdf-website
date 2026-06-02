@@ -1,4 +1,24 @@
 services:
+  # Backend API Service
+  - type: web
+    name: whdf-backend
+    runtime: python
+    repo: https://github.com/BashirAdam/whdf-website
+    branch: master
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port 8001
+    envVars:
+      - key: MONGO_URL
+        value: mongodb+srv://bashiradam219_db_user:sbSpeKmYfZbIM04RacLuster0.e3non.mongodb.net/shield_foundation
+      - key: JWT_SECRET
+        value: whdf-secret-key-2024
+      - key: CORS_ORIGINS
+        value: https://whdf-frontend.onrender.com,https://whdf-s.org
+      - key: PORT
+        value: 8001
+
+  # Frontend Static Service
   - type: web
     name: whdf-frontend
     runtime: static
@@ -6,6 +26,9 @@ services:
     branch: master
     buildCommand: cd frontend && yarn install && yarn build
     staticPublishPath: ./frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://whdf-backend.onrender.com
     routes:
       - type: rewrite
         source: /*
