@@ -19,7 +19,7 @@ services:
     name: whdf-frontend
     runtime: static
     buildCommand: cd frontend && npm install && npm run build
-    publishDir: frontend/build
+    staticPublishPath: frontend/build
     envVars:
       - key: REACT_APP_BACKEND_URL
         sync: false
