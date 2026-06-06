@@ -1,5 +1,4 @@
 services:
-  # Backend API Service
   - type: web
     name: whdf-backend
     runtime: python
@@ -16,7 +15,6 @@ services:
       - key: CORS_ORIGINS
         value: https://whdf-frontend.onrender.com
 
-  # Frontend Static Site
   - type: web
     name: whdf-frontend
     runtime: static
