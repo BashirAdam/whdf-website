@@ -12,17 +12,18 @@ services:
         value: shield_foundation
       - key: JWT_SECRET_KEY
         sync: false
-      - key: CORS_ORIGINS
-        value: https://whdf-frontend.onrender.com
 
   - type: web
     name: whdf-frontend
     runtime: static
-    buildCommand: cd frontend && npm install && npm run build
+    buildCommand: cd frontend && yarn install && yarn build
     staticPublishPath: frontend/build
     envVars:
       - key: REACT_APP_BACKEND_URL
-        sync: false
+        fromService:
+          type: web
+          name: whdf-backend
+          envVarKey: RENDER_EXTERNAL_URL
     routes:
       - type: rewrite
         source: /*
