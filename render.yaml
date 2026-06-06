@@ -3,32 +3,28 @@ services:
   - type: web
     name: whdf-backend
     runtime: python
-    repo: https://github.com/BashirAdam/whdf-website
-    branch: master
     rootDir: backend
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn server:app --host 0.0.0.0 --port 8001
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: MONGO_URL
-        value: mongodb+srv://bashiradam219_db_user:sbSpeKmYfZbIM04RacLuster0.e3non.mongodb.net/shield_foundation
-      - key: JWT_SECRET
-        value: whdf-secret-key-2024
+        sync: false
+      - key: DB_NAME
+        value: shield_foundation
+      - key: JWT_SECRET_KEY
+        sync: false
       - key: CORS_ORIGINS
-        value: https://whdf-frontend.onrender.com,https://whdf-s.org
-      - key: PORT
-        value: 8001
+        value: https://whdf-frontend.onrender.com
 
-  # Frontend Static Service
+  # Frontend Static Site
   - type: web
     name: whdf-frontend
     runtime: static
-    repo: https://github.com/BashirAdam/whdf-website
-    branch: master
-    buildCommand: cd frontend && yarn install && yarn build
-    staticPublishPath: ./frontend/build
+    buildCommand: cd frontend && npm install && npm run build
+    publishDir: frontend/build
     envVars:
-      - key: REACT_APP_API_URL
-        value: https://whdf-backend.onrender.com
+      - key: REACT_APP_BACKEND_URL
+        sync: false
     routes:
       - type: rewrite
         source: /*
