@@ -30,7 +30,7 @@ const Header = () => {
     { name: 'المعرض', href: '/gallery' },
     { name: 'الأخبار', href: '/news' },
     { name: 'المدونة', href: '/blog' },
-    { name: 'الأثر', href: '/impact' },
+    { name: 'الفعاليات', href: '/events' },
     { name: 'الزغاوة', href: '/programs' },
     { name: 'عن الجبهة', href: '/about' },
     { name: 'الرئيسية', href: '/' },
