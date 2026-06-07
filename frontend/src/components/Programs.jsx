@@ -203,11 +203,45 @@ const Programs = () => {
   <p className="text-base text-[#d78525] mb-3">Dr. Khalil Ibrahim</p>
   <p className="text-gray-600 leading-relaxed">
   طبيب وسياسي 
-  سوداني  مؤسس حركة العدل والمساواة وأبرز قادة التمرد في دارفور  </p>
+  سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
 </div>
             </div>
 
-            {/* Figure 3 - Mahamat Déby */}
+            {/* Figure 3 - Dr. Ali Abdelrahman Hagar */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/ali abdull.jpeg" alt="دكتور على عبد الرحمن حقار  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">دكتور على عبد الرحمن حقار   </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Dr. Ali Abdelrahman Hagar</p>
+  <p className="text-gray-600 leading-relaxed">
+  الدكتور على عبد الرحمن حقار مؤسس ورئيس جامعة هيك تشاد
+  </p>
+</div>
+            </div>
+
+
+            {/* Figure 4 - Dr. and General Youssef Tiara */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/yousef.jpeg" alt=" الدكتور والجنرال يوسف تيارا " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">Dr. and General Youssef Tiara  </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Dr. and General Youssef Tiara</p>
+  <p className="text-gray-600 leading-relaxed">
+  طبيب وسياسي 
+  سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
+</div>
+            </div>
+
+
+            {/* Figure 5 - Mohamed Idris Déby */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
                 <img src="/images/mohamed idres.jpg" alt="محمد ديبي إتنو" className="rounded-lg shadow-xl w-full h-80 object-cover" />
@@ -223,7 +257,7 @@ const Programs = () => {
 </div>
             </div>
 
-            {/* Figure 4 - Mini Minawi */}
+            {/* Figure 6 - Mini Minawi */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
                 <img src="/images/arco.jpg" alt="مني أركو مناوي" className="rounded-lg shadow-xl w-full h-80 object-cover" />
@@ -239,7 +273,7 @@ const Programs = () => {
 </div>
             </div>
 
-            {/* Figure 5 -  Souleyman Sandel */}
+            {/* Figure 7 -  Souleyman Sandel */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
                 <img src="/images/sel.jpg" alt="سليمان صندل" className="rounded-lg shadow-xl w-full h-80 object-cover" />
@@ -257,7 +291,7 @@ const Programs = () => {
 </div>
             </div>
 
-            {/* Figure 6 - Jibril Ibrahim  */}
+            {/* Figure 8 - Jibril Ibrahim  */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
                 <img src="/images/jb.jpg" alt="جبريل خليل إبراهيم" className="rounded-lg shadow-xl w-full h-80 object-cover" />
@@ -268,7 +302,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Jibril Khalil Ibrahim</p>
   <p className="text-gray-600 leading-relaxed">
-   الدكتور جبريل إبراهيم محمد هو سياسي، واقتصادي، وقائد متمرد سابق في السودان. يشغل حالياً منصب وزير المالية والتخطيط الاقتصادي ورئيس حركة العدل والمساواة السودانية
+        سياسي، واقتصادي، يشغل حالياً منصب وزير المالية والتخطيط الاقتصادي ورئيس حركة العدل والمساواة السودانية
   </p>
 </div>
             </div>

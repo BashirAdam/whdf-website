@@ -142,7 +142,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-          {siteContent.about?.story?.title || "قصتنا"}
+          {siteContent.about?.story?.title || "البداية"}
         </h2>
               <div className="text-lg text-gray-800 leading-relaxed mb-6 text-justify" style={{ direction: 'rtl' }}>
   {siteContent.about?.story?.content || `تأسست جبهة وادي هور الديمقراطية في 12 أبريل 2021م بهدف واضح: "إقامة إقليم دار زغاوة (إقليم بيربي) كمركزية ثقافية وسياسية لشعب الزغاوة في السودان، مستندة على الإرث الحضاري لممالك الزغاوة قبل الميلاد ومملكة كانم بعد الميلاد، والعمل على تمكين المجتمع للحفاظ على هويته الشمال إفريقية وحقوقه الثقافية والسياسية."`}
@@ -190,7 +190,7 @@ const About = () => {
       1. الدكتور احمد ابراهيم سبيل / رئيساً "مؤقتاً"<br />
       2. باشمهندس / عبد القادر سليمان دفع الله / سكرتيراً للطلاب "مؤقتاً"<br />
       3. باشمهندس / احمد جماع / سكرتير العلاقات العامة والمنظمات "مؤقتاً"<br />
-      4. أستاذ / عمار ماكن / سكرتيراً للإعلام "مؤقتاً"
+      4. أستاذ / عمار تودي / سكرتيراً للإعلام "مؤقتاً"
     </p>
     
     <p className="text-black mb-4 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
@@ -204,7 +204,7 @@ const About = () => {
     </p>
     
     <p className="text-black mb-4 leading-relaxed text-right">
-      استاذ/عمار ماكن<br />
+      استاذ/عمار تودي<br />
       سكرتير الإعلام<br />
       الخرطوم -15ابريل 2021م
     </p>
