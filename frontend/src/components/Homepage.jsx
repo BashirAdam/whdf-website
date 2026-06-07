@@ -168,7 +168,7 @@ const Homepage = () => {
     <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
       <div>
         <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-          {siteContent.about?.story?.title || "رؤيتنا"}
+          {siteContent.about?.story?.title || "البداية"}
         </h2>
         <div className="text-lg text-gray-800 leading-relaxed mb-6 text-justify" style={{ direction: 'rtl' }}>
           {siteContent.about?.story?.content || `تأسست جبهة وادي هور الديمقراطية في 12 أبريل 2021م بهدف واضح: "إقامة إقليم دار زغاوة (إقليم بيربي) كمركزية ثقافية وسياسية لشعب الزغاوة في السودان، مستندة على الإرث الحضاري لممالك الزغاوة قبل الميلاد ومملكة كانم بعد الميلاد، والعمل على تمكين المجتمع للحفاظ على هويته الشمال إفريقية وحقوقه الثقافية والسياسية."`}
@@ -354,7 +354,17 @@ const Homepage = () => {
       <img src="/images/Flag.jpeg" alt="علم الزغاوة الثقافي" className="max-h-full object-contain rounded-lg shadow-lg" />
     </div>
   </div>
+
+  {/* Flag Disclaimer - Added at the bottom, full width */}
+  <div className="px-6 pb-6">
+    <div className="text-center">
+      <p className="text-sm text-gray-500 bg-yellow-50 p-3 rounded-lg border border-yellow-200" style={{ direction: 'rtl' }}>
+        <strong>ملاحظة:</strong> هذه خريطة توضيحية تعتمد على المصادر المتاحة ولا تمثل الحدود الرسمية المعترف بها دولياً.
+      </p>
+    </div>
+  </div>
 </div>
+
 
 {/* Map Section - Dar Zaghawa Region */}
 <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-200">
