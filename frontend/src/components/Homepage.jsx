@@ -350,7 +350,7 @@ const Homepage = () => {
       <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
         <li className="text-right">اللون البني الداكن: الإقليم محمي بدماء شهدائه</li>
         <li className="text-right">أصفر خردلي: يرمز للصحراء</li>
-        <li className="text-right">اللون الأخضر: يرمز لوادي حور والثراء الزراعي</li>
+        <li className="text-right">اللون الأخضر: يرمز لوادي هور والثراء الزراعي</li>
         <li className="text-right">النجمة: ترمز للحرية والمستقبل</li>
         <li className="text-right">الأربعة حروف: تعني كلمة باريا (لغة الزغاوى)</li>
       </ul>

@@ -151,7 +151,7 @@ const Programs = () => {
       <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
         <li className="text-right">اللون البني الداكن: الإقليم محمي بدماء شهدائه</li>
         <li className="text-right">أصفر خردلي: يرمز للصحراء</li>
-        <li className="text-right">اللون الأخضر: يرمز لوادي حور والثراء الزراعي</li>
+        <li className="text-right">اللون الأخضر: يرمز لوادي هور والثراء الزراعي</li>
         <li className="text-right">النجمة: ترمز للحرية والمستقبل</li>
         <li className="text-right">الأربعة حروف: تعني كلمة باريا (لغة الزغاوى)</li>
       </ul>
@@ -302,7 +302,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">  Sumaya Musa Harran</p>
   <p className="text-gray-600 leading-relaxed">
-  ناشطة في المجتمع المدني
+ مستقلة و ناشطة في المجتمع المدني، ومساهمة في نشر الوعي الحقوقي وبناء السلام
   </p>
 </div>
             </div>
@@ -396,7 +396,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Madiha Hassan</p>
   <p className="text-gray-600 leading-relaxed">
-  ناشطة في المجتمع المدني
+   مستقلة و ناشطة في المجتمع المدني، ومدافعه عن حقوق اللاجئين
   </p>
 </div>
             </div>
@@ -434,6 +434,25 @@ const Programs = () => {
   <p className="text-gray-600 leading-relaxed">
    قائد عسكري والقائد الاعلي السابق للجيش الوطني التشادي  
   </p>
+</div>
+            </div>
+
+
+
+              {/* Figure 4 -Qasim Altahir*/}
+              <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/gasim.png" alt="   قاسم الطاهر     " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">  قاسم الطاهر     </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Qasim Altahir</p>
+  <p className="text-gray-600 leading-relaxed">
+     ناشط سياسي ومهتم بالشأن الافريقي
+    
+    </p>
 </div>
             </div>
 
