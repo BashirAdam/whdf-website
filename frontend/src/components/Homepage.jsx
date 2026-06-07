@@ -297,11 +297,6 @@ const Homepage = () => {
   </div>
 </div>
 
-
-
-
-{/* Main Content Container */}
-<div className="max-w-5xl mx-auto px-4 md:px-8 py-8">
         
         {/* Who are the Zaghawa People - Full Section */}
         <div className="mb-8 mt-7">
@@ -318,43 +313,54 @@ const Homepage = () => {
 
 
 
-         {/* Who are the Zaghawa People - Full Section */}
-         <div className="mb-8 mt-7">
-          <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-          لغة الزغاوة
-          </h2>
-          <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-            يتحدث الزغاوة لغة تعرف باسم البريا او بيرا، وهي لغة من فصيلة اللغات النيلية الصحراوية، ولها عدة لهجات محلية. كما يتحدث كثير من الزغاوة العربية كلغة ثانية ، خاصة في السودان والفرنسية في تشاد. ولغة الزغاوة مكتوبة وتتكون من ثمانية وعشرون حرفآ وله كيبورد خاص به ويتم تدريسه في جامعة كولن بجمهورية المالنيا لطلاب الدراسات العليا . كما يوجد العديد من الكتب عن تعليم لغة الزغاوة . وتم صياغة حروف اللغة من اوشام الابل لدي قومية الزغاوة عن طريق بحث قام الاستاذ ادم تاجر في نهاية القرن الماضي . وتم وضع القواعد وتقنين الحروف بواسطة الطبيب البيطري صديق ادم عيسى خريج جامعة الخرطوم، وكما ساهمت البروفسيرة انجيلا جاكوبي من معهد كولن الالمانية في صياغة القواعد النحوية للغة الزغاوة.
-          </p>
-        </div>
 
-        {/* Details in two columns */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-gray-50 rounded-xl p-5">
-            <h3 className="font-bold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
-              <Compass className="h-5 w-5 inline-block ml-2 text-[#d78525]" />
-              مطورو لغة الزغاو
-            </h3>
-            <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-              <li className="text-right"> 'الأستاذ ادم محمد عبدالله عيسى 'ادم تاجر </li>
-              <li className="text-right">الدكتور صديق ادم عيسي</li>
-              <li className="text-right">الدكتور محمود ابكر الطيناوي</li>
-              <li className="text-right"> الاستاذ الصادق صديق  </li>
-            </ul>
-          </div>
-          <div className="bg-gray-50 rounded-xl p-5">
-            <h3 className="font-bold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
-              <Languages className="h-5 w-5 inline-block ml-2 text-[#d78525]" />
-              أين يقطن الزغاوة
-              </h3>
-            <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-              <li className="text-right">شمال وغرب دارفور (كُتُم، كُرنوي، أم برو، الطينة، كُبكابية، مليط)</li>
-              <li className="text-right">شمال ووسط تشاد (انجمينا، ابيشي، وادي فِرا، أُمّ جرس)</li>
-              <li className="text-right">جاليات في ليبيا والنيجر والمدن السودانية الكبرى</li>
-            </ul>
-          </div>
-        </div>
-</div>
+        {/* من هم شعب الزغاوة */}
+  <div className="mb-8">
+    <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
+      من هم شعب الزغاوة
+    </h2>
+    <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+      الزغاوة هم أحد الشعوب الإفريقية العريقة التي تعيش في منطقة الساحل الإفريقي، ويُعتبرون من أقدم المجموعات الإثنية في إقليم دارفور بغرب السودان وشمال تشاد. عُرفوا تاريخيًا بأنهم شعب محارب، تاجر، ومبدع في الزراعة والرعي، ولهم نظام اجتماعي وسياسي متماسك.
+    </p>
+  </div>
+
+  {/* لغة الزغاوة */}
+  <div className="mb-8">
+    <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
+      لغة الزغاوة
+    </h2>
+    <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+      يتحدث الزغاوة لغة تعرف باسم البريا او بيرا، وهي لغة من فصيلة اللغات النيلية الصحراوية، ولها عدة لهجات محلية. كما يتحدث كثير من الزغاوة العربية كلغة ثانية ، خاصة في السودان والفرنسية في تشاد. ولغة الزغاوة مكتوبة وتتكون من ثمانية وعشرون حرفآ وله كيبورد خاص به ويتم تدريسه في جامعة كولن بجمهورية ألمانيا لطلاب الدراسات العليا . كما يوجد العديد من الكتب عن تعليم لغة الزغاوة . وتم صياغة حروف اللغة من أوشام الإبل لدى قومية الزغاوة عن طريق بحث قام به الأستاذ آدم تاجر في نهاية القرن الماضي . وتم وضع القواعد وتقنين الحروف بواسطة الطبيب البيطري صديق آدم عيسى خريج جامعة الخرطوم، وكما ساهمت البروفسيرة أنجيلا جاكوبي من معهد كولن الألمانية في صياغة القواعد النحوية للغة الزغاوة.
+    </p>
+  </div>
+
+  {/* Details in two columns */}
+  <div className="grid md:grid-cols-2 gap-6 mb-8">
+    <div className="bg-gray-50 rounded-xl p-5">
+      <h3 className="font-bold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+        <Compass className="h-5 w-5 inline-block ml-2 text-[#d78525]" />
+        مطورو لغة الزغاوة
+      </h3>
+      <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
+        <li className="text-right">الأستاذ آدم محمد عبدالله عيسى (آدم تاجر)</li>
+        <li className="text-right">الدكتور صديق آدم عيسى</li>
+        <li className="text-right">الدكتور محمود أبكر الطيناوي</li>
+        <li className="text-right">الأستاذ الصادق صديق</li>
+      </ul>
+    </div>
+
+    <div className="bg-gray-50 rounded-xl p-5">
+      <h3 className="font-bold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+        <Languages className="h-5 w-5 inline-block ml-2 text-[#d78525]" />
+        أين يقطن الزغاوة
+      </h3>
+      <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
+        <li className="text-right">شمال وغرب دارفور (كُتُم، كُرنوي، أم برو، الطينة، كُبكابية، مليط)</li>
+        <li className="text-right">شمال ووسط تشاد (انجمينا، ابيشي، وادي فِرا، أُمّ جرس)</li>
+        <li className="text-right">جاليات في ليبيا والنيجر والمدن السودانية الكبرى</li>
+      </ul>
+    </div>
+  </div>
 
 {/* Culture & Heritage Section */}
         <div className="mb-8">
