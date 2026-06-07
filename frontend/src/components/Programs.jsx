@@ -80,7 +80,7 @@ const Programs = () => {
               مطورو لغة الزغاو
             </h3>
             <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-              <li className="text-right"> الأستاذ ادم تاجر </li>
+            <li className="text-right"> 'الأستاذ ادم محمد عبدالله عيسى 'ادم تاجر </li>
               <li className="text-right">الدكتور صديق ادم عيسي</li>
               <li className="text-right">الدكتور محمود ابكر الطيناوي</li>
               <li className="text-right"> الاستاذ الصادق صديق  </li>
@@ -138,7 +138,7 @@ const Programs = () => {
   </div>
 </div>
 
-                {/* Wadi Hur Civilization Section - Text Only */}
+               {/* Wadi Hur Civilization Section - Text Only */}
 <div className="mb-8">
   <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
     حضارة وادي هور
@@ -147,7 +147,7 @@ const Programs = () => {
   <div className="space-y-6">
     {/* الفقرة الرئيسية */}
     <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-      حضارة وادي هور ازدهرت على ضفاف وادي هور العريقة منذ الألفية الرابعة قبل الميلاد، تاركة إرثاً أثرياً ضخماً من المستوطنات والفخار والنقوش الصخرية التي تؤكد استيطان مجموعات بشرية رعوية وزراعية متطورة.
+      حضارة وادي هور ازدهرت على ضفاف وادي هور العريقة منذ الألفية الرابعة قبل الميلاد، تاركة إرثاً أثرياً ضخماً من المستوطنات و الفخار والنقوش الصخرية التي تؤكد استيطان مجموعات بشرية رعوية وزراعية متطورة.
     </p>
 
     <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
@@ -156,7 +156,7 @@ const Programs = () => {
 
     {/* الأهمية التاريخية والأثرية */}
     <div>
-      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+      <h3 className="text-base font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
         الأهمية التاريخية والأثرية والاستيطان البشري
       </h3>
       <p className="text-gray-700 leading-relaxed text-justify mb-4" style={{ direction: 'rtl' }}>
@@ -166,7 +166,7 @@ const Programs = () => {
 
     {/* الاقتصاد والمجتمع */}
     <div>
-      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+      <h3 className="text-base font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
         الاقتصاد والمجتمع
       </h3>
       <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
@@ -176,7 +176,7 @@ const Programs = () => {
 
     {/* الربط الحضاري */}
     <div>
-      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+      <h3 className="text-base font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
         الربط الحضاري
       </h3>
       <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
@@ -186,7 +186,7 @@ const Programs = () => {
 
     {/* الوضع الحالي */}
     <div>
-      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+      <h3 className="text-base font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
         الوضع الحالي للوادي
       </h3>
       <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
