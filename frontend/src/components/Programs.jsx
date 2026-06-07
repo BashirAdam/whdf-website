@@ -325,40 +325,26 @@ const Programs = () => {
 </div>
             </div>
 
-             {/* Figure 10 - Sultan Hassan Bargou Hassan  */}
+            
+             {/* Figure 10 - Professor Adam Saleh Mohamedin  */}
              <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/sultan_hassan.jpeg" alt="  حسن برقو حسن" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/Adam Saleh.jpeg" alt="  البروفيسور ادم صالح محمدين   " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800"> حسن برقو حسن </h3>
+    <h3 className="text-xl font-bold text-gray-800">    البروفيسور ادم صالح محمدين   </h3>
   </div>
-  <p className="text-base text-[#d78525] mb-3">Hassan Bargou Hassan</p>
+  <p className="text-base text-[#d78525] mb-3">  Prof. Adam Saleh Mohamedin</p>
   <p className="text-gray-600 leading-relaxed">
-        سياسي، واقتصادي، يشغل حالياً منصب وزير المالية والتخطيط الاقتصادي ورئيس حركة العدل والمساواة السودانية
+  اختصاصي واستشاري النساء والتوليد ومدير مركز جراحه الناسور البولي في أفريقيا 
+  مدير جامعة الفاشر السابق
   </p>
 </div>
             </div>
 
 
-            {/* Figure 11 -  Al-Tahir Hajar */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/yay.jpeg" alt=" الطاهر حجر " className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">الطاهر حجر  </h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3"> Al-Tahir Hajar</p>
-  <p className="text-gray-600 leading-relaxed">
-  هو سياسي سوداني
-  </p>
-</div>
-            </div>
-
-             {/* Figure 12 - Sumaya Musa Harran  */}
+             {/* Figure 11 - Sumaya Musa Harran  */}
              <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
                 <img src="/images/Sumaya.jpeg" alt="  سمية موسى حرّان" className="rounded-lg shadow-xl w-full h-80 object-cover" />
@@ -374,7 +360,7 @@ const Programs = () => {
 </div>
             </div>
 
-            {/* Figure 14 -  Mohamed Ahmed El Sheikh */}
+            {/* Figure 12 -  Mohamed Ahmed El Sheikh */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
                 <img src="/images/Mohamed Ahmed El Sheikh.jpeg" alt=" محمد احمد الشيخ " className="rounded-lg shadow-xl w-full h-80 object-cover" />
@@ -390,19 +376,18 @@ const Programs = () => {
 </div>
             </div>
 
-             {/* Figure 15 - Professor Adam Saleh Mohamedin  */}
-             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+            {/* Figure 13 -  Al-Tahir Hajar */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/Adam Saleh.jpeg" alt="  البروفيسور ادم صالح محمدين   " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/alta.jpeg" alt=" الطاهر حجر " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">    البروفيسور ادم صالح محمدين   </h3>
+    <h3 className="text-xl font-bold text-gray-800">الطاهر حجر  </h3>
   </div>
-  <p className="text-base text-[#d78525] mb-3">  Prof. Adam Saleh Mohamedin</p>
+  <p className="text-base text-[#d78525] mb-3"> Al-Tahir Hajar</p>
   <p className="text-gray-600 leading-relaxed">
-  اختصاصي واستشاري النساء والتوليد ومدير مركز جراحه الناسور البولي في أفريقيا 
-  مدير جامعة الفاشر السابق
+  هو سياسي سوداني
   </p>
 </div>
             </div>
