@@ -478,7 +478,7 @@ const Programs = () => {
               {/* Figure 4 -Adam Tajir*/}
               <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/adam.jpg" alt="   الأستاذ آدم تاجر      " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/adam.jpeg" alt="   الأستاذ آدم تاجر      " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
