@@ -413,7 +413,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. Siddig Adam Issa</p>
   <p className="text-gray-600 leading-relaxed">
-     الدكتور صديق ادم عيسي من الشخصيات الت ساهمت في تطوير لغة الزغاوة
+     الدكتور صديق ادم عيسي من الشخصيات التي ساهمت في تطوير لغة الزغاوة
     
     </p>
 </div>

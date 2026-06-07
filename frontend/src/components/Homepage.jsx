@@ -236,7 +236,7 @@ const Homepage = () => {
     من هم شعب الزغاوة
   </h2>
   <p className="text-gray-800 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-    الزغاوة هم أحد الشعوب الإفريقية العريقة التي تعيش في منطقة الساحل الإفريقي، ويُعتبرون من أقدم المجموعات الإثنية في إقليم دارفور بغرب السودان وشمال تشاد. عُرفوا تاريخيًا بأنهم شعب محارب، تاجر، ومبدع في الزراعة والرعي، ولهم نظام اجتماعي وسياسي متماسك.
+    الزغاوة هم أحد الشعوب الإفريقية العريقة التي تعيش في منطقة الساحل الإفريقي، ويُعتبرون من أقدم المجموعات الإثنية في إقليم دارفور بغرب السودان وشمال تشاد. تاريخيا عُرفوا ببراعتهم في مجالات التجارة والزراعة والرعي، كما برزوا كشعبٍ محارب، ولهم نظام اجتماعي وسياسي متماسك.
   </p>
 </div>
 
@@ -336,37 +336,47 @@ const Homepage = () => {
 
 
 
-        {/* Flag Section */}
-<div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-200">
+     {/* Flag Section */}
+<div className="bg-white rounded-2xl shadow-lg overflow-hidden mb-8 border border-gray-200">
   <div className="grid md:grid-cols-2 gap-0">
-    <div className="p-6 md:p-8 order-2 md:order-1">
-      <h3 className="text-xl font-bold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>
-        <Flag className="h-6 w-6 inline-block ml-2 text-yellow-400" />
-        علم الزغاوة الثقافي
-      </h3>
-      <p className="text-gray-700 leading-relaxed text-justify mb-4" style={{ direction: 'rtl' }}>
+    
+    {/* Left - Text Content */}
+    <div className="p-8 md:p-10 order-2 md:order-1">
+      <div className="flex items-center gap-3 mb-6">
+        <Flag className="h-7 w-7 text-yellow-400" />
+        <h3 className="text-2xl font-bold text-gray-800" style={{ direction: 'rtl' }}>
+          علم الزغاوة الثقافي
+        </h3>
+      </div>
+      
+      <p className="text-gray-700 leading-relaxed text-justify mb-6" style={{ direction: 'rtl' }}>
         العلم الثقافي للزغاوة يُستخدم كرمز للهوية التاريخية والوحدة المجتمعية لشعب الزغاوة. يتكون العلم من:
       </p>
-      <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-        <li className="text-right">اللون البني الداكن: الإقليم محمي بدماء شهدائه</li>
-        <li className="text-right">أصفر خردلي: يرمز للصحراء</li>
-        <li className="text-right">اللون الأخضر: يرمز لوادي حور والثراء الزراعي</li>
-        <li className="text-right">النجمة: ترمز للحرية والمستقبل</li>
-        <li className="text-right">الأربعة حروف: تعني كلمة باريا (لغة الزغاوى)</li>
+      
+      <ul className="space-y-3 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
+        <li>اللون البني الداكن: الإقليم محمي بدماء شهدائه</li>
+        <li>أصفر خردلي: يرمز للصحراء</li>
+        <li>اللون الأخضر: يرمز لوادي حور والثراء الزراعي</li>
+        <li>النجمة: ترمز للحرية والمستقبل</li>
+        <li>الأربعة حروف: تعني كلمة باريا (لغة الزغاوى)</li>
       </ul>
     </div>
-    <div className="h-64 md:h-auto bg-gray-100 order-1 md:order-2 flex items-center justify-center p-4">
-      <img src="/images/Flag.jpeg" alt="علم الزغاوة الثقافي" className="max-h-full object-contain rounded-lg shadow-lg" />
+
+    {/* Right - Flag Image */}
+    <div className="h-80 md:h-auto bg-gray-50 flex items-center justify-center p-8 order-1 md:order-2 border-l border-gray-100">
+      <img 
+        src="/images/Flag.jpeg" 
+        alt="علم الزغاوة الثقافي" 
+        className="max-h-full max-w-full object-contain rounded-lg shadow-md" 
+      />
     </div>
   </div>
 
-  {/* Flag Disclaimer - Added at the bottom, full width */}
-  <div className="px-6 pb-6">
-    <div className="text-center">
-      <p className="text-sm text-gray-500 bg-yellow-50 p-3 rounded-lg border border-yellow-200" style={{ direction: 'rtl' }}>
-        <strong>ملاحظة:</strong> هذه خريطة توضيحية تعتمد على المصادر المتاحة ولا تمثل الحدود الرسمية المعترف بها دولياً.
-      </p>
-    </div>
+  {/* Disclaimer - Bottom full width */}
+  <div className="bg-yellow-50 px-8 py-5 border-t border-yellow-100">
+    <p className="text-sm text-gray-600 text-center" style={{ direction: 'rtl' }}>
+      <strong>ملاحظة:</strong> هذه خريطة توضيحية تعتمد على المصادر المتاحة ولا تمثل الحدود الرسمية المعترف بها دولياً.
+    </p>
   </div>
 </div>
 
