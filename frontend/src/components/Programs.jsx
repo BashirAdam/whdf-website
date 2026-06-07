@@ -223,20 +223,20 @@ const Programs = () => {
 </div>
             </div>
 
-
-            {/* Figure 4 - Dr. and General Youssef Tiara */}
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+             {/* Figure 10 - Professor Adam Saleh Mohamedin  */}
+             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/yousef.jpeg" alt=" الدكتور والجنرال يوسف تيارا " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/Adam Saleh.jpeg" alt="  البروفيسور ادم صالح محمدين   " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">Dr. and General Youssef Tiara  </h3>
+    <h3 className="text-xl font-bold text-gray-800">    البروفيسور ادم صالح محمدين   </h3>
   </div>
-  <p className="text-base text-[#d78525] mb-3">Dr. and General Youssef Tiara</p>
+  <p className="text-base text-[#d78525] mb-3">  Prof. Adam Saleh Mohamedin</p>
   <p className="text-gray-600 leading-relaxed">
-  طبيب وسياسي 
-  سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
+  اختصاصي واستشاري النساء والتوليد ومدير مركز جراحه الناسور البولي في أفريقيا 
+  مدير جامعة الفاشر السابق
+  </p>
 </div>
             </div>
 
@@ -256,6 +256,43 @@ const Programs = () => {
   </p>
 </div>
             </div>
+
+
+             {/* Figure 9 -  Yahya Dillo */}
+             <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/yay.jpeg" alt=" يحي ديلو" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">يحي ديلو </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Yahya Dillo</p>
+  <p className="text-gray-600 leading-relaxed">
+  سياسي تشادي، وزعيم المعارضة كرئيس للحزب الاشتراكي بلا حدود
+  </p>
+</div>
+            </div>
+
+
+            {/* Figure 4 - Dr. and General Youssef Tiara */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/yousef.jpeg" alt=" الدكتور والجنرال يوسف تيارا " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">Dr. and General Youssef Tiara  </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Dr. and General Youssef Tiara</p>
+  <p className="text-gray-600 leading-relaxed">
+  طبيب وسياسي 
+  سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
+</div>
+            </div>
+
+
+            
 
             {/* Figure 6 - Mini Minawi */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
@@ -308,41 +345,7 @@ const Programs = () => {
             </div>
 
 
-            
-            {/* Figure 9 -  Yahya Dillo */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/yay.jpeg" alt=" يحي ديلو" className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">يحي ديلو </h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">Yahya Dillo</p>
-  <p className="text-gray-600 leading-relaxed">
-  سياسي تشادي، وزعيم المعارضة كرئيس للحزب الاشتراكي بلا حدود
-  </p>
-</div>
-            </div>
-
-            
-             {/* Figure 10 - Professor Adam Saleh Mohamedin  */}
-             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/Adam Saleh.jpeg" alt="  البروفيسور ادم صالح محمدين   " className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">    البروفيسور ادم صالح محمدين   </h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">  Prof. Adam Saleh Mohamedin</p>
-  <p className="text-gray-600 leading-relaxed">
-  اختصاصي واستشاري النساء والتوليد ومدير مركز جراحه الناسور البولي في أفريقيا 
-  مدير جامعة الفاشر السابق
-  </p>
-</div>
-            </div>
-
+          
 
              {/* Figure 11 - Sumaya Musa Harran  */}
              <div className="flex flex-col md:flex-row-reverse items-center gap-8">
@@ -360,21 +363,7 @@ const Programs = () => {
 </div>
             </div>
 
-            {/* Figure 12 -  Mohamed Ahmed El Sheikh */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/Mohamed Ahmed El Sheikh.jpeg" alt=" محمد احمد الشيخ " className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">  </h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">محمد احمد الشيخ</p>
-  <p className="text-gray-600 leading-relaxed">
-  مدير جامعة الخرطوم الأسبق اول الشهادة السودانية عام 1964
-  </p>
-</div>
-            </div>
+
 
             {/* Figure 13 -  Al-Tahir Hajar */}
             <div className="flex flex-col md:flex-row items-center gap-8">
