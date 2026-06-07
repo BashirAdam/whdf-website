@@ -311,7 +311,7 @@ const Programs = () => {
             {/* Figure 7 -  Mohamed Ahmed El Sheikh */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/sel.jpg" alt="البروفيسور محمد أحمد علي الشيخ  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/mo.jpeg" alt="البروفيسور محمد أحمد علي الشيخ  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">

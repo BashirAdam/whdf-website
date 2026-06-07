@@ -312,13 +312,12 @@ const Homepage = () => {
 <div className="bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-gray-100">
   <div className="grid md:grid-cols-2 gap-0">
     <div className="h-64 md:h-auto bg-gray-200">
-      <img src="/images/kamel.jpg" alt="وادي هور" className="w-full h-full object-cover" />
+      <img src="/images/wa.jpg" alt="وادي هور" className="w-full h-full object-cover" />
     </div>
     <div className="p-6 md:p-8">
-      <h3 className="text-xl font-bold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>حضارة وادي هور</h3>
+      <h3 className="text-xl font-bold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>وادي هور  </h3>
       <p className="text-gray-700 leading-relaxed text-justify mb-4" style={{ direction: 'rtl' }}>
-        يُعتبر وادي هور أحد أقدم المراكز الحضارية في إفريقيا، وكان في العصور القديمة نهرًا عظيمًا يتدفق من شمال دارفور حتى النيل.
-        حول هذا الوادي قامت حضارات قديمة جدا رى بعض الباحثين أن حضارة وادي هور كانت الجسر الذي وصل بين حضارة النوبة والنيل وبين ممالك إفريقيا الداخلية مثل كانم.
+      يُعد وادي هور واحداً من أكبر الأودية الجافة في الصحراء الكبرى. وكان في العصور القديمة نهراً حيوياً يربط بين تشاد ونهر النيل في السودان. يمتد الوادي على مسافة تزيد عن ١٢٠٠ كلم، وينحدر من مرتفعات إنيدي شرق تشاد مروراً بدار زغاوة حتى المصب بنهر النيل عند منطقة الدبة. كان الوادي يُعرف قديماً بـ "النهر الأصفر" لكونه الرافد الرئيسي لنهر النيل من الصحراء الشرقية، وشرياناً مائياً غنياً وفر بيئة خصبة للاستقرار البشري والحياة البرية قبل أن يجف تماماً.
       </p>
       <ul className="space-y-2 text-gray-700 pr-5" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
         <li className="text-right">الزراعة والرعي</li>
