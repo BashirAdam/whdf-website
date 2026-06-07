@@ -121,6 +121,23 @@ const Programs = () => {
           </p>
         </div>
 
+
+        {/* وادي هور */}
+<div className="bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-gray-100">
+  <div className="grid md:grid-cols-2 gap-0">
+    <div className="h-64 md:h-auto bg-gray-200">
+      <img src="/images/wa.jpg" alt="وادي هور" className="w-full h-full object-cover" />
+    </div>
+    <div className="p-6 md:p-8">
+      <h3 className="text-xl font-bold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>وادي هور  </h3>
+      <p className="text-gray-700 leading-relaxed text-justify mb-4" style={{ direction: 'rtl' }}>
+      يُعد وادي هور واحداً من أكبر الأودية الجافة في الصحراء الكبرى. وكان في العصور القديمة نهراً حيوياً يربط بين تشاد ونهر النيل في السودان. يمتد الوادي على مسافة تزيد عن ١٢٠٠ كلم، وينحدر من مرتفعات إنيدي شرق تشاد مروراً بدار زغاوة حتى المصب بنهر النيل عند منطقة الدبة. كان الوادي يُعرف قديماً بـ "النهر الأصفر" لكونه الرافد الرئيسي لنهر النيل من الصحراء الشرقية، وشرياناً مائياً غنياً وفر بيئة خصبة للاستقرار البشري والحياة البرية قبل أن يجف تماماً.
+      </p>
+
+    </div>
+  </div>
+</div>
+
                 {/* Wadi Hur Civilization Section - Text Only */}
 <div className="mb-8">
   <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
