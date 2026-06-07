@@ -122,20 +122,71 @@ const Programs = () => {
         </div>
 
                 {/* Wadi Hur Civilization Section - Text Only */}
-        <div className="mb-8">
-          <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-            
-            حضارة وادي هور
-          </h2>
-          <p className="text-gray-700 leading-relaxed text-justify mb-4" style={{ direction: 'rtl' }}>
-            يُعتبر وادي هور أحد أقدم المراكز الحضارية في إفريقيا، وكان في العصور القديمة نهرًا عظيمًا يتدفق من شمال دارفور حتى النيل. حول هذا الوادي قامت حضارات قديمة جدا رى بعض الباحثين أن حضارة وادي هور كانت الجسر الذي وصل بين حضارة النوبة والنيل وبين ممالك إفريقيا الداخلية مثل كانم.
-          </p>
-          <ul className="space-y-2 text-gray-700 pr-5" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-            <li className="text-right">الزراعة والرعي</li>
-            <li className="text-right">التجارة بين الصحراء الكبرى ووادي النيل</li>
-            <li className="text-right">بناء المدن والقرى والممالك المحلية</li>
-          </ul>
-        </div>
+<div className="mb-8">
+  <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
+    حضارة وادي هور
+  </h2>
+
+  <div className="space-y-6">
+    {/* الفقرة الرئيسية */}
+    <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+      حضارة وادي هور ازدهرت على ضفاف وادي هور العريقة منذ الألفية الرابعة قبل الميلاد، تاركة إرثاً أثرياً ضخماً من المستوطنات والفخار والنقوش الصخرية التي تؤكد استيطان مجموعات بشرية رعوية وزراعية متطورة.
+    </p>
+
+    <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+      يُعتبر وادي هور أحد أقدم المراكز الحضارية في إفريقيا، وكان في العصور القديمة نهرًا عظيمًا يتدفق من شمال دارفور حتى النيل. حول هذا الوادي قامت حضارات قديمة جداً، ويرى بعض الباحثين أن حضارة وادي هور كانت الجسر الذي وصل بين حضارة النوبة والنيل وبين ممالك إفريقيا الداخلية مثل كانم.
+    </p>
+
+    {/* الأهمية التاريخية والأثرية */}
+    <div>
+      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+        الأهمية التاريخية والأثرية والاستيطان البشري
+      </h3>
+      <p className="text-gray-700 leading-relaxed text-justify mb-4" style={{ direction: 'rtl' }}>
+        تؤكد الاكتشافات الأثرية (مثل أبحاث متحف بوزنان للآثار وجامعة كولن بجمهورية ألمانيا) أن المنطقة كانت مأهولة بالسكان منذ العصر الحجري، حيث ازدهرت حضارة متأثرة بالممالك الكوشية.
+      </p>
+    </div>
+
+    {/* الاقتصاد والمجتمع */}
+    <div>
+      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+        الاقتصاد والمجتمع
+      </h3>
+      <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+        اعتمد سكان الوادي الأوائل على الرعي والزراعة واستئناس الحيوانات، وصناعة الفخار المتميز، وتركوا العديد من النقوش الصخرية التي توثق حياتهم اليومية وعلاقتهم بالبيئة النهرية.
+      </p>
+    </div>
+
+    {/* الربط الحضاري */}
+    <div>
+      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+        الربط الحضاري
+      </h3>
+      <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+        لعب الوادي دوراً مهماً كممر تجاري وحلقة وصل استراتيجية بين وسط إفريقيا ووادي النيل، مما ساهم في ازدهار الحضارات النوبية القديمة.
+      </p>
+    </div>
+
+    {/* الوضع الحالي */}
+    <div>
+      <h3 className="text-lg font-semibold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
+        الوضع الحالي للوادي
+      </h3>
+      <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+        يمثل وادي هور اليوم واحداً من أكبر المنتزهات الوطنية في العالم، ورغم جفافه السطحي إلا أنه لا يزال يشكل مورداً حيوياً للرعاة الرحل والمواشي خلال مواسم الأمطار. يحتضن الوادي مواقع أثرية بالغة الأهمية مسجلة في الخريطة الأثرية السودانية، وقد تم إعلان وادي هور محمية طبيعية عالمية من منظمة اليونسكو التابعة للأمم المتحدة.
+      </p>
+    </div>
+
+    {/* النقاط الرئيسية (محدثة) */}
+    <ul className="space-y-2 text-gray-700 pr-5 list-disc" style={{ direction: 'rtl', listStylePosition: 'inside' }}>
+      <li>الزراعة والرعي</li>
+      <li>التجارة بين الصحراء الكبرى ووادي النيل</li>
+      <li>بناء المدن والقرى والممالك المحلية</li>
+      <li>النقوش الصخرية والفخار كشواهد حضارية</li>
+      <li>دور استراتيجي كممر تجاري بين إفريقيا الوسطى ووادي النيل</li>
+    </ul>
+  </div>
+</div>
 
                 {/* Kingdom Section - Text Only */}
         <div className="mb-8">
