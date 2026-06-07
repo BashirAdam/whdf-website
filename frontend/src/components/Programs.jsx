@@ -274,22 +274,23 @@ const Programs = () => {
             </div>
 
 
-
-             {/* Figure 9 -  Yahya Dillo */}
-             <div className="flex flex-col md:flex-row items-center gap-8">
+            {/* Figure 7 -  Mohamed Ahmed El Sheikh */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/yay.jpeg" alt=" يحي ديلو" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/mo.jpeg" alt="البروفيسور محمد أحمد علي الشيخ  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">يحي ديلو </h3>
+    <h3 className="text-xl font-bold text-gray-800">البروفيسور محمد أحمد علي الشيخ  </h3>
   </div>
-  <p className="text-base text-[#d78525] mb-3">Yahya Dillo</p>
+  <p className="text-base text-[#d78525] mb-3">Prof. Mohamed Ahmed Ali Al-Sheikh</p>
   <p className="text-gray-600 leading-relaxed">
-  سياسي تشادي، وزعيم المعارضة كرئيس للحزب الاشتراكي بلا حدود
+  مدير جامعة الخرطوم الأسبق اول الشهادة السودانية عام 1964
   </p>
 </div>
             </div>
+
+             
 
 
             {/* Figure 4 - Dr. and General Youssef Tiara */}
@@ -308,97 +309,8 @@ const Programs = () => {
 </div>
             </div>
 
-            {/* Figure 7 -  Mohamed Ahmed El Sheikh */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/mo.jpeg" alt="البروفيسور محمد أحمد علي الشيخ  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">البروفيسور محمد أحمد علي الشيخ  </h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">Prof. Mohamed Ahmed Ali Al-Sheikh</p>
-  <p className="text-gray-600 leading-relaxed">
-  مدير جامعة الخرطوم الأسبق اول الشهادة السودانية عام 1964
-  </p>
-</div>
-            </div>
-
-
             
 
-            {/* Figure 6 - Mini Minawi */}
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/arco.jpg" alt="مني أركو مناوي" className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">مني أركو مناوي</h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">Mini Arko Minawi</p>
-  <p className="text-gray-600 leading-relaxed">
-    . عسكري وسياسي سوداني ، حاكم إقليم دارفور ، ورئيس حركة تحرير السودان 
-  </p>
-</div>
-            </div>
-
-            {/* Figure 7 -  Souleyman Sandel */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/sel.jpg" alt="سليمان صندل" className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">سليمان صندل</h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">Souleyman Sandel</p>
-  <p className="text-gray-600 leading-relaxed">
-   سياسي سوداني والأمين السياسي 
-لحركة العدل والمساواة
- السودانية والقيادي بالجبهة الثورية
-  </p>
-</div>
-            </div>
-
-            {/* Figure 8 - Jibril Ibrahim  */}
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/jb.jpg" alt="جبريل خليل إبراهيم" className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">جبريل خليل إبراهيم</h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">Jibril Khalil Ibrahim</p>
-  <p className="text-gray-600 leading-relaxed">
-        سياسي، واقتصادي، يشغل حالياً منصب وزير المالية والتخطيط الاقتصادي ورئيس حركة العدل والمساواة السودانية
-  </p>
-</div>
-            </div>
-
-
-        
-
-
-
-
-
-            {/* Figure 13 -  Al-Tahir Hajar */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/alta.jpeg" alt=" الطاهر حجر " className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">الطاهر حجر  </h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3"> Al-Tahir Hajar</p>
-  <p className="text-gray-600 leading-relaxed">
-  هو سياسي سوداني
-  </p>
-</div>
-            </div>
 
           </div>
         </div>
