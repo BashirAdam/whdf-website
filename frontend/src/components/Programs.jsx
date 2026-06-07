@@ -77,7 +77,7 @@ const Programs = () => {
           <div className="bg-gray-50 rounded-xl p-5">
             <h3 className="font-bold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
               <Compass className="h-5 w-5 inline-block ml-2 text-[#d78525]" />
-              مطورو لغة الزغاو
+              مطورو لغة الزغاوة
             </h3>
             <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
             <li className="text-right"> 'الأستاذ ادم محمد عبدالله عيسى 'ادم تاجر </li>
