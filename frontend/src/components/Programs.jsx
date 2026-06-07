@@ -450,8 +450,43 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Qasim Altahir</p>
   <p className="text-gray-600 leading-relaxed">
-     ناشط سياسي ومهتم بالشأن الافريقي
+     ناشط سياسي مستقل ومهتم بالشأن الافريقي
     
+    </p>
+</div>
+            </div>
+
+
+            {/* Figure 7 - Al-Sadiq Siddiq */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/language.jpeg" alt="   الصادق صديق  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800"> الصادق صديق    </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3"> Al-Sadiq Siddiq</p>
+  <p className="text-gray-600 leading-relaxed">
+   الاستاذ الصادق صديق من الشخصيات التي ساهمت بشكل كبير ومباشر في تطوير لغة البريا 
+  </p>
+</div>
+            </div>
+
+
+
+              {/* Figure 4 -Adam Tajir*/}
+              <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/adam.jpg" alt="   الأستاذ آدم تاجر      " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">   الأستاذ آدم تاجر     </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Adam Tajir</p>
+  <p className="text-gray-600 leading-relaxed">
+        هو أستاذ، وباحث،  مخترع حروف لغة الزغاوة (الكتابة بالأوشام)، من الشخصيات التي ساهمت في تطوير لغة لغة البريا
     </p>
 </div>
             </div>
