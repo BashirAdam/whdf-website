@@ -427,7 +427,7 @@ const Programs = () => {
              {/* Figure 7 - Dr. Khalil Ibrahim */}
              <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/jamos1.jpg" alt="   دكتور خليل إبراهيم  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/kahlil.jpg" alt="   دكتور خليل إبراهيم  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
@@ -465,7 +465,7 @@ const Programs = () => {
             {/* Figure 7 - Al-Sadiq Siddiq */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/207.jpg" alt="   الصادق صديق  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/language.jpeg" alt="   الصادق صديق  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
@@ -482,7 +482,7 @@ const Programs = () => {
              {/* Figure 4 -Najla Amer*/}
              <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/najla.jpeg" alt="      نجلاء عامر    " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/Najla.jpeg" alt="      نجلاء عامر    " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
@@ -490,7 +490,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Najla Amer</p>
   <p className="text-gray-600 leading-relaxed">
-  نجلاء عامر رئيسة المجلس الاستشاري لرابطة الزغاوة بمصر
+  الأستاذة نجلاء عامر نعمان ناشطة في التراث ورئيس اللجنة الاستشارية لرابطة أبناء الزغاوة بمصر
     
     </p>
 </div>
