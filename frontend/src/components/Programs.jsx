@@ -210,7 +210,7 @@ const Programs = () => {
             {/* Figure 3 - Dr. Ali Abdelrahman Hagar */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/ali.jpeg" alt="دكتور على عبد الرحمن حقار  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/ali abdull.jpeg" alt="دكتور على عبد الرحمن حقار  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
@@ -286,7 +286,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Mahamat Déby</p>
   <p className="text-gray-600 leading-relaxed">
-    رئيس جمهورية تشاد الحالي ونجل الرئيس الراحل إدريس ديبي. تولى الحكم بعد مقتل والده عام 2021
+    رئيس جمهورية تشاد الحالي ونجل الرئيس الراحل إدريس ديبي. تولى الحكم بعد  عام 2021
   </p>
 </div>
             </div>
@@ -334,7 +334,7 @@ const Programs = () => {
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">Dr. and General Youssef Tiara  </h3>
+    <h3 className="text-xl font-bold text-gray-800">الدكتور والجنرال يوسف تيارا </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. and General Youssef Tiara</p>
   <p className="text-gray-600 leading-relaxed">
@@ -342,6 +342,45 @@ const Programs = () => {
   سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
 </div>
             </div>
+
+
+
+            {/* Figure 7 -  Zakaria Fadl Kater */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/pro_Snap.jpeg" alt="  البروفيسور زكريا فضل كتر    " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">   البروفيسور زكريا فضل كتر    </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Prof. Zakaria Fadl Kater</p>
+  <p className="text-gray-600 leading-relaxed">
+    اكاديمي وكاتب ودبلوماسي. شغل منصب وزير التعليم العالي التشادي وغيرها من المناصب الاكاديمية والدبلوماسية
+  </p>
+</div>
+            </div>
+
+             
+
+
+            {/* Figure 4 - Dr. Ezz El-Din Asso */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/Asso.png" alt="   دكتور عزالدين أسو   " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">دكتور عزالدين أسو       </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Dr. Ezz el-Din Asso</p>
+  <p className="text-gray-600 leading-relaxed">
+  اختصاصي الجراحه العامة،  مدير عام مستشفى الفاشر الجنوبي
+    
+    </p>
+</div>
+            </div>
+
 
 
             
@@ -358,6 +397,24 @@ const Programs = () => {
   <p className="text-gray-600 leading-relaxed">
   ناشطة في المجتمع المدني
   </p>
+</div>
+            </div>
+
+            
+            {/* Figure 4 -Dr. Siddig Adam Issa */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/Dr.Siddig.png" alt="   الدكتور صديق أدم عيسي     " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">  الدكتور صديق أدم عيسي       </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Dr. Siddig Adam Issa</p>
+  <p className="text-gray-600 leading-relaxed">
+     الدكتور صديق ادم عيسي من الشخصيات الساهمت في تطوير لغة الزغاوة
+    
+    </p>
 </div>
             </div>
 
