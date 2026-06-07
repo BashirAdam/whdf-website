@@ -178,7 +178,7 @@ const Programs = () => {
             {/* Figure 1 - Idriss Déby */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/182981.jpg" alt="إدريس ديبي إتنو" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/idres.jpeg" alt="إدريس ديبي إتنو" className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
@@ -210,7 +210,7 @@ const Programs = () => {
             {/* Figure 3 - Dr. Ali Abdelrahman Hagar */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/ali abdull.jpeg" alt="دكتور على عبد الرحمن حقار  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/ali.jpeg" alt="دكتور على عبد الرحمن حقار  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
@@ -340,6 +340,24 @@ const Programs = () => {
   <p className="text-gray-600 leading-relaxed">
   طبيب وسياسي 
   سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
+</div>
+            </div>
+
+
+            
+            {/* Figure 7 - Madiha Hassan */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/mad.jpeg" alt="    مديحة حسن  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">   مديحة حسن   </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Madiha Hassan</p>
+  <p className="text-gray-600 leading-relaxed">
+  ناشطة في المجتمع المدني
+  </p>
 </div>
             </div>
 
