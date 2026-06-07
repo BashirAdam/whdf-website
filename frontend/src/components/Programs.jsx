@@ -256,6 +256,23 @@ const Programs = () => {
   </p>
 </div>
             </div>
+            
+            {/* Figure 11 - Sumaya Musa Harran  */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/Sumaya.jpeg" alt="  سمية موسى حرّان" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">  سمية موسى حرّان  </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">  Sumaya Musa Harran</p>
+  <p className="text-gray-600 leading-relaxed">
+  ناشطة في المجتمع المدني
+  </p>
+</div>
+            </div>
+
 
 
              {/* Figure 9 -  Yahya Dillo */}
@@ -288,6 +305,22 @@ const Programs = () => {
   <p className="text-gray-600 leading-relaxed">
   طبيب وسياسي 
   سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
+</div>
+            </div>
+
+            {/* Figure 7 -  Mohamed Ahmed El Sheikh */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/sel.jpg" alt="البروفيسور محمد أحمد علي الشيخ  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">البروفيسور محمد أحمد علي الشيخ  </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Prof. Mohamed Ahmed Ali Al-Sheikh</p>
+  <p className="text-gray-600 leading-relaxed">
+  مدير جامعة الخرطوم الأسبق اول الشهادة السودانية عام 1964
+  </p>
 </div>
             </div>
 
@@ -345,23 +378,9 @@ const Programs = () => {
             </div>
 
 
-          
+        
 
-             {/* Figure 11 - Sumaya Musa Harran  */}
-             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/Sumaya.jpeg" alt="  سمية موسى حرّان" className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">  سمية موسى حرّان  </h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">  Sumaya Musa Harran</p>
-  <p className="text-gray-600 leading-relaxed">
-  ناشطة في المجتمع المدني
-  </p>
-</div>
-            </div>
+
 
 
 
