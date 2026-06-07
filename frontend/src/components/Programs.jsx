@@ -186,7 +186,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Idriss Déby</p>
   <p className="text-gray-600 leading-relaxed">
-    رئيس جمهورية تشاد السابق وأبرز زعماء الزغاوي في التاريخ الحديث، حكم تشاد منذ عام 1990 حتى مقتله عام 2021
+    رئيس جمهورية تشاد السابق وأبرز زعماء الزغاوي في التاريخ الحديث، حكم تشاد منذ عام 1990 حتى عام 2021
   </p>
 </div>
             </div>
@@ -286,7 +286,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Mahamat Déby</p>
   <p className="text-gray-600 leading-relaxed">
-    رئيس جمهورية تشاد الحالي ونجل الرئيس الراحل إدريس ديبي. تولى الحكم بعد  عام 2021
+    رئيس جمهورية تشاد الحالي ونجل الرئيس الراحل إدريس ديبي. تولى الحكم عام 2021
   </p>
 </div>
             </div>
@@ -338,8 +338,9 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. and General Youssef Tiara</p>
   <p className="text-gray-600 leading-relaxed">
-  طبيب وسياسي 
-  سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
+  رئيس جمعية حماية التراث الثقافي للزغاوة حول العالم ومستشار الرئيس التشادي محمد إدريس ديبي، دكتور وجنرال في الجيش التشادي ولديه الكثير من المؤلفات
+    
+  </p>
 </div>
             </div>
 
@@ -356,7 +357,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Prof. Zakaria Fadl Kater</p>
   <p className="text-gray-600 leading-relaxed">
-    اكاديمي وكاتب ودبلوماسي. شغل منصب وزير التعليم العالي التشادي وغيرها من المناصب الاكاديمية والدبلوماسية
+    اكاديمي وكاتب ودبلوماسي، شغل منصب وزير التعليم العالي التشادي وغيرها من المناصب الاكاديمية والدبلوماسية
   </p>
 </div>
             </div>
@@ -404,7 +405,7 @@ const Programs = () => {
             {/* Figure 4 -Dr. Siddig Adam Issa */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/Dr.Siddig.png" alt="   الدكتور صديق أدم عيسي     " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/Siddig.png" alt="   الدكتور صديق أدم عيسي     " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
@@ -412,7 +413,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. Siddig Adam Issa</p>
   <p className="text-gray-600 leading-relaxed">
-     الدكتور صديق ادم عيسي من الشخصيات الساهمت في تطوير لغة الزغاوة
+     الدكتور صديق ادم عيسي من الشخصيات الت ساهمت في تطوير لغة الزغاوة
     
     </p>
 </div>
