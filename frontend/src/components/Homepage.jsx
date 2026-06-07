@@ -298,20 +298,7 @@ const Homepage = () => {
 </div>
 
         
-        {/* Who are the Zaghawa People - Full Section */}
-        <div className="mb-8 mt-7">
-          <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-            من هم شعب الزغاوة
-          </h2>
-          <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-            الزغاوة هم أحد الشعوب الإفريقية العريقة التي تعيش في منطقة الساحل الإفريقي، ويُعتبرون من أقدم المجموعات الإثنية في إقليم دارفور بغرب السودان وشمال تشاد. عُرفوا تاريخيًا بأنهم شعب محارب، تاجر، ومبدع في الزراعة والرعي، ولهم نظام اجتماعي وسياسي متماسك.
-          </p>
-        </div>
-
-
-
-
-
+    
 
 
         {/* من هم شعب الزغاوة */}
