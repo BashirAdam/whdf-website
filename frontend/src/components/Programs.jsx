@@ -241,6 +241,40 @@ const Programs = () => {
             </div>
 
 
+
+            {/* Figure 3 - Moussa Faki */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/musa.jpg" alt=" موسى فكي  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">  موسى فكي   </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Moussa Faki</p>
+  <p className="text-gray-600 leading-relaxed">
+  رئيس مفوضية الاتحاد الأفريقي السابق، ورئيس وزراء تشاد السابق
+  </p>
+</div>
+            </div>
+
+             {/* Figure 10 - Sherif Hariri  */}
+             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/sharif.jpeg" alt="   دكتور شريف حرير   " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800"> دكتور شريف حرير     </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3"> Dr. Sherif Hariri</p>
+  <p className="text-gray-600 leading-relaxed">
+  أكاديمي وباحث سوداني متخصص في الأنثروبولوجيا عمل أستاذًا في جامعة الخرطوم وكذلك في جامعة بيرغن بالنرويج
+  </p>
+</div>
+            </div>
+
+
             {/* Figure 5 - Mohamed Idris Déby */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
