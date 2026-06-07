@@ -191,21 +191,24 @@ const Programs = () => {
 </div>
             </div>
 
-            {/* Figure 2 - Dr. Khalil Ibrahim */}
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+
+             {/* Figure 4 -Adam Tajir*/}
+             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/207.jpg" alt="دكتور خليل إبراهيم" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/adam.jpeg" alt="   الأستاذ آدم تاجر      " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">دكتور خليل إبراهيم</h3>
+    <h3 className="text-xl font-bold text-gray-800">   الأستاذ آدم تاجر     </h3>
   </div>
-  <p className="text-base text-[#d78525] mb-3">Dr. Khalil Ibrahim</p>
+  <p className="text-base text-[#d78525] mb-3">Adam Tajir</p>
   <p className="text-gray-600 leading-relaxed">
-  طبيب وسياسي 
-  سوداني  مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور  </p>
+  الاستاذ ادم تاجر شخصية معروفة في جهود تطوير لغة الزغاوة في السودان وتشاد . وينسب له وضع  الحروف الاولية للغة المستوحاة من اوشام الابل . تولى الدكتور صديق ادم عيسى لاحقا مهمة تطوير وتقنين اللغة لاحقا بعد وفاة تاجر . ويحتفى بذكراه سنويا في 20 مارس كيوم للغة .
+    </p>
 </div>
             </div>
+
+
 
             {/* Figure 3 - Dr. Ali Abdelrahman Hagar */}
             <div className="flex flex-col md:flex-row items-center gap-8">
@@ -421,18 +424,20 @@ const Programs = () => {
 
 
 
-             {/* Figure 7 - Hassan Djamous */}
+             {/* Figure 7 - Dr. Khalil Ibrahim */}
              <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/jamos1.jpg" alt="  حسن جاموس  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/jamos1.jpg" alt="   دكتور خليل إبراهيم  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">    حسن جاموس   </h3>
+    <h3 className="text-xl font-bold text-gray-800">     دكتور خليل إبراهيم   </h3>
   </div>
-  <p className="text-base text-[#d78525] mb-3"> Hassan Djamous</p>
+  <p className="text-base text-[#d78525] mb-3"> Dr. Khalil Ibrahim</p>
   <p className="text-gray-600 leading-relaxed">
-   قائد عسكري والقائد الاعلي السابق للجيش الوطني التشادي  
+  طبيب وسياسي سوداني مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور
+
+
   </p>
 </div>
             </div>
@@ -460,7 +465,7 @@ const Programs = () => {
             {/* Figure 7 - Al-Sadiq Siddiq */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/language.jpeg" alt="   الصادق صديق  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/207.jpg" alt="   الصادق صديق  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
@@ -474,23 +479,26 @@ const Programs = () => {
             </div>
 
 
-
-              {/* Figure 4 -Adam Tajir*/}
-              <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+             {/* Figure 4 -Najla Amer*/}
+             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/adam.jpeg" alt="   الأستاذ آدم تاجر      " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/najla.jpeg" alt="      نجلاء عامر    " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">   الأستاذ آدم تاجر     </h3>
+    <h3 className="text-xl font-bold text-gray-800">   نجلاء عامر      </h3>
   </div>
-  <p className="text-base text-[#d78525] mb-3">Adam Tajir</p>
+  <p className="text-base text-[#d78525] mb-3">Najla Amer</p>
   <p className="text-gray-600 leading-relaxed">
-  الأستاذ آدم تاجر هو شخصية معروفة في جهود تطوير لغة الزغاوة (Beria) في السودان وتشاد. يُنسب إليه وضع الحروف الأولية للغة بناءً على أوشام الإبل، قبل أن يتولى الدكتور صديق آدم عيسى تقنينها وتطويرها لاحقًا. توفي آدم تاجر، ويُحتفى بذكراه سنويًا في 20 مارس كيوم للغة الزغاوة عرفانًا
-  بجهوده.
+  نجلاء عامر رئيسة المجلس الاستشاري لرابطة الزغاوة بمصر
+    
     </p>
 </div>
             </div>
+
+
+
+             
 
             
 
