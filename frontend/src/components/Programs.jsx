@@ -307,6 +307,106 @@ const Programs = () => {
 </div>
             </div>
 
+
+            
+            {/* Figure 9 -  Yahya Dillo */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/yay.jpeg" alt=" يحي ديلو" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">يحي ديلو </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Yahya Dillo</p>
+  <p className="text-gray-600 leading-relaxed">
+  سياسي تشادي، وزعيم المعارضة كرئيس للحزب الاشتراكي بلا حدود
+  </p>
+</div>
+            </div>
+
+             {/* Figure 10 - Sultan Hassan Bargou Hassan  */}
+             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/sultan_hassan.jpeg" alt="  حسن برقو حسن" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800"> حسن برقو حسن </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Hassan Bargou Hassan</p>
+  <p className="text-gray-600 leading-relaxed">
+        سياسي، واقتصادي، يشغل حالياً منصب وزير المالية والتخطيط الاقتصادي ورئيس حركة العدل والمساواة السودانية
+  </p>
+</div>
+            </div>
+
+
+            {/* Figure 11 -  Al-Tahir Hajar */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/yay.jpeg" alt=" الطاهر حجر " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">الطاهر حجر  </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3"> Al-Tahir Hajar</p>
+  <p className="text-gray-600 leading-relaxed">
+  هو سياسي سوداني
+  </p>
+</div>
+            </div>
+
+             {/* Figure 12 - Sumaya Musa Harran  */}
+             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/Sumaya.jpeg" alt="  سمية موسى حرّان" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">  سمية موسى حرّان  </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">  Sumaya Musa Harran</p>
+  <p className="text-gray-600 leading-relaxed">
+  ناشطة في المجتمع المدني
+  </p>
+</div>
+            </div>
+
+            {/* Figure 14 -  Mohamed Ahmed El Sheikh */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/Mohamed Ahmed El Sheikh.jpeg" alt=" محمد احمد الشيخ " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">  </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">محمد احمد الشيخ</p>
+  <p className="text-gray-600 leading-relaxed">
+  مدير جامعة الخرطوم الأسبق اول الشهادة السودانية عام 1964
+  </p>
+</div>
+            </div>
+
+             {/* Figure 15 - Professor Adam Saleh Mohamedin  */}
+             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/Adam Saleh.jpeg" alt="  البروفيسور ادم صالح محمدين   " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">    البروفيسور ادم صالح محمدين   </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">  Prof. Adam Saleh Mohamedin</p>
+  <p className="text-gray-600 leading-relaxed">
+  اختصاصي واستشاري النساء والتوليد ومدير مركز جراحه الناسور البولي في أفريقيا 
+  مدير جامعة الفاشر السابق
+  </p>
+</div>
+            </div>
+
           </div>
         </div>
       </section>
