@@ -419,7 +419,7 @@ const Programs = () => {
 </div>
             </div>
 
-            
+
 
              {/* Figure 7 - Hassan Djamous */}
              <div className="flex flex-col md:flex-row items-center gap-8">
@@ -432,7 +432,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3"> Hassan Djamous</p>
   <p className="text-gray-600 leading-relaxed">
-   قائد عسكري والقائد الاعلي للجيش الوطني التشادي  
+   قائد عسكري والقائد الاعلي السابق للجيش الوطني التشادي  
   </p>
 </div>
             </div>
