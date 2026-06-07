@@ -146,7 +146,7 @@ const Programs = () => {
         علم الزغاوة الثقافي
       </h3>
       <p className="text-gray-700 leading-relaxed text-justify mb-4" style={{ direction: 'rtl' }}>
-        العلم الثقافي للزغاوة يُستخدم كرمز للهوية التاريخية والوحدة المجتمعية لشعب الزغاوة. يتكون العلم من:
+         تستخدم كرمز للهوية التاريخية والوحدة المجتمعية لشعب الزغاوة. فكرة انشاء العلم وتصميمه وتنفيذه من قبل جبهة وادي هور الديمقراطية و يتكون العلم من:
       </p>
       <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
         <li className="text-right">اللون البني الداكن: الإقليم محمي بدماء شهدائه</li>
@@ -416,6 +416,24 @@ const Programs = () => {
      الدكتور صديق ادم عيسي من الشخصيات التي ساهمت في تطوير لغة الزغاوة
     
     </p>
+</div>
+            </div>
+
+            
+
+             {/* Figure 7 - Hassan Djamous */}
+             <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/jamos1.jpg" alt="  حسن جاموس  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">    حسن جاموس   </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3"> Hassan Djamous</p>
+  <p className="text-gray-600 leading-relaxed">
+   قائد عسكري والقائد الاعلي للجيش الوطني التشادي  
+  </p>
 </div>
             </div>
 
