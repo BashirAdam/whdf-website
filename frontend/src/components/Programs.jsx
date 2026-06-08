@@ -122,6 +122,30 @@ const Programs = () => {
           </p>
         </div>
 
+        {/* Kingdom Section - Text Only */}
+        <div className="mb-8">
+          <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
+            
+            مملكة الزغاوة التاريخية
+          </h2>
+          <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+          ظهرت مملكة الزغاوة المحازية لنهر النيل من الغرب بعد انهيار حضارة كوش ، وكانت تُعرف بـ مملكة كانم ايضا" وامتدت شمالا" الي ليبيا والنيجر وغرب بحيرة تشاد في نيجيرياوالكمرون . وتميزت بازدهارها الاقتصادي حيث كانت غنية بالذهب والملح والماشية، واشتهرت بالتجارة مع شمال إفريقيا عبر القوافل التجارية العابرة للصحراء الكبرى حيث أقاموا حاميات ومراكز عبور في الصحراء الكبري بين ليبيا والنيجر والسودان وتشاد . كان ملوكها يُلقبون بـ "كوي" أو "دِرِّي"، وقد عُرفوا بالحكمة والشجاعة والقدرة على التنظيم السياسي والعسكري
+          </p>
+        </div>
+
+                {/* Dar Zaghawa Region Section - Text Only */}
+        <div className="mb-8">
+          <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
+            
+            إقليم دار زغاوة
+          </h2>
+          <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+            هو تصور ثقافي وسياسي يهدف إلى إحياء الهوية التاريخية والجغرافية لشعب الزغاوة في السودان وتشاد، وجعله إقليمًا إداريًا وتنمويًا يُعرف بـ "إقليم دار زغاوة (إقليم بيربي)". يستند هذا التصور إلى الإرث الحضاري العريق لوادي هور وممالك الزغاوة القديمة، وإلى رغبة الشعب في حماية اللغة والتراث من الاندثار.
+          </p>
+        </div>
+
+
+
 
         {/* وادي هور */}
 <div className="bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-gray-100">
@@ -206,29 +230,7 @@ const Programs = () => {
   </div>
 </div>
 
-                {/* Kingdom Section - Text Only */}
-        <div className="mb-8">
-          <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-            
-            مملكة الزغاوة التاريخية
-          </h2>
-          <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-          ظهرت مملكة الزغاوة المحازية لنهر النيل من الغرب بعد انهيار حضارة كوش ، وكانت تُعرف بـ مملكة كانم ايضا" وامتدت شمالا" الي ليبيا والنيجر وغرب بحيرة تشاد في نيجيرياوالكمرون . وتميزت بازدهارها الاقتصادي حيث كانت غنية بالذهب والملح والماشية، واشتهرت بالتجارة مع شمال إفريقيا عبر القوافل التجارية العابرة للصحراء الكبرى حيث أقاموا حاميات ومراكز عبور في الصحراء الكبري بين ليبيا والنيجر والسودان وتشاد . كان ملوكها يُلقبون بـ "كوي" أو "دِرِّي"، وقد عُرفوا بالحكمة والشجاعة والقدرة على التنظيم السياسي والعسكري
-          </p>
-        </div>
-
-                {/* Dar Zaghawa Region Section - Text Only */}
-        <div className="mb-8">
-          <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-            
-            إقليم دار زغاوة
-          </h2>
-          <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-            هو تصور ثقافي وسياسي يهدف إلى إحياء الهوية التاريخية والجغرافية لشعب الزغاوة في السودان وتشاد، وجعله إقليمًا إداريًا وتنمويًا يُعرف بـ "إقليم دار زغاوة (إقليم بيربي)". يستند هذا التصور إلى الإرث الحضاري العريق لوادي هور وممالك الزغاوة القديمة، وإلى رغبة الشعب في حماية اللغة والتراث من الاندثار.
-          </p>
-        </div>
-
-
+                
         {/* Flag Section */}
 <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-200">
   <div className="grid md:grid-cols-2 gap-0">

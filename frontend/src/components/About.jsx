@@ -150,7 +150,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="/images/logo-preview.png"
+                src="/images/logo.png"
                 alt="Shield Foundation Community Work"
                 className="rounded-lg shadow-lg"
               />
