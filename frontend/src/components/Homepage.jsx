@@ -299,101 +299,6 @@ const Homepage = () => {
   </div>
 </div>
 
-        
-    
-
-
-        {/* من هم شعب الزغاوة */}
-  <div className="mb-8">
-    <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-      من هم شعب الزغاوة
-    </h2>
-    <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-      الزغاوة هم أحد الشعوب الإفريقية العريقة التي تعيش في منطقة الساحل الإفريقي، ويُعتبرون من أقدم المجموعات الإثنية في إقليم دارفور بغرب السودان وشمال تشاد. عُرفوا تاريخيًا بأنهم شعب محارب، تاجر، ومبدع في الزراعة والرعي، ولهم نظام اجتماعي وسياسي متماسك.
-    </p>
-  </div>
-
-  {/* لغة الزغاوة */}
-  <div className="mb-8">
-    <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-      لغة الزغاوة
-    </h2>
-    <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-      يتحدث الزغاوة لغة تعرف باسم البريا او بيرا، وهي لغة من فصيلة اللغات النيلية الصحراوية، ولها عدة لهجات محلية. كما يتحدث كثير من الزغاوة العربية كلغة ثانية ، خاصة في السودان والفرنسية في تشاد. ولغة الزغاوة مكتوبة وتتكون من ثمانية وعشرون حرفآ وله كيبورد خاص به ويتم تدريسه في جامعة كولن بجمهورية ألمانيا لطلاب الدراسات العليا . كما يوجد العديد من الكتب عن تعليم لغة الزغاوة . وتم صياغة حروف اللغة من أوشام الإبل لدى قومية الزغاوة عن طريق بحث قام به الأستاذ آدم تاجر في نهاية القرن الماضي . وتم وضع القواعد وتقنين الحروف بواسطة الطبيب البيطري صديق آدم عيسى خريج جامعة الخرطوم، وكما ساهمت البروفسيرة أنجيلا جاكوبي من معهد كولن الألمانية في صياغة القواعد النحوية للغة الزغاوة.
-    </p>
-  </div>
-
-  {/* Details in two columns */}
-  <div className="grid md:grid-cols-2 gap-6 mb-8">
-    <div className="bg-gray-50 rounded-xl p-5">
-      <h3 className="font-bold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
-        <Compass className="h-5 w-5 inline-block ml-2 text-[#d78525]" />
-        مطورو لغة الزغاوة
-      </h3>
-      <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-        <li className="text-right">الأستاذ آدم محمد عبدالله عيسى (آدم تاجر)</li>
-        <li className="text-right">الدكتور صديق آدم عيسى</li>
-        <li className="text-right">الدكتور محمود أبكر الطيناوي</li>
-        <li className="text-right">الأستاذ الصادق صديق</li>
-      </ul>
-    </div>
-
-    <div className="bg-gray-50 rounded-xl p-5">
-      <h3 className="font-bold text-gray-800 mb-3 text-right" style={{ direction: 'rtl' }}>
-        <Languages className="h-5 w-5 inline-block ml-2 text-[#d78525]" />
-        أين يقطن الزغاوة
-      </h3>
-      <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-        <li className="text-right"> منطقة دار زغاوة (بِرّيبي) الممتدة بين السودان وتشاد، وتشمل مدن ومناطق مثل: أم برو، الطينة، كرنوي، أشيمي، مزبد، أم حراز، وأنكا وغيرها. </li>
-        <li className="text-right">  إقليم دارفور والمدن السودانية الكبرى، خاصة كُتُم، مليط، الفاشر، نيالا، الخرطوم، إضافة إلى انتشارهم في مختلف مدن السودان.</li>
-        <li className="text-right">إقليم دارفور والمدن السودانية الكبرى، خاصة كُتُم، مليط، الفاشر، نيالا، الخرطوم، إضافة إلى انتشارهم في مختلف مدن السودان.      </li>
-      </ul>
-    </div>
-  </div>
-
-{/* Culture & Heritage Section */}
-        <div className="mb-8">
-          <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-            ثقافة وتراث الزغاوة
-          </h2>
-          <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-          تُعد ثقافة الزغاوة من أعمق الثقافات في المنطقة، وهي غنية بالعناصر التراثية التي تشمل الأغنيات الحماسية، والرقصات الشعبية المتنوعة على إيقاعات نقارة الزغاوة (التسعة إيقاعات)، والقصص الشعبية والأساطير، إلى جانب سباقات الهجن والفروسية التي تُقام في المناسبات والاحتفالات الشعبية. وتقوم الحياة الاجتماعية على الاحترام المتبادل والترابط القبلي، حيث تُعد الأسرة النواة الأساسية للمجتمع، بينما تلعب المرأة دورًا محوريًا في الحياة الاجتماعية والاقتصادية والسياسية، من خلال مشاركتها في الزراعة والتجارة والشأن العام.
-          </p>
-          <p className="text-gray-700 leading-relaxed text-justify mt-3" style={{ direction: 'rtl' }}>
-          يتميّز الزغاوة بلباسهم التقليدي الذي يجمع بين الأصالة والجمال، مثل الثوب كفملي والعمامة أو الكدمول التي تُعد رمزًا للهوية والوقار..وتتميز اللبس التقليدي للمرأة الزغاوية بالوشاح المزخرف بالنقوش التراثية الكوشية والافريقية والتاج الفضي خاصة في المناسبات الرسمية كما تشتهر مناسباتهم الاجتماعية، خاصة الزواج والحصاد، بالرقصات والأغاني الشعبية التي تعبّر عن الشجاعة، الكرم، والحب والبطولة، وتُؤدى بإيقاعات الطبول والصفير الجماعي.
-          </p>
-          <p className="text-gray-700 leading-relaxed text-justify mt-3" style={{ direction: 'rtl' }}>
-          ومن أبرز سمات المجتمع الزغاوي نظام "التكافل القبلي" المعروف، وهو شكل من أشكال التعاون الجماعي الذي يعزز روح التضامن. وتُزين أدواتهم المنزلية والأسلحة التقليدية بالنقوش والزخارف التي تحمل رموزًا تشير إلى القوة، الشجاعة، والانتماء القبلي.
-          </p>
-        </div>
-
-{/* Dar Zaghawa Region - Card Style */}
-<div className="bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-gray-100">
-  <div className="grid md:grid-cols-2 gap-0">
-    <div className="p-6 md:p-8">
-      <h3 className="text-xl font-bold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>إقليم دار زغاوة</h3>
-      <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-        هو تصور ثقافي وسياسي يهدف إلى إحياء الهوية التاريخية والجغرافية لشعب الزغاوة في السودان وتشاد، وجعله إقليمًا إداريًا وتنمويًا يُعرف بـ "إقليم دار زغاوة (إقليم بيربي)".
-        يستند هذا التصور إلى الإرث الحضاري العريق لوادي هور وممالك الزغاوة القديمة، وإلى رغبة الشعب في حماية اللغة والتراث من الاندثار.  تعتبر "حاكورة" تاريخية وموطناً رئيسياً لقبائل الزغاوة الأفريقية، وتتميز بخصائص جغرافية وسياسية وثقافي
-      </p>
-    </div>
-    <div className="h-64 md:h-auto bg-gray-200">
-      <img src="/images/gyk0k.png" alt="إقليم دار زغاوة" className="w-full h-full object-cover" />
-    </div>
-  </div>
-</div>
-
-
-{/* Kingdom Section */}
-<div className="mb-8">
-  <h2 className="text-2xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-    مملكة الزغاوة التاريخية
-  </h2>
-  <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-  ظهرت مملكة الزغاوة المحازية لنهر النيل من الغرب بعد انهيار حضارة كوش ، وكانت تُعرف بـ مملكة كانم ايضا" وامتدت شمالا" الي ليبيا والنيجر وغرب بحيرة تشاد في نيجيرياوالكمرون . وتميزت بازدهارها الاقتصادي حيث كانت غنية بالذهب والملح والماشية، واشتهرت بالتجارة مع شمال إفريقيا عبر القوافل التجارية العابرة للصحراء الكبرى حيث أقاموا حاميات ومراكز عبور في الصحراء الكبري بين ليبيا والنيجر والسودان وتشاد . كان ملوكها يُلقبون بـ "كوي" أو "دِرِّي"، وقد عُرفوا بالحكمة والشجاعة والقدرة على التنظيم السياسي والعسكري
-  </p>
-</div>
- 
 
 {/* وادي هور */}
 <div className="bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-gray-100">
@@ -410,6 +315,7 @@ const Homepage = () => {
     </div>
   </div>
 </div>
+
 
 {/* Wadi Hur Civilization Section - Text Only */}
 <div className="mb-8">
@@ -477,6 +383,52 @@ const Homepage = () => {
     </ul>
   </div>
 </div>
+
+
+{/* Kingdom Section */}
+<div className="mb-8">
+  <h2 className="text-2xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
+    مملكة الزغاوة التاريخية
+  </h2>
+  <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+  ظهرت مملكة الزغاوة المحازية لنهر النيل من الغرب بعد انهيار حضارة كوش ، وكانت تُعرف بـ مملكة كانم ايضا" وامتدت شمالا" الي ليبيا والنيجر وغرب بحيرة تشاد في نيجيريا والكمرون . وتميزت بازدهارها الاقتصادي حيث كانت غنية بالذهب والملح والماشية، واشتهرت بالتجارة مع شمال إفريقيا عبر القوافل التجارية العابرة للصحراء الكبرى حيث أقاموا حاميات ومراكز عبور في الصحراء الكبري بين ليبيا والنيجر والسودان وتشاد . كان ملوكها يُلقبون بـ "كوي" أو "دِرِّي"، وقد عُرفوا بالحكمة والشجاعة والقدرة على التنظيم السياسي والعسكري
+  </p>
+</div>
+
+        
+    
+
+{/* Dar Zaghawa Region - Card Style */}
+<div className="bg-white rounded-xl shadow-md overflow-hidden mb-8 border border-gray-100">
+  <div className="grid md:grid-cols-2 gap-0">
+    
+    {/* Image - Left Side */}
+    <div className="h-64 md:h-auto bg-gray-200 order-2 md:order-1">
+      <img 
+        src="/images/gyk0k.png" 
+        alt="إقليم دار زغاوة" 
+        className="w-full h-full object-cover" 
+      />
+    </div>
+
+    {/* Content - Right Side */}
+    <div className="p-6 md:p-8 order-1 md:order-2">
+      <h3 className="text-xl font-bold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>
+        إقليم دار زغاوة
+      </h3>
+      <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+        هو تصور ثقافي وسياسي يهدف إلى إحياء الهوية التاريخية والجغرافية لشعب الزغاوة في السودان وتشاد، وجعله إقليمًا إداريًا وتنمويًا يُعرف بـ "إقليم دار زغاوة (إقليم بيربي)".
+        يستند هذا التصور إلى الإرث الحضاري العريق لوادي هور وممالك الزغاوة القديمة، وإلى رغبة الشعب في حماية اللغة والتراث من الاندثار. تعتبر "حاكورة" تاريخية وموطناً رئيسياً لقبائل الزغاوة الأفريقية، وتتميز بخصائص جغرافية وسياسية وثقافية.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+
+ 
+
 
 
 
