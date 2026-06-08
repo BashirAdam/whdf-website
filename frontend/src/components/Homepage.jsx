@@ -178,7 +178,7 @@ const Homepage = () => {
       </div>
       <div className="relative">
         <img 
-          src="/images/logo.png"
+          src="/images/logo-preview.png"
           alt="جبهة وادي هور الديمقراطية"
           className="rounded-lg shadow-lg w-full"
         />
