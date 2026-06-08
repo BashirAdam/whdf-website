@@ -145,8 +145,8 @@ const About = () => {
           {siteContent.about?.story?.title || "البداية"}
         </h2>
               <div className="text-lg text-gray-800 leading-relaxed mb-6 text-justify" style={{ direction: 'rtl' }}>
-  {siteContent.about?.story?.content || `تأسست جبهة وادي هور الديمقراطية في 12 أبريل 2021م بهدف واضح: "إقامة إقليم دار زغاوة (إقليم بيربي) كمركزية ثقافية وسياسية لشعب الزغاوة في السودان، مستندة على الإرث الحضاري لممالك الزغاوة قبل الميلاد ومملكة كانم بعد الميلاد، والعمل على تمكين المجتمع للحفاظ على هويته  إلافريقية وحقوقه الثقافية والسياسية."`}
-</div>
+  {siteContent.about?.story?.content || `تأسست جبهة وادي هور الديمقراطية في 2017م ، فيما جري التدشين الرسمي للجبهة وتشكيل هيئتها العام 2021م.`}
+        </div>
             </div>
             <div className="relative">
               <img 

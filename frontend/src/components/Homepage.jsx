@@ -173,7 +173,7 @@ const Homepage = () => {
           {siteContent.about?.story?.title || "البداية"}
         </h2>
         <div className="text-lg text-gray-800 leading-relaxed mb-6 text-justify" style={{ direction: 'rtl' }}>
-          {siteContent.about?.story?.content || `تأسست جبهة وادي هور الديمقراطية في 2017م ، فيما جري التدشين الرسمي للجبهة وتشكيل هيئتها العام 2021م."`}
+          {siteContent.about?.story?.content || `تأسست جبهة وادي هور الديمقراطية في 2017م ، فيما جري التدشين الرسمي للجبهة وتشكيل هيئتها العام 2021م.`}
         </div>
       </div>
       <div className="relative">
@@ -344,9 +344,9 @@ const Homepage = () => {
         أين يقطن الزغاوة
       </h3>
       <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-        <li className="text-right">شمال وغرب دارفور (كُتُم، كُرنوي، أم برو، الطينة، كُبكابية، مليط)</li>
-        <li className="text-right">شمال ووسط تشاد (انجمينا، ابيشي، وادي فِرا، أُمّ جرس)</li>
-        <li className="text-right">جاليات في ليبيا والنيجر والمدن السودانية الكبرى</li>
+        <li className="text-right"> منطقة دار زغاوة (بِرّيبي) الممتدة بين السودان وتشاد، وتشمل مدن ومناطق مثل: أم برو، الطينة، كرنوي، أشيمي، مزبد، أم حراز، وأنكا وغيرها. </li>
+        <li className="text-right">  إقليم دارفور والمدن السودانية الكبرى، خاصة كُتُم، مليط، الفاشر، نيالا، الخرطوم، إضافة إلى انتشارهم في مختلف مدن السودان.</li>
+        <li className="text-right">إقليم دارفور والمدن السودانية الكبرى، خاصة كُتُم، مليط، الفاشر، نيالا، الخرطوم، إضافة إلى انتشارهم في مختلف مدن السودان.      </li>
       </ul>
     </div>
   </div>
