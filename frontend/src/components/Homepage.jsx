@@ -422,7 +422,7 @@ const Homepage = () => {
 
 {/* Kingdom Section */}
 <div className="mb-8">
-  <h2 className="text-2xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
+  <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
     مملكة الزغاوة التاريخية
   </h2>
   <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
