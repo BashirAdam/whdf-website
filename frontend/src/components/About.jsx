@@ -243,7 +243,7 @@ const About = () => {
           <div className="text-center mb-16">
   
   <p className="text-xl font-bold text-black text-center" style={{ direction: 'rtl' }}>
-   (الهيئة العليا والسكرتارية التنفيذية) اعضاء الهيكل التنظيمي
+   (   المكتب التنفيذي 2026)   
   </p>
 </div>
           
@@ -251,7 +251,7 @@ const About = () => {
           {(() => {
             // Group team members by category
             const groupedMembers = teamMembers.reduce((acc, member) => {
-              const category = member.category || 'Trustee';
+              const category = member.category || '';
               if (!acc[category]) {
                 acc[category] = [];
               }
