@@ -156,10 +156,10 @@ const About = () => {
               />
               <div className="absolute -bottom-6 -left-6 bg-[#d78525] text-white p-6 rounded-lg" style={{ direction: 'rtl' }}>
   <div className="text-2xl font-bold text-center">
-    {siteContent.about?.story?.highlightBox?.text || "5+ سنوات"}
+    {siteContent.about?.story?.highlightBox?.text || "9+ سنوات"}
   </div>
   <div className="text-sm text-center">
-    {siteContent.about?.story?.highlightBox?.subtext || "منذ التاسيس في العام 2021"}
+    {siteContent.about?.story?.highlightBox?.subtext || "منذ التاسيس في العام 2017"}
   </div>
 </div>
             </div>

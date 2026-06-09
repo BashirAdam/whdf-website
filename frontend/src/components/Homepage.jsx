@@ -184,10 +184,10 @@ const Homepage = () => {
         />
         <div className="absolute -bottom-6 -left-6 bg-[#d78525] text-white p-5 rounded-lg min-w-[130px] text-center" style={{ direction: 'rtl' }}>
           <div className="text-xl font-bold">
-            {siteContent.about?.story?.highlightBox?.text || "5+ سنوات"}
+            {siteContent.about?.story?.highlightBox?.text || "9+ سنوات"}
           </div>
           <div className="text-xs">
-            {siteContent.about?.story?.highlightBox?.subtext || "منذ التأسيس في العام 2021"}
+            {siteContent.about?.story?.highlightBox?.subtext || "منذ التأسيس في العام 2017"}
           </div>
         </div>
       </div>
