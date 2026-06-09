@@ -398,7 +398,7 @@ const Homepage = () => {
     {/* Image - Left Side */}
     <div className="h-64 md:h-auto bg-gray-200 order-2 md:order-1">
       <img 
-        src="/images/reginal.jpeg" 
+        src="/images/reginal.png" 
         alt="إقليم دار زغاوة" 
         className="w-full h-full object-cover" 
       />
