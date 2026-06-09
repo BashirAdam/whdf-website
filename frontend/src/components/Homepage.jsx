@@ -453,7 +453,7 @@ const Homepage = () => {
         <li className="text-right">أصفر خردلي: يرمز للصحراء</li>
         <li className="text-right">اللون الأخضر: يرمز لوادي هور والثراء الزراعي</li>
         <li className="text-right">النجمة: ترمز للحرية والمستقبل</li>
-        <li className="text-right">الأربعة حروف: تعني كلمة باريا (لغة الزغاوى)</li>
+        <li className="text-right">الأربعة حروف: تعني كلمة باريا (لغة الزغاوة)</li>
       </ul>
     </div>
     <div className="h-64 md:h-auto bg-gray-100 order-1 md:order-2 flex items-center justify-center p-4">
