@@ -105,7 +105,7 @@ const Footer = () => {
               <div className="flex items-start gap-3 text-sm">
                 <Mail className="h-5 w-5 text-yellow-400 mt-0.5 flex-shrink-0" />
                 <span>
-                  {siteContent.contact?.contactInfo?.email || "info@example.com"}
+                  {siteContent.contact?.contactInfo?.email || "Ahosman3000@gmail.com"}
                 </span>
               </div>
               <div className="flex items-start gap-3 text-sm">
