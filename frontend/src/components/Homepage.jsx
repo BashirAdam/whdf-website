@@ -702,21 +702,21 @@ const Homepage = () => {
       <div className="flex items-center justify-end">
         <div className="text-right">
           <p className="font-semibold text-gray-900" style={{ direction: 'rtl' }}>البريد الإلكتروني</p>
-          <p className="text-gray-600" style={{ direction: 'rtl' }}>{siteContent?.contact?.contactInfo?.email || "info@example.com"}</p>
+          <p className="text-gray-600" style={{ direction: 'rtl' }}>{siteContent?.contact?.contactInfo?.email || "Ahosman3000@gmail.com"}</p>
         </div>
         <Mail className="h-6 w-6 text-[#d78525] ml-4 mt-1" />
       </div>
       <div className="flex items-center justify-end">
         <div className="text-right">
           <p className="font-semibold text-gray-900" style={{ direction: 'rtl' }}>الهاتف</p>
-          <p className="text-gray-600" style={{ direction: 'rtl' }}>{siteContent?.contact?.contactInfo?.phone || "+249 XXX XXX XXX"}</p>
+          <p className="text-gray-600" style={{ direction: 'rtl' }}>{siteContent?.contact?.contactInfo?.phone || " XXX XXX XXX +249"}</p>
         </div>
         <Phone className="h-6 w-6 text-[#d78525] ml-4 mt-1" />
       </div>
       <div className="flex items-center justify-end">
         <div className="text-right">
           <p className="font-semibold text-gray-900" style={{ direction: 'rtl' }}>العنوان</p>
-          <p className="text-gray-600" style={{ direction: 'rtl' }}>{siteContent?.contact?.contactInfo?.address || "السودان"}</p>
+          <p className="text-gray-600" style={{ direction: 'rtl' }}>{siteContent?.contact?.contactInfo?.address || " السودان-دارفور-وادي هور"}</p>
         </div>
         <MapPin className="h-6 w-6 text-[#d78525] ml-4 mt-1" />
       </div>
