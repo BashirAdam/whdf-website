@@ -588,7 +588,7 @@ const Programs = () => {
   </div>
   <p className="text-base text-[#d78525] mb-3"> Muhyiddin Bakhit Juma</p>
   <p className="text-gray-600 leading-relaxed">
-    الاستاذ محي الدين بخيت جمعة 'مجك' مدير قناة بري بور TV
+      الاستاذ محي الدين بخيت جمعة 'مجك' مدير قناة بري بورTV
     </p>
 </div>
             </div>

@@ -72,9 +72,9 @@ const TestimonialsSection = () => {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ direction: 'rtl' }}>آراء الناس عن الجبهة</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-4" style={{ direction: 'rtl' }}>آراء الناس عن الجبهة</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto" style={{ direction: 'rtl' }}>
-            استمع إلى من غيرت حياتهم بفضل جبهة وادي هور الديمقراطية
+            استمع الي اراء الناس عن جبهة وادي هور الديمقراطية 
           </p>
         </div>
 
@@ -87,7 +87,7 @@ const TestimonialsSection = () => {
                       قريباً...
                     </p>
                   <p className="text-sm text-gray-400 mt-2" style={{ direction: 'rtl' }}>
-                    تابعونا لقراءة قصص ملهمة من مجتمعنا
+                  استمع الي اراء الناس عن جبهة وادي هور الديمقراطية 
                   </p>
                 </div>
               </CardContent>
