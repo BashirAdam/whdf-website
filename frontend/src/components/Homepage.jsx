@@ -307,27 +307,27 @@ const Homepage = () => {
   
   <ul className="text-gray-700 leading-relaxed text-justify space-y-4" style={{ direction: 'rtl' }}>
     <li className="flex gap-3">
-      <span className="text-[#d78525] font-bold mt-1">•</span>
+      <span className="text-black font-bold mt-1">•</span>
       <span>نتبنى سياسة حسن الجوار مع جمهورية مصر العربية، ودولة ليبيا، وجمهورية تشاد، ونعبر عن شكرنا وتقديرنا لشعوبها وحكوماتها على كرم الاستضافة وحسن استقبال السودانيين في ظل الظروف الإنسانية الراهنة.</span>
     </li>
     
     <li className="flex gap-3">
-      <span className="text-[#d78525] font-bold mt-1">•</span>
+      <span className="text-black font-bold mt-1">•</span>
       <span>نسعى إلى بناء علاقات استراتيجية راسخة بين إقليم وادي هور وكلٍ من جمهورية تشاد وليبيا ومصر، على أساس المصالح المشتركة، والاحترام المتبادل، والروابط التاريخية والاجتماعية التي تجمع شعوب المنطقة.</span>
     </li>
     
     <li className="flex gap-3">
-      <span className="text-[#d78525] font-bold mt-1">•</span>
+      <span className="text-black font-bold mt-1">•</span>
       <span>نعبر عن عميق امتناننا وتقديرنا للرئيس التشادي محمد إدريس ديبي إتنو وحكومته، على جهودهم المخلصة في حماية وإنقاذ اللاجئين السودانيين، ومساعيهم المستمرة لدعم جهود السلام والاستقرار في السودان والمنطقة.</span>
     </li>
     
     <li className="flex gap-3">
-      <span className="text-[#d78525] font-bold mt-1">•</span>
+      <span className="text-black font-bold mt-1">•</span>
       <span>نطالب المجتمع الدولي بالاعتراف بالدور المحوري الذي تضطلع به جمهورية تشاد، واعتبارها وسيطاً رئيسياً في المبادرات الإقليمية والدولية الرامية لتحقيق السلام في السودان.</span>
     </li>
     
     <li className="flex gap-3">
-      <span className="text-[#d78525] font-bold mt-1">•</span>
+      <span className="text-black font-bold mt-1">•</span>
       <span>نؤكد انفتاحنا على الحوار مع جميع الأطراف، واستعدادنا للتعاطي الإيجابي والمسؤول مع كافة المبادرات السلمية، سواءً من الحكومة السودانية، أو الرباعية الدولية، أو الاتحاد الإفريقي، بما يخدم تطلعات شعبنا في الأمن والاستقرار والسلام العادل والشامل.</span>
     </li>
   </ul>
