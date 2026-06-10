@@ -16,7 +16,7 @@ const Donation = () => {
   const { toast } = useToast();
   const [siteContent, setSiteContent] = useState({});
   const [loading, setLoading] = useState(false);
-  
+ 
   const [donationForm, setDonationForm] = useState({
     name: '',
     email: '',
@@ -49,11 +49,11 @@ const Donation = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+   
     if (!donationForm.name.trim() || !donationForm.email.trim() || !donationForm.amount) {
       toast({
-        title: "Error",
-        description: "Please fill in all required fields.",
+        title: "خطأ",
+        description: "يرجى تعبئة جميع الحقول المطلوبة.",
         variant: "destructive",
       });
       return;
@@ -62,8 +62,8 @@ const Donation = () => {
     const amount = parseFloat(donationForm.amount);
     if (isNaN(amount) || amount <= 0) {
       toast({
-        title: "Error",
-        description: "Please enter a valid donation amount.",
+        title: "خطأ",
+        description: "يرجى إدخال مبلغ تبرع صحيح.",
         variant: "destructive",
       });
       return;
@@ -76,13 +76,13 @@ const Donation = () => {
         amount: amount,
         frequency: donationForm.recurring ? donationForm.frequency : null
       };
-      
+     
       await api.submitDonation(donationData);
       toast({
-        title: "Thank You!",
-        description: "Your donation has been received. We will process it shortly.",
+        title: "شكراً لك!",
+        description: "تم استلام تبرعك. سنقوم بمعالجته قريباً.",
       });
-      
+     
       // Reset form
       setDonationForm({
         name: '',
@@ -97,7 +97,7 @@ const Donation = () => {
         frequency: ''
       });
     } catch (error) {
-      let errorMessage = "Failed to submit donation. Please try again.";
+      let errorMessage = "فشل في إرسال التبرع. يرجى المحاولة مرة أخرى.";
       if (error.response?.data) {
         if (typeof error.response.data === 'string') {
           errorMessage = error.response.data;
@@ -106,7 +106,7 @@ const Donation = () => {
         }
       }
       toast({
-        title: "Error",
+        title: "خطأ",
         description: errorMessage,
         variant: "destructive",
       });
@@ -117,22 +117,9 @@ const Donation = () => {
   const presetAmounts = [500, 1000, 2500, 5000, 10000, 25000];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" dir="rtl">
       <Header />
-      
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-yellow-50 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Heart className="h-16 w-16 text-red-500 mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            {siteContent.donation?.hero?.title || "Make a Difference Today"}
-          </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            {siteContent.donation?.hero?.subtitle || "Your generous donation helps us transform lives and create lasting impact in our community."}
-          </p>
-        </div>
-      </section>
-
+     
       {/* Donation Form Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -142,8 +129,8 @@ const Donation = () => {
               <Card className="border-0 shadow-xl">
                 <CardHeader>
                   <CardTitle className="text-2xl flex items-center">
-                    <DollarSign className="h-6 w-6 mr-2 text-blue-600" />
-                    Donation Details
+                    <DollarSign className="h-6 w-6 mr-2 text-[#d78525]" />
+                    تفاصيل التبرع
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -151,7 +138,7 @@ const Donation = () => {
                     {/* Amount Selection */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Donation Amount <span className="text-red-500">*</span>
+                        مبلغ التبرع <span className="text-red-500">*</span>
                       </label>
                       <div className="grid grid-cols-3 gap-3 mb-3">
                         {presetAmounts.map((amount) => (
@@ -168,7 +155,7 @@ const Donation = () => {
                       </div>
                       <Input
                         type="number"
-                        placeholder="Or enter custom amount"
+                        placeholder="أو أدخل مبلغ مخصص"
                         value={donationForm.amount}
                         onChange={(e) => setDonationForm({...donationForm, amount: e.target.value})}
                         min="1"
@@ -179,7 +166,7 @@ const Donation = () => {
 
                     {/* Currency */}
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Currency</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">العملة</label>
                       <Select
                         value={donationForm.currency}
                         onValueChange={(value) => setDonationForm({...donationForm, currency: value})}
@@ -188,7 +175,7 @@ const Donation = () => {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="INR">INR (₹)</SelectItem>
+                          <SelectItem value="INR">S Pound</SelectItem>
                           <SelectItem value="USD">USD ($)</SelectItem>
                           <SelectItem value="EUR">EUR (€)</SelectItem>
                         </SelectContent>
@@ -197,7 +184,7 @@ const Donation = () => {
 
                     {/* Payment Method */}
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Payment Method</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">طريقة الدفع</label>
                       <Select
                         value={donationForm.payment_method}
                         onValueChange={(value) => setDonationForm({...donationForm, payment_method: value})}
@@ -206,10 +193,10 @@ const Donation = () => {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="online">Online Payment</SelectItem>
-                          <SelectItem value="bank_transfer">Bank Transfer</SelectItem>
-                          <SelectItem value="cheque">Cheque</SelectItem>
-                          <SelectItem value="cash">Cash</SelectItem>
+                          <SelectItem value="online">الدفع عبر الإنترنت</SelectItem>
+                          <SelectItem value="bank_transfer">تحويل بنكي</SelectItem>
+                          <SelectItem value="cheque">شيك</SelectItem>
+                          <SelectItem value="cash">نقداً</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -222,24 +209,24 @@ const Donation = () => {
                         onCheckedChange={(checked) => setDonationForm({...donationForm, recurring: checked})}
                       />
                       <label htmlFor="recurring" className="text-sm font-medium text-gray-700">
-                        Make this a recurring donation
+                        اجعل هذا تبرعاً متكرراً
                       </label>
                     </div>
 
                     {donationForm.recurring && (
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">Frequency</label>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">التكرار</label>
                         <Select
                           value={donationForm.frequency}
                           onValueChange={(value) => setDonationForm({...donationForm, frequency: value})}
                         >
                           <SelectTrigger>
-                            <SelectValue placeholder="Select frequency" />
+                            <SelectValue placeholder="اختر التكرار" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="monthly">Monthly</SelectItem>
-                            <SelectItem value="quarterly">Quarterly</SelectItem>
-                            <SelectItem value="yearly">Yearly</SelectItem>
+                            <SelectItem value="monthly">شهرياً</SelectItem>
+                            <SelectItem value="quarterly">كل ثلاثة أشهر</SelectItem>
+                            <SelectItem value="yearly">سنوياً</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -248,27 +235,26 @@ const Donation = () => {
                     {/* Donor Information */}
                     <div className="pt-4 border-t">
                       <h3 className="text-lg font-semibold mb-4 flex items-center">
-                        <User className="h-5 w-5 mr-2 text-blue-600" />
-                        Donor Information
+                        <User className="h-5 w-5 mr-2 text-[#d78525]" />
+                        معلومات المتبرع
                       </h3>
-                      
+                     
                       <div className="space-y-4">
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-1">
-                            Full Name <span className="text-red-500">*</span>
+                            الاسم الكامل <span className="text-red-500">*</span>
                           </label>
                           <Input
                             type="text"
                             value={donationForm.name}
                             onChange={(e) => setDonationForm({...donationForm, name: e.target.value})}
-                            placeholder="Your full name"
+                            placeholder="اسمك الكامل"
                             required
                           />
                         </div>
-
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-1">
-                            Email <span className="text-red-500">*</span>
+                            البريد الإلكتروني <span className="text-red-500">*</span>
                           </label>
                           <Input
                             type="email"
@@ -278,27 +264,24 @@ const Donation = () => {
                             required
                           />
                         </div>
-
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">Phone (Optional)</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">رقم الهاتف (اختياري)</label>
                           <Input
                             type="tel"
                             value={donationForm.phone}
                             onChange={(e) => setDonationForm({...donationForm, phone: e.target.value})}
-                            placeholder="Your phone number"
+                            placeholder="رقم هاتفك"
                           />
                         </div>
-
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-1">Message (Optional)</label>
+                          <label className="block text-sm font-medium text-gray-700 mb-1">الرسالة (اختياري)</label>
                           <Textarea
                             value={donationForm.message}
                             onChange={(e) => setDonationForm({...donationForm, message: e.target.value})}
-                            placeholder="Any message you'd like to include..."
+                            placeholder="أي رسالة تود إضافتها..."
                             rows={3}
                           />
                         </div>
-
                         <div className="flex items-center space-x-2">
                           <Checkbox
                             id="anonymous"
@@ -306,7 +289,7 @@ const Donation = () => {
                             onCheckedChange={(checked) => setDonationForm({...donationForm, anonymous: checked})}
                           />
                           <label htmlFor="anonymous" className="text-sm font-medium text-gray-700">
-                            Donate anonymously
+                            التبرع بشكل مجهول
                           </label>
                         </div>
                       </div>
@@ -315,9 +298,9 @@ const Donation = () => {
                     <Button
                       type="submit"
                       disabled={loading}
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg"
+                      className="w-full bg-blue-600 hover:bg-[#d78525] text-white py-6 text-lg"
                     >
-                      {loading ? 'Processing...' : 'Proceed to Donate'}
+                      {loading ? 'جاري المعالجة...' : 'المتابعة للتبرع'}
                     </Button>
                   </form>
                 </CardContent>
@@ -328,38 +311,38 @@ const Donation = () => {
             <div className="md:col-span-1">
               <Card className="border-0 shadow-lg sticky top-24">
                 <CardHeader>
-                  <CardTitle className="text-xl">Why Donate?</CardTitle>
+                  <CardTitle className="text-xl">لماذا التبرع؟</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start">
                     <Heart className="h-5 w-5 text-red-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold mb-1">Transform Lives</h4>
-                      <p className="text-sm text-gray-600">Your donation directly supports youth skilling programs and senior citizen care.</p>
+                      <h4 className="font-semibold mb-1">تحويل حياة</h4>
+                      <p className="text-sm text-gray-600">تبرعك يدعم مباشرة برامج تدريب الشباب   .</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <Building2 className="h-5 w-5 text-blue-600 mr-3 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold mb-1">Build Communities</h4>
-                      <p className="text-sm text-gray-600">Help us create sustainable impact in underserved communities.</p>
+                      <h4 className="font-semibold mb-1">بناء مجتمعات</h4>
+                      <p className="text-sm text-gray-600">ساعدنا في خلق تأثير مستدام في المجتمعات المحتاجة.</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CreditCard className="h-5 w-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold mb-1">Secure & Transparent</h4>
-                      <p className="text-sm text-gray-600">All donations are processed securely and used transparently.</p>
+                      <h4 className="font-semibold mb-1">آمن وشفاف</h4>
+                      <p className="text-sm text-gray-600">جميع التبرعات تتم بأمان وتُستخدم بشفافية كاملة.</p>
                     </div>
                   </div>
-                  
+                 
                   <div className="pt-4 border-t">
-                    <h4 className="font-semibold mb-2">Other Ways to Help</h4>
+                    <h4 className="font-semibold mb-2">طرق أخرى للمساعدة</h4>
                     <p className="text-sm text-gray-600 mb-3">
-                      Can't donate right now? Consider volunteering or spreading the word about our mission.
+                      لا تستطيع التبرع الآن؟ يمكنك التطوع أو نشر رسالتنا عن مهمتنا.
                     </p>
                     <Button variant="outline" className="w-full" asChild>
-                      <a href="/contact">Contact Us</a>
+                      <a href="/contact">اتصل بنا</a>
                     </Button>
                   </div>
                 </CardContent>
@@ -368,11 +351,9 @@ const Donation = () => {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
 };
 
 export default Donation;
-
