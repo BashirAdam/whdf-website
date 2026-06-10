@@ -577,6 +577,23 @@ const Programs = () => {
             </div>
 
 
+            {/* Figure 4 -محي الدين بخيت جمعة*/}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/majack.jpeg" alt="      محي الدين بخيت جمعة     " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">   محي الدين بخيت جمعة     </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3"> Muhyiddin Bakhit Juma</p>
+  <p className="text-gray-600 leading-relaxed">
+    الاستاذ محي الدين بخيت جمعة 'مجك' مدير قناة بري بور TV
+    </p>
+</div>
+            </div>
+
+
              
 
 
