@@ -420,7 +420,8 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">  الدكتور ابوبكر برقو  </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. Abubakr Bargou</p>
-  <p className="text-gray-600 leading-relaxed text-justify"> 
+  <p className="text-gray-600 leading-relaxed text-justify textAlign: justify">
+
   دكتوراة في الإعلام من الجامعة الاميركية بالقاهرة، المستشار الإعلامي الأسبق للرئيس الراحل إدريس ديبي والمستشار المكلف بالبعثات الدبلوماسية السابق للرئيس محمد إدريس ديبي. رئيس أتحاد التلفزة الأفريقي ومؤسس اذاعة النصر (كأول مؤسس إذاعة وتلفزيون من أبناء الكيان)، وكاتب ومحلل سياسي متخصص في الشؤون الأفريقية
   </p>
 </div>
