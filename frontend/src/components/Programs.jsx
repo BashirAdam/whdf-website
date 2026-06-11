@@ -392,38 +392,41 @@ const Programs = () => {
 </div>
             </div>
             
-            {/* Figure 11 - Sumaya Musa Harran  */}
+            {/* Figure 11 -  Mohamed Ahmed El Sheikh */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/Sumaya.jpeg" alt="  سمية موسى حرّان" className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/mo.jpeg" alt="        البروفيسور محمد أحمد علي الشيخ" className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">  سمية موسى حرّان  </h3>
+    <h3 className="text-xl font-bold text-gray-800">      البروفيسور محمد أحمد علي الشيخ    </h3>
   </div>
-  <p className="text-base text-[#d78525] mb-3">  Sumaya Musa Harran</p>
-  <p className="text-gray-600 leading-relaxed">
- مستقلة و ناشطة في المجتمع المدني، ومساهمة في نشر الوعي الحقوقي وبناء السلام
-  </p>
-</div>
-            </div>
-
-
-            {/* Figure 7 -  Mohamed Ahmed El Sheikh */}
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="md:w-1/2">
-                <img src="/images/mo.jpeg" alt="البروفيسور محمد أحمد علي الشيخ  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
-              </div>
-              <div className="md:w-1/2 text-right">
-  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">البروفيسور محمد أحمد علي الشيخ  </h3>
-  </div>
-  <p className="text-base text-[#d78525] mb-3">Prof. Mohamed Ahmed Ali Al-Sheikh</p>
+  <p className="text-base text-[#d78525] mb-3">  Prof. Mohamed Ahmed Ali Al-Sheikh</p>
   <p className="text-gray-600 leading-relaxed">
   مدير جامعة الخرطوم الأسبق اول الشهادة السودانية عام 1964
+
   </p>
 </div>
             </div>
+
+
+            {/* Figure 7 -  Dr. Abubakr Bargou */}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/bargo.png" alt="الدكتور ابوبكر برقو   " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">  الدكتور ابوبكر برقو  </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3">Dr. Abubakr Bargou</p>
+  <p className="text-gray-600 leading-relaxed">
+  الدكتور أبو بكر برقو المستشار الإعلامى السابق للرئيس التشادى ورئيس اتحاد التلفزة الأفريقى.
+
+  </p>
+</div>
+            </div>
+
 
              
 
@@ -589,6 +592,42 @@ const Programs = () => {
   <p className="text-base text-[#d78525] mb-3"> Muhyiddin Bakhit Juma</p>
   <p className="text-gray-600 leading-relaxed" style={{ direction: 'rtl', textAlign: 'right' }}>
   الاستاذ محي الدين بخيت جمعة 'مجك' مدير قناة بري بور <span dir="ltr">TV</span>
+</p>
+</div>
+            </div>
+
+
+
+            {/* Figure 7 - Saif Al-Prof*/}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/save.jpeg" alt="   سيف البروف    " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800"> سيف البروف      </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3"> Saif Al-Prof</p>
+  <p className="text-gray-600 leading-relaxed">
+    سيف البروف رئيس رابطة ابناء الزغاوة بجمهورية مصر ومدير شبكة سودازول الاعلامية
+  </p>
+</div>
+            </div>
+
+
+            {/* Figure 4 - Sumaya Musa Harran  */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/Sumaya.jpeg" alt="   سمية موسى حران       " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">   سمية موسى حران      </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3"> Sumaya Musa Harran </p>
+  <p className="text-gray-600 leading-relaxed" style={{ direction: 'rtl', textAlign: 'right' }}>
+  مستقلة و ناشطة في المجتمع المدني، ومساهمة في نشر الوعي الحقوقي وبناء السلام
+
 </p>
 </div>
             </div>
