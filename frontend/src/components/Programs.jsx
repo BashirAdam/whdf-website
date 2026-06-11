@@ -300,7 +300,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">   الأستاذ آدم تاجر     </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Adam Tajir</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed"  style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
   الاستاذ ادم تاجر شخصية معروفة في جهود تطوير لغة الزغاوة في السودان وتشاد . وينسب له وضع  الحروف الاولية للغة المستوحاة من اوشام الابل . تولى الدكتور صديق ادم عيسى لاحقا مهمة تطوير وتقنين اللغة لاحقا بعد وفاة تاجر . ويحتفى بذكراه  سنويآ في 21 فبراير كيوم عالمي للغة المعتمدة لدي اليونسكو والأمم المتحدة 
     </p>
 </div>
@@ -443,7 +445,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">الدكتور والجنرال يوسف تيارا </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. and General Youssef Tiara</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed"  style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
   رئيس جمعية حماية التراث الثقافي للزغاوة حول العالم ومستشار الرئيس التشادي محمد إدريس ديبي، دكتور وجنرال في الجيش التشادي ولديه الكثير من المؤلفات
     
   </p>
