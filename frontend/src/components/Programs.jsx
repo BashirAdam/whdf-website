@@ -94,10 +94,16 @@ const Programs = () => {
             <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
             <li className="text-right">    وادي هور   </li>     
 
-              <li className="text-right">   منطقة دار زغاوة (بِرّيبي) الممتدة بين السودان وتشاد: أم برو، الطينة، كرنوي، أشيمي، مزبد، أم حراز، وأنكا وغيرها. </li>     
+              <li className="text-right" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>   منطقة دار زغاوة (بِرّيبي) الممتدة بين السودان وتشاد: أم برو، الطينة، كرنوي، أشيمي، مزبد، أم حراز، وأنكا وغيرها. </li>     
             
-              <li className="text-right"> إقليم دارفور والمدن السودانية الكبرى، خاصة كُتُم، مليط، الفاشر، نيالا، الخرطوم، إضافة إلى انتشارهم في مختلف مدن السودان.</li>
-              <li className="text-right"> تشاد ودول الجوار، في إنجمينا، أبشي، وادي فِرا، أم جرس، إلى جانب جاليات  في ليبيا والنيجر ودول أخرى.    </li>
+              <li className="text-right" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}> إقليم دارفور والمدن السودانية الكبرى، خاصة كُتُم، مليط، الفاشر، نيالا، الخرطوم، إضافة إلى انتشارهم في مختلف مدن السودان.</li>
+              <li className="text-right" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}> تشاد ودول الجوار، في إنجمينا، أبشي، وادي فِرا، أم جرس، إلى جانب جاليات  في ليبيا والنيجر ودول أخرى.    </li>
               </ul>
           </div>
         </div>
@@ -283,7 +289,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">إدريس ديبي إتنو</h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Idriss Déby</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
     رئيس جمهورية تشاد السابق وأبرز زعماء الزغاوي في التاريخ الحديث، حكم تشاد منذ عام 1990 حتى عام 2021
   </p>
 </div>
@@ -303,7 +311,7 @@ const Programs = () => {
   <p className="text-gray-600 leading-relaxed"  style={{
     textAlign: "justify",
     textAlignLast: "right"}}>
-  الاستاذ ادم تاجر شخصية معروفة في جهود تطوير لغة الزغاوة في السودان وتشاد . وينسب له وضع  الحروف الاولية للغة المستوحاة من اوشام الابل . تولى الدكتور صديق ادم عيسى لاحقا مهمة تطوير وتقنين اللغة لاحقا بعد وفاة تاجر . ويحتفى بذكراه  سنويآ في 21 فبراير كيوم عالمي للغة المعتمدة لدي اليونسكو والأمم المتحدة 
+  الاستاذ ادم تاجر شخصية معروفة في جهود تطوير لغة الزغاوة في السودان وتشاد. وينسب له وضع  الحروف الاولية للغة المستوحاة من اوشام الابل. تولى الدكتور صديق ادم عيسى لاحقا مهمة تطوير وتقنين اللغة لاحقا بعد وفاة تاجر. ويحتفى بذكراه  سنويآ في 21 فبراير كيوم عالمي للغة المعتمدة لدي اليونسكو والأمم المتحدة 
     </p>
 </div>
             </div>
@@ -320,7 +328,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">دكتور على عبد الرحمن حقار   </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. Ali Abdelrahman Hagar</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
   الدكتور على عبد الرحمن حقار مؤسس ورئيس جامعة هيك تشاد
   </p>
 </div>
@@ -336,7 +346,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">    البروفيسور ادم صالح محمدين   </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">  Prof. Adam Saleh Mohamedin</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
   اختصاصي واستشاري النساء والتوليد ومدير مركز جراحه الناسور البولي في أفريقيا 
   مدير جامعة الفاشر السابق
   </p>
@@ -355,7 +367,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">  موسى فكي   </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Moussa Faki</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
   رئيس مفوضية الاتحاد الأفريقي السابق، ورئيس وزراء تشاد السابق
   </p>
 </div>
@@ -371,7 +385,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800"> دكتور شريف حرير     </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3"> Dr. Sherif Hariri</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
   أكاديمي وباحث سوداني متخصص في الأنثروبولوجيا عمل أستاذًا في جامعة الخرطوم وكذلك في جامعة بيرغن بالنرويج
   </p>
 </div>
@@ -466,7 +482,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">   البروفيسور زكريا فضل كتر    </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Prof. Zakaria Fadl Kater</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
     اكاديمي وكاتب ودبلوماسي، شغل منصب وزير التعليم العالي التشادي وغيرها من المناصب الاكاديمية والدبلوماسية
   </p>
 </div>
@@ -505,7 +523,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">   مديحة حسن   </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Madiha Hassan</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
    مستقلة و ناشطة في المجتمع المدني، ومدافعه عن حقوق اللاجئين
   </p>
 </div>
@@ -522,7 +542,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">  الدكتور صديق أدم عيسي       </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. Siddig Adam Issa</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
      الدكتور صديق ادم عيسي من الشخصيات التي ساهمت في تطوير لغة الزغاوة
     
     </p>
@@ -541,7 +563,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">     دكتور خليل إبراهيم   </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3"> Dr. Khalil Ibrahim</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
   طبيب وسياسي سوداني مؤسس حركة العدل والمساواة وأبرز قادة الكفاح المسلح في دارفور
 
 
@@ -561,7 +585,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">   نجلاء عامر      </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Najla Amer</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
   الأستاذة نجلاء عامر نعمان ناشطة في التراث ورئيس اللجنة الاستشارية لرابطة أبناء الزغاوة بمصر
     
     </p>
@@ -614,7 +640,9 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800"> سيف البروف      </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3"> Saif Al-Prof</p>
-  <p className="text-gray-600 leading-relaxed">
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
     سيف البروف رئيس رابطة ابناء الزغاوة بجمهورية مصر ومدير شبكة سودازول الاعلامية
   </p>
 </div>
@@ -645,7 +673,7 @@ const Programs = () => {
 
              
 
-            
+
 
 
           </div>
