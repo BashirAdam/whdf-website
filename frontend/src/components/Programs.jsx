@@ -273,7 +273,7 @@ const Programs = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-xl font-bold text-black max-w-3xl mx-auto" style={{ direction: 'rtl' }}>أبرز الشخصيات في تاريخ الزغاوة</p>
+            <p className="text-xl font-bold text-black max-w-3xl mx-auto" style={{ direction: 'rtl' }}>    من ابرز الشخصيات في تاريخ الزغاوة </p>
             <div className="h-1 w-32 bg-[#d78525] mx-auto mt-4"></div>
           </div>
 
@@ -360,17 +360,17 @@ const Programs = () => {
             {/* Figure 3 - Moussa Faki */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/2">
-                <img src="/images/musa.jpg" alt=" موسى فكي  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+                <img src="/images/musa.jpg" alt="  باشمهندس موسي فكي محمد  " className="rounded-lg shadow-xl w-full h-80 object-cover" />
               </div>
               <div className="md:w-1/2 text-right">
   <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
-    <h3 className="text-xl font-bold text-gray-800">  موسى فكي   </h3>
+    <h3 className="text-xl font-bold text-gray-800">  باشمهندس موسي فكي محمد    </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Moussa Faki</p>
   <p className="text-gray-600 leading-relaxed" style={{
     textAlign: "justify",
     textAlignLast: "right"}}>
-  رئيس مفوضية الاتحاد الأفريقي السابق، ورئيس وزراء تشاد السابق
+     دبلوماسي  تشادي وزير الخارجية التشادية الاسبق. رئيس مجلس الوزراء الاسبق. ورئيس مفوضية الاتحاد الافريقي السابق
   </p>
 </div>
             </div>
