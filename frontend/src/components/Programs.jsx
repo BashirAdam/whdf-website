@@ -266,7 +266,7 @@ const Programs = () => {
       {/* Notable Figures Section - Timeline Style (Full Width) */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-justify mb-16">
             <p className="text-xl font-bold text-black max-w-3xl mx-auto" style={{ direction: 'rtl' }}>أبرز الشخصيات في تاريخ الزغاوة</p>
             <div className="h-1 w-32 bg-[#d78525] mx-auto mt-4"></div>
           </div>
@@ -420,7 +420,7 @@ const Programs = () => {
     <h3 className="text-xl font-bold text-gray-800">  الدكتور ابوبكر برقو  </h3>
   </div>
   <p className="text-base text-[#d78525] mb-3">Dr. Abubakr Bargou</p>
-  <p className="text-gray-600 leading-relaxed text-justify textAlign: justify">
+  <p className="text-gray-600 leading-relaxed ">
 
   دكتوراة في الإعلام من الجامعة الاميركية بالقاهرة، المستشار الإعلامي الأسبق للرئيس الراحل إدريس ديبي والمستشار المكلف بالبعثات الدبلوماسية السابق للرئيس محمد إدريس ديبي. رئيس أتحاد التلفزة الأفريقي ومؤسس اذاعة النصر (كأول مؤسس إذاعة وتلفزيون من أبناء الكيان)، وكاتب ومحلل سياسي متخصص في الشؤون الأفريقية
   </p>
