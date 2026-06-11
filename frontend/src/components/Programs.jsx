@@ -80,7 +80,7 @@ const Programs = () => {
               مطورو لغة الزغاوة
             </h3>
             <ul className="space-y-2 text-gray-700" style={{ direction: 'rtl', listStyleType: 'disc', listStylePosition: 'inside' }}>
-            <li className="text-right"> 'الأستاذ ادم محمد عبدالله عيسى 'ادم تاجر </li>
+            <li className="text-right">  الاستاذ ادم محمد عبدالله عيسى (ادم تاجر)</li>
               <li className="text-right">الدكتور صديق ادم عيسي</li>
               <li className="text-right">الدكتور محمود ابكر الطيناوي</li>
               <li className="text-right"> الاستاذ الصادق صديق  </li>
