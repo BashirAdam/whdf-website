@@ -20,6 +20,8 @@ UPLOAD_DIR.mkdir(exist_ok=True)
 
 ALLOWED_IMAGE_TYPES = {"image/jpeg", "image/png", "image/gif", "image/webp"}
 MAX_UPLOAD_SIZE = 5 * 1024 * 1024  # 5 MB
+ALLOWED_VIDEO_TYPES = {"video/mp4", "video/webm", "video/quicktime"}
+MAX_VIDEO_SIZE = 50 * 1024 * 1024  # 50 MB
 
 # Create the main app
 app = FastAPI(title="Shield Foundation API", version="1.0.0")
@@ -177,6 +179,7 @@ async def get_published_blogs():
             "category": blog_item.get("category", ""),
             "tags": blog_item.get("tags", []),
             "image": blog_item.get("image"),
+            "video": blog_item.get("video"),
             "author": blog_item["author"],
             "publishDate": blog_item["created_at"].isoformat() if blog_item.get("created_at") else None,
             "status": blog_item["status"]
@@ -202,6 +205,7 @@ async def get_blog(blog_id: str):
             "category": blog_item.get("category", ""),
             "tags": blog_item.get("tags", []),
             "image": blog_item.get("image"),
+            "video": blog_item.get("video"),
             "author": blog_item["author"],
             "publishDate": blog_item["created_at"].isoformat() if blog_item.get("created_at") else None,
             "status": blog_item["status"]
@@ -511,6 +515,28 @@ async def upload_image(
     return {"url": f"/api/uploads/{filename}"}
 
 
+@api_router.post("/admin/upload-video")
+async def upload_video(
+    file: UploadFile = File(...),
+    current_user: dict = Depends(admin_required)
+):
+    """Upload cover video for blog (admin only)"""
+    if file.content_type not in ALLOWED_VIDEO_TYPES:
+        raise HTTPException(status_code=400, detail="Only MP4, WEBM, MOV allowed")
+
+    contents = await file.read()
+    if len(contents) > MAX_VIDEO_SIZE:
+        raise HTTPException(status_code=400, detail="File too large (max 50MB)")
+
+    ext = Path(file.filename).suffix.lower() or ".mp4"
+    filename = f"{uuid.uuid4()}{ext}"
+    file_path = UPLOAD_DIR / filename
+
+    with open(file_path, "wb") as f:
+        f.write(contents)
+
+    return {"url": f"/api/uploads/{filename}"}
+
 
 @api_router.post("/admin/blogs", response_model=MessageResponse)
 async def create_blog(blog_data: BlogCreate, current_user: dict = Depends(admin_required)):
@@ -540,6 +566,7 @@ async def get_all_blogs(current_user: dict = Depends(admin_required)):
             "category": blog_item.get("category", ""),
             "tags": blog_item.get("tags", []),
             "image": blog_item.get("image"),
+            "video": blog_item.get("video"),
             "status": blog_item["status"],
             "author": blog_item["author"],
             "date": blog_item["created_at"].isoformat(),

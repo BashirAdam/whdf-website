@@ -9,6 +9,7 @@ import { Badge } from './ui/badge';
 import { useAlert } from '../hooks/use-alert';
 import AlertDialog from './ui/alert-dialog';
 import ImageUpload from './ImageUpload';
+import VideoUpload from './VideoUpload';
 import {
   Shield,
   LogOut,
@@ -69,6 +70,7 @@ const AdminPanel = () => {
     category: '',
     tags: [],
     image: '',
+    video: '', 
     status: 'draft'
   });
 
@@ -1307,6 +1309,7 @@ const handleAddBlog = async () => {
       category: blogPost.category,
       tags: blogPost.tags || [],
       image: blogPost.image || '',
+      video: blogPost.video || '',
       status: blogPost.status
     });
     setShowBlogForm(true);
@@ -1321,6 +1324,7 @@ const handleAddBlog = async () => {
       category: '',
       tags: [],
       image: '',
+      video: '',
       status: 'draft'
     });
     setShowBlogForm(false);
@@ -2200,6 +2204,12 @@ const handleAddBlog = async () => {
   value={blogForm.image}
   onChange={(url) => setBlogForm({ ...blogForm, image: url })}
   label="Cover Image"
+/>
+
+<VideoUpload
+  value={blogForm.video}
+  onChange={(url) => setBlogForm({ ...blogForm, video: url })}
+  label="Cover Video (optional)"
 />
 
                       <div>

@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import { Calendar, User, Search, Tag, ChevronRight, BookOpen } from 'lucide-react';
+import { Calendar, User, Search, Tag, ChevronRight, BookOpen, Play  } from 'lucide-react';
 import { api } from '../api';
 import { Link } from 'react-router-dom';
 import Header from './Header';
@@ -102,15 +102,21 @@ const Blog = () => {
                     className="overflow-hidden hover:shadow-lg transition-shadow duration-300"
                   >
                     <div className="md:flex">
-                      {post.image && (
-                        <div className="md:w-1/3">
-                          <img
-                            src={getMediaUrl(post.image)}
-                            alt={post.title}
-                            className="w-full h-48 md:h-full object-cover"
-                          />
-                        </div>
-                      )}
+                    {(post.image || post.video) && (
+  <div className="md:w-1/3">
+    {post.image ? (
+      <img
+        src={getMediaUrl(post.image)}
+        alt={post.title}
+        className="w-full h-48 md:h-full object-cover"
+      />
+    ) : (
+      <div className="w-full h-48 md:h-full bg-gray-900 flex items-center justify-center">
+        <Play className="h-16 w-16 text-white opacity-80" />
+      </div>
+    )}
+  </div>
+)}
                       <div className="md:w-2/3">
                         <CardHeader>
                           <div className="flex items-center gap-4 text-sm text-gray-600 mb-2">

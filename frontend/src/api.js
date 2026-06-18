@@ -173,26 +173,41 @@ export const api = {
       return response.data;
     },
 
-        // Delete a blog
-        deleteBlog: async (id) => {
-          const response = await apiClient.delete(`/admin/blogs/${id}`);
-          return response.data;
-        },
-    
-        // Upload cover image
-        uploadImage: async (file) => {
-          const formData = new FormData();
-          formData.append('file', file);
-    
-          const response = await apiClient.post('/admin/upload', formData, {
-            headers: {
-              'Content-Type': 'multipart/form-data',
-            },
-            timeout: 30000,
-          });
-    
-          return response.data;
-        },
+                // Delete a blog
+                deleteBlog: async (id) => {
+                  const response = await apiClient.delete(`/admin/blogs/${id}`);
+                  return response.data;
+                },
+            
+                // Upload cover image
+                uploadImage: async (file) => {
+                  const formData = new FormData();
+                  formData.append('file', file);
+            
+                  const response = await apiClient.post('/admin/upload', formData, {
+                    headers: {
+                      'Content-Type': 'multipart/form-data',
+                    },
+                    timeout: 30000,
+                  });
+                  
+                  return response.data;
+                },
+        
+                // Upload video
+                uploadVideo: async (file) => {
+                  const formData = new FormData();
+                  formData.append('file', file);
+                  
+                  const response = await apiClient.post('/admin/upload-video', formData, {
+                    headers: {
+                      'Content-Type': 'multipart/form-data',
+                    },
+                    timeout: 120000, // 2 minutes for large videos
+                  });
+                  
+                  return response.data;
+                },
     // Update impact statistics
     updateImpactStats: async (statsData) => {
       const response = await apiClient.put('/admin/impact-stats', statsData);

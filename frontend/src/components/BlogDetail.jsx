@@ -74,6 +74,15 @@ const BlogDetail = () => {
           />
         )}
 
+        {/* Cover video — shown below image if exists */}
+{blog.video && (
+  <video
+    src={getMediaUrl(blog.video)}
+    controls
+    className="w-full rounded-lg mb-8 bg-black"
+  />
+)}
+
         {/* Blog content with formatting */}
         <div
           dir="auto"

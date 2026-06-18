@@ -95,6 +95,7 @@ class BlogCreate(BaseModel):
     category: str = Field(..., min_length=3, max_length=50)
     tags: List[str] = []
     image: Optional[str] = None  # URL of the blog image
+    video: Optional[str] = None   # ← ADD
     status: str = Field(default="draft")
 
     @validator('status')
@@ -112,6 +113,7 @@ class BlogUpdate(BaseModel):
     tags: Optional[List[str]] = None
     image: Optional[str] = None
     status: Optional[str] = None
+    video: Optional[str] = None   # ← ADD
 
     @validator('status')
     def validate_status(cls, v):
@@ -128,6 +130,7 @@ class Blog(BaseModel):
     category: str
     tags: List[str] = []
     image: Optional[str] = None
+    video: Optional[str] = None   # ← ADD
     status: str
     author: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
