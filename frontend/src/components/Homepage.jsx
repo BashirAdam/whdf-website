@@ -241,7 +241,7 @@ const Homepage = () => {
         <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           أولًا: الحقوق الثقافية والهوية
         </h4>
-        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{ direction: 'rtl' }}>
+        <ul className="list-disc pr-6 space-y-2 text-gray-700 text-justify" style={{ direction: 'rtl' }}>
           <li>السعي إلى انتزاع الاعتراف الرسمي بالهوية الثقافية واللغوية والتاريخية لمجتمعات الزغاوة باعتبارها جزءًا أصيلًا من التنوع السوداني.</li>
           <li>حماية الإرث الحضاري والتاريخي المرتبط بمملكة الزغاوة التاريخية في السودان.</li>
           <li>تعزيز حضور الثقافة الزغاوية في المؤسسات التعليمية والثقافية والإعلامية.</li>
