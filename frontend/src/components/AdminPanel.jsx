@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Badge } from './ui/badge';
 import { useAlert } from '../hooks/use-alert';
 import AlertDialog from './ui/alert-dialog';
+import ImageUpload from './ImageUpload';
 import {
   Shield,
   LogOut,
@@ -2195,14 +2196,11 @@ const handleAddBlog = async () => {
                         />
                       </div>
 
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Featured Image URL</label>
-                        <Input
-                          value={blogForm.image}
-                          onChange={(e) => setBlogForm({...blogForm, image: e.target.value})}
-                          placeholder="https://example.com/image.jpg"
-                        />
-                      </div>
+                      <ImageUpload
+  value={blogForm.image}
+  onChange={(url) => setBlogForm({ ...blogForm, image: url })}
+  label="Cover Image"
+/>
 
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">Tags</label>

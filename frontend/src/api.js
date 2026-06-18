@@ -174,8 +174,17 @@ export const api = {
     },
 
     // Delete a blog
-    deleteBlog: async (id) => {
-      const response = await apiClient.delete(`/admin/blogs/${id}`);
+    uploadImage: async (file) => {
+      const formData = new FormData();
+      formData.append('file', file);
+    
+      const response = await apiClient.post('/admin/upload', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+        timeout: 30000,
+      });
+    
       return response.data;
     },
 

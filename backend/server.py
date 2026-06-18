@@ -1,4 +1,5 @@
-from fastapi import FastAPI, APIRouter, HTTPException, Depends, status
+from fastapi import FastAPI, APIRouter, HTTPException, Depends, status, File, UploadFile
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 from datetime import datetime
@@ -14,6 +15,11 @@ from auth import *
 from database import db, init_database
 
 ROOT_DIR = Path(__file__).parent
+UPLOAD_DIR = ROOT_DIR / "uploads"
+UPLOAD_DIR.mkdir(exist_ok=True)
+
+ALLOWED_IMAGE_TYPES = {"image/jpeg", "image/png", "image/gif", "image/webp"}
+MAX_UPLOAD_SIZE = 5 * 1024 * 1024  # 5 MB
 
 # Create the main app
 app = FastAPI(title="Shield Foundation API", version="1.0.0")
@@ -482,7 +488,30 @@ async def get_all_news(current_user: dict = Depends(admin_required)):
     except Exception as e:
         logger.error(f"Failed to fetch all news: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch news")
+@api_router.post("/admin/upload")
+async def upload_image(
+    file: UploadFile = File(...),
+    current_user: dict = Depends(admin_required)
+):
+    """Upload cover image for blog (admin only)"""
+    if file.content_type not in ALLOWED_IMAGE_TYPES:
+        raise HTTPException(status_code=400, detail="Only JPG, PNG, GIF, WEBP allowed")
 
+    contents = await file.read()
+    if len(contents) > MAX_UPLOAD_SIZE:
+        raise HTTPException(status_code=400, detail="File too large (max 5MB)")
+
+    ext = Path(file.filename).suffix.lower() or ".jpg"
+    filename = f"{uuid.uuid4()}{ext}"
+    file_path = UPLOAD_DIR / filename
+
+    with open(file_path, "wb") as f:
+        f.write(contents)
+
+    return {"url": f"/api/uploads/{filename}"}
+
+
+@api_router.post("/admin/blogs", response_model=MessageResponse)
 @api_router.post("/admin/blogs", response_model=MessageResponse)
 async def create_blog(blog_data: BlogCreate, current_user: dict = Depends(admin_required)):
     """Create a new blog post (admin only)"""
@@ -1736,6 +1765,11 @@ async def delete_document(collection_name: str, document_id: str, current_user: 
 
 
 app.include_router(api_router)
+app.mount(
+    "/api/uploads",
+    StaticFiles(directory=str(UPLOAD_DIR)),
+    name="uploads"
+)
 
 @app.on_event("shutdown")
 async def shutdown_db_client():

@@ -9,6 +9,7 @@ import { api } from '../api';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import { getMediaUrl } from '../utils/mediaUrl';
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -104,7 +105,7 @@ const Blog = () => {
                       {post.image && (
                         <div className="md:w-1/3">
                           <img
-                            src={post.image}
+                            src={getMediaUrl(post.image)}
                             alt={post.title}
                             className="w-full h-48 md:h-full object-cover"
                           />

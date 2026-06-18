@@ -6,6 +6,7 @@ import { api } from '../api';
 import Header from './Header';
 import Footer from './Footer';
 import DOMPurify from 'dompurify';
+import { getMediaUrl } from '../utils/mediaUrl';
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -67,7 +68,7 @@ const BlogDetail = () => {
         {/* Blog image */}
         {blog.image && (
           <img
-            src={blog.image}
+            src={getMediaUrl(blog.image)}
             alt={blog.title}
             className="w-full h-96 object-cover rounded-lg mb-8"
           />
