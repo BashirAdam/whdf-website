@@ -511,7 +511,7 @@ async def upload_image(
     return {"url": f"/api/uploads/{filename}"}
 
 
-@api_router.post("/admin/blogs", response_model=MessageResponse)
+
 @api_router.post("/admin/blogs", response_model=MessageResponse)
 async def create_blog(blog_data: BlogCreate, current_user: dict = Depends(admin_required)):
     """Create a new blog post (admin only)"""
