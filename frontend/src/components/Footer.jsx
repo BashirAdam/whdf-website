@@ -155,7 +155,7 @@ const Footer = () => {
               <li><Link to="/gallery" className="hover:text-yellow-400 transition-colors">المعرض</Link></li>
               <li><Link to="/news" className="hover:text-yellow-400 transition-colors">الأخبار</Link></li>
               <li><Link to="/blog" className="hover:text-yellow-400 transition-colors">المدونة</Link></li>
-              <li><Link to="/contact" className="hover:text-yellow-400 transition-colors">اتصل بنا</Link></li>
+              
               <li>
   <a
     href="/documents/manifesto.pdf"
@@ -163,7 +163,7 @@ const Footer = () => {
     rel="noopener noreferrer"
     className="hover:text-yellow-400 transition-colors"
   >
-    المنشور
+    المانيفستو
   </a>
 </li>
             </ul>

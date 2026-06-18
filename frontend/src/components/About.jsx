@@ -249,11 +249,11 @@ const About = () => {
       </div>
 
       <h2 className="text-2xl font-bold text-gray-800 mb-3">
-        منشور جبهة وادي هور الديمقراطية
+      مانيفستو جبهة وادي هور الديمقراطية
       </h2>
 
       <p className="text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-        اطلع على المنشور الرسمي للجبهة الذي يوضح رؤيتنا وأهدافنا ومبادئنا الأساسية.
+        يمكننك تصفح او تحميل المانيفستو الرسمي للجبهة الذي يوضح رؤيتنا وأهدافنا ومبادئنا الأساسية.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
