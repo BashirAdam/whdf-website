@@ -584,6 +584,11 @@ const Homepage = () => {
     </main>
 
 
+{/* EXISTING GITHUB HERO SECTION - As a Card */}
+
+  </>
+
+
 
       {/* Impact Highlights Section */}
       <div className="bg-white">
