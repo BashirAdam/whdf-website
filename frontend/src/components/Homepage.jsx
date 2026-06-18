@@ -162,7 +162,7 @@ const Homepage = () => {
         هي حركة ثقافية ثورية سياسية، تهدف إلى إقامة إقليم وادي هور (دار الزغاوة السودانية)، استنادًا إلى الشرعية التاريخية لمملكة الزغاوة في السودان، وإلى حق الشعوب الأصلية في صون حقوقها، والحفاظ على تراثها، ومكتسباتها الحضارية والثقافية.
       </p>
 
-      <p className="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto text-justify" style={{ direction: 'rtl' }}>
+      <p className="text-gray-700 leading-relaxed text-justify mb-4 mt-6" style={{ direction: 'rtl' }}>
         وتسعى الجبهة إلى ترسيخ مركزية ثقافية وسياسية لمجتمعات الزغاوة في السودان، إلى جانب بقية المكونات الاجتماعية الأخرى على امتداد وادي هور، بما في ذلك جميع كيانات الرحّل في كردفان ودارفور، وذلك في إطار التعايش السلمي، والعدالة، والتنمية المتوازنة، واحترام التنوع الثقافي والاجتماعي.
       </p>
     </div>
@@ -241,9 +241,7 @@ const Homepage = () => {
         <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           أولًا: الحقوق الثقافية والهوية
         </h4>
-        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{
-    textAlign: "justify",
-    textAlignLast: "right"}}>
+        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{ direction: 'rtl' }}>
           <li>السعي إلى انتزاع الاعتراف الرسمي بالهوية الثقافية واللغوية والتاريخية لمجتمعات الزغاوة باعتبارها جزءًا أصيلًا من التنوع السوداني.</li>
           <li>حماية الإرث الحضاري والتاريخي المرتبط بمملكة الزغاوة التاريخية في السودان.</li>
           <li>تعزيز حضور الثقافة الزغاوية في المؤسسات التعليمية والثقافية والإعلامية.</li>
@@ -255,9 +253,7 @@ const Homepage = () => {
         <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           ثانيًا: المركزية الثقافية والسياسية
         </h4>
-        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{
-    textAlign: "justify",
-    textAlignLast: "right"}}>
+        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{ direction: 'rtl' }}>
           <li>العمل على إنشاء مركزية ثقافية وسياسية لمجتمعات الزغاوة ووادي هور، بما يمثل إطارًا للتعبير عن الهوية والمصالح التنموية والسياسية داخل دولة سودانية موحدة تقوم على الفيدرالية والتعدد الثقافي واللغوي.</li>
           <li>تعزيز المشاركة السياسية العادلة لمجتمعات وادي هور في مؤسسات الحكم وصناعة القرار.</li>
         </ul>
@@ -268,9 +264,7 @@ const Homepage = () => {
         <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           ثالثًا: الحقوق اللغوية
         </h4>
-        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{
-    textAlign: "justify",
-    textAlignLast: "right"}}>
+        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{ direction: 'rtl' }}>
           <li>السعي إلى الاعتراف بلغة الزغاوة كلغة وطنية ورسمية ضمن اللغات السودانية المعترف بها دستوريًا.</li>
           <li>اعتماد اللغة الزغاوية لغةً للتعليم والثقافة في إقليم وادي هور إلى جانب اللغات الأخرى المعتمدة.</li>
         </ul>
@@ -281,14 +275,10 @@ const Homepage = () => {
         <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           رابعًا: التنمية المستدامة وإعادة بناء المؤسسات
         </h4>
-        <p className="text-gray-700 leading-relaxed text-justify mb-3" style={{
-    textAlign: "justify",
-    textAlignLast: "right"}}>
+        <p className="text-gray-700 leading-relaxed text-justify mb-3" style={{ direction: 'rtl' }}>
           العمل على ترسيخ صلاحيات إدارية وتنموية تمكّن الإقليم من وضع وتنفيذ استراتيجياته التنموية وفق احتياجاته المحلية، ومن أبرز المشروعات المقترحة:
         </p>
-        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{
-    textAlign: "justify",
-    textAlignLast: "right"}}>
+        <ul className="list-disc pr-6 space-y-2 text-gray-700" style={{ direction: 'rtl' }}>
           <li>إنشاء مستشفى تخصصي عام يخدم سكان دار الزغاوة ووادي هور.</li>
           <li>تأسيس بنوك ومؤسسات تمويل تنموي تدعم الأنشطة الاقتصادية المحلية.</li>
           <li>إنشاء بورصات وأسواق حديثة للماشية والإبل والمنتجات المحلية.</li>
