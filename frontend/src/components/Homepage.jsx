@@ -584,42 +584,6 @@ const Homepage = () => {
     </main>
 
 
-{/* EXISTING GITHUB HERO SECTION - As a Card */}
-<section className="relative bg-white py-12">
-  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-200 text-center">
-      
-      <p className="text-base md:text-lg text-gray-600 mb-6 max-w-3xl mx-auto leading-relaxed" style={{ direction: 'rtl' }}>
-        {siteContent?.homepage?.hero?.description || "يمكنك التطوع معنا أو دعم رسالتنا للمساهمة في تحقيق أهداف جبهة وادي هور الديمقراطية"}
-      </p>
-      
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button 
-          asChild
-          size="lg" 
-          className="bg-[#d78525] hover:bg-[#b8681a] text-white px-6 py-2 text-base"
-        >
-          <Link to="/donate">
-            {siteContent?.homepage?.hero?.primaryButton || "دعم رسالتنا"}
-          </Link>
-        </Button>
-        <Button 
-          asChild
-          variant="outline" 
-          size="lg" 
-          className="border-[#d78525] text-[#d78525] bg-white hover:bg-[#d78525] hover:text-white px-6 py-2 text-base"
-        >
-          <Link to="/contact">
-            {siteContent?.homepage?.hero?.secondaryButton || "تطوع معنا"}
-          </Link>
-        </Button>
-      </div>
-    </div>
-  </div>
-</section>
-  </>
-
-
 
       {/* Impact Highlights Section */}
       <div className="bg-white">
