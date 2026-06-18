@@ -265,7 +265,7 @@ const About = () => {
           className="inline-flex items-center justify-center gap-2 bg-[#d78525] hover:bg-[#b8681a] text-white px-6 py-3 rounded-lg font-medium transition-colors"
         >
           <FileText className="h-5 w-5" />
-          عرض المنشور
+          عرض المانيفستو
         </a>
 
         {/* Download */}
@@ -275,7 +275,7 @@ const About = () => {
           className="inline-flex items-center justify-center gap-2 border-2 border-[#d78525] text-[#d78525] hover:bg-[#d78525] hover:text-white px-6 py-3 rounded-lg font-medium transition-colors"
         >
           <Download className="h-5 w-5" />
-          تحميل المنشور
+          تحميل المانيفستو
         </a>
       </div>
 
