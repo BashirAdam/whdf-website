@@ -55,6 +55,8 @@ const AdminPanel = () => {
   const [newsForm, setNewsForm] = useState({
     title: '',
     content: '',
+    image: '',
+    video: '',
     status: 'draft'
   });
   const [loading, setLoading] = useState(false);
@@ -307,7 +309,7 @@ const AdminPanel = () => {
         description: "News article created successfully!",
         variant: "success",
       });
-      setNewsForm({ title: '', content: '', status: 'draft' });
+      setNewsForm({ title: '', content: '', image: '', video: '', status: 'draft' });
       setShowNewsForm(false);
       loadNews(); // Reload news list
     } catch (error) {
@@ -338,7 +340,7 @@ const AdminPanel = () => {
         description: "News article updated successfully!",
         variant: "success",
       });
-      setNewsForm({ title: '', content: '', status: 'draft' });
+      setNewsForm({ title: '', content: '', image: '', video: '',  status: 'draft' });
       setEditingNews(null);
       loadNews(); // Reload news list
     } catch (error) {
@@ -376,13 +378,15 @@ const AdminPanel = () => {
     setNewsForm({
       title: newsItem.title,
       content: newsItem.content,
+      image: newsItem.image || '',
+      video: newsItem.video || '',
       status: newsItem.status
     });
   };
 
   const cancelEdit = () => {
     setEditingNews(null);
-    setNewsForm({ title: '', content: '', status: 'draft' });
+    setNewsForm({ title: '', content: '', image: '', video: '', status: 'draft' });
     setShowNewsForm(false);
   };
 
@@ -2026,6 +2030,17 @@ const handleAddBlog = async () => {
                             required
                           />
                         </div>
+                        <ImageUpload
+  value={newsForm.image}
+  onChange={(url) => setNewsForm({ ...newsForm, image: url })}
+  label="Cover Image"
+/>
+
+<VideoUpload
+  value={newsForm.video}
+  onChange={(url) => setNewsForm({ ...newsForm, video: url })}
+  label="Cover Video (optional)"
+/>
 
                         <div>
                           <label className="text-sm font-medium text-gray-700 mb-2 block">Content *</label>

@@ -6,6 +6,7 @@ import { api } from "../api";
 import Header from "./Header";
 import Footer from "./Footer";
 import DOMPurify from 'dompurify';
+import { getMediaUrl } from '../utils/mediaUrl';
 
 const NewsDetail = () => {
   const { id } = useParams();
@@ -68,13 +69,31 @@ const NewsDetail = () => {
             {news.author}
           </span>
         </div>
+        
 
-        <div
-          dir="auto"
-          className="prose prose-lg max-w-none"
-          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(news.content) }}
-        />
-      </div>
+        </div>
+
+{news.image && (
+  <img
+    src={getMediaUrl(news.image)}
+    alt={news.title}
+    className="w-full h-96 object-cover rounded-lg mb-8"
+  />
+)}
+
+{news.video && (
+  <video
+    src={getMediaUrl(news.video)}
+    controls
+    className="w-full rounded-lg mb-8 bg-black"
+  />
+)}
+
+<div
+  dir="auto"
+  className="prose prose-lg max-w-none"
+  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(news.content) }}
+/>
 
       <Footer />
     </div>
