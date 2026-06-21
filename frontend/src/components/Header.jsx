@@ -51,13 +51,13 @@ const Header = () => {
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Using Cairo */}
           <nav className="hidden md:flex items-center gap-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-gray-800 hover:text-[#d78525] font-medium transition-colors duration-200 ${
+                className={`font-cairo text-gray-800 hover:text-[#d78525] font-medium transition-colors duration-200 ${
                   isActive(item.href) ? 'text-[#d78525] border-b-2 border-[#d78525] pb-1' : ''
                 }`}
               >
@@ -66,10 +66,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Logo + Title - Right Side (Stable Layout) */}
+          {/* Logo + Title - Using Cairo for Title */}
           <div className="flex items-center gap-3 flex-shrink-0">
             <h1 
-              className="text-base sm:text-lg md:text-xl font-bold text-gray-800 text-right leading-tight min-w-0"
+              className="font-cairo text-base sm:text-lg md:text-xl font-bold text-gray-800 text-right leading-tight min-w-0"
               dir="rtl"
             >
               {siteSettings.site_title}
@@ -83,22 +83,22 @@ const Header = () => {
 
         </div>
 
-        {/* Mobile Menu */}
-{isMenuOpen && (
-  <div className="md:hidden bg-white py-4 px-4 shadow-lg border-t border-gray-100">
-    <div className="flex flex-col space-y-3">
-      {[...navigation].reverse().map((item) => (
-        <Link
-          key={item.name}
-          to={item.href}
-          className="text-gray-800 hover:text-[#d78525] font-medium py-3 border-b border-gray-100 last:border-0 text-right"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          {item.name}
-        </Link>
-      ))}
-    </div>
-  </div>
+        {/* Mobile Menu - Using Cairo */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white py-4 px-4 shadow-lg border-t border-gray-100">
+            <div className="flex flex-col space-y-3">
+              {[...navigation].reverse().map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="font-cairo text-gray-800 hover:text-[#d78525] font-medium py-3 border-b border-gray-100 last:border-0 text-right"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
         )}
       </div>
     </header>
