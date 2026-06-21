@@ -11,18 +11,6 @@ const Header = () => {
   });
   const location = useLocation();
 
-  // Load Cairo font only for this component
-  useEffect(() => {
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-
-    return () => {
-      document.head.removeChild(link); // Cleanup
-    };
-  }, []);
-
   const navigation = [
     { name: 'اتصل بنا', href: '/contact' },
     { name: 'المعرض', href: '/gallery' },
@@ -49,26 +37,26 @@ const Header = () => {
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          {/* Desktop Navigation - Cairo */}
+          {/* Desktop Navigation - Cairo Only */}
           <nav className="hidden md:flex items-center gap-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
                 className="text-gray-800 hover:text-[#d78525] font-medium transition-colors duration-200"
-                style={{ fontFamily: 'Cairo, sans-serif' }}
+                style={{ fontFamily: "'Cairo', sans-serif" }}
               >
                 {item.name}
               </Link>
             ))}
           </nav>
 
-          {/* Site Title - Cairo */}
+          {/* Site Title - Cairo Only */}
           <div className="flex items-center gap-3 flex-shrink-0">
             <h1 
               className="text-base sm:text-lg md:text-xl font-bold text-gray-800 text-right leading-tight min-w-0"
               dir="rtl"
-              style={{ fontFamily: 'Cairo, sans-serif' }}
+              style={{ fontFamily: "'Cairo', sans-serif" }}
             >
               {siteSettings.site_title}
             </h1>
@@ -81,7 +69,7 @@ const Header = () => {
 
         </div>
 
-        {/* Mobile Menu - Cairo */}
+        {/* Mobile Menu - Cairo Only */}
         {isMenuOpen && (
           <div className="md:hidden bg-white py-4 px-4 shadow-lg border-t border-gray-100">
             <div className="flex flex-col space-y-3">
@@ -90,7 +78,7 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   className="text-gray-800 hover:text-[#d78525] font-medium py-3 border-b border-gray-100 last:border-0 text-right"
-                  style={{ fontFamily: 'Cairo, sans-serif' }}
+                  style={{ fontFamily: "'Cairo', sans-serif" }}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
