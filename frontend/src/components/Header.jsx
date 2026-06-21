@@ -11,18 +11,16 @@ const Header = () => {
   });
   const location = useLocation();
 
+  // Load Cairo font only for this component
   useEffect(() => {
-    const loadSiteSettings = async () => {
-      try {
-        const settings = await getSiteSettings();
-        if (settings && settings.site_title) {
-          setSiteSettings(settings);
-        }
-      } catch (error) {
-        console.log('Using default site settings');
-      }
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link); // Cleanup
     };
-    loadSiteSettings();
   }, []);
 
   const navigation = [
@@ -43,7 +41,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
 
-          {/* Hamburger - Left (Mobile) */}
+          {/* Hamburger */}
           <button
             className="md:hidden text-gray-700 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -51,15 +49,13 @@ const Header = () => {
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          {/* Desktop Navigation - Cairo Only */}
+          {/* Desktop Navigation - Cairo */}
           <nav className="hidden md:flex items-center gap-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-gray-800 hover:text-[#d78525] font-medium transition-colors duration-200 ${
-                  isActive(item.href) ? 'text-[#d78525] border-b-2 border-[#d78525] pb-1' : ''
-                }`}
+                className="text-gray-800 hover:text-[#d78525] font-medium transition-colors duration-200"
                 style={{ fontFamily: 'Cairo, sans-serif' }}
               >
                 {item.name}
@@ -67,7 +63,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Logo + Site Title - Cairo Only */}
+          {/* Site Title - Cairo */}
           <div className="flex items-center gap-3 flex-shrink-0">
             <h1 
               className="text-base sm:text-lg md:text-xl font-bold text-gray-800 text-right leading-tight min-w-0"
@@ -85,7 +81,7 @@ const Header = () => {
 
         </div>
 
-        {/* Mobile Menu - Cairo Only */}
+        {/* Mobile Menu - Cairo */}
         {isMenuOpen && (
           <div className="md:hidden bg-white py-4 px-4 shadow-lg border-t border-gray-100">
             <div className="flex flex-col space-y-3">
