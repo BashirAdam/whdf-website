@@ -51,26 +51,28 @@ const Header = () => {
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          {/* Desktop Navigation - Using Cairo */}
+          {/* Desktop Navigation - Cairo Only */}
           <nav className="hidden md:flex items-center gap-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`font-cairo text-gray-800 hover:text-[#d78525] font-medium transition-colors duration-200 ${
+                className={`text-gray-800 hover:text-[#d78525] font-medium transition-colors duration-200 ${
                   isActive(item.href) ? 'text-[#d78525] border-b-2 border-[#d78525] pb-1' : ''
                 }`}
+                style={{ fontFamily: 'Cairo, sans-serif' }}
               >
                 {item.name}
               </Link>
             ))}
           </nav>
 
-          {/* Logo + Title - Using Cairo for Title */}
+          {/* Logo + Site Title - Cairo Only */}
           <div className="flex items-center gap-3 flex-shrink-0">
             <h1 
-              className="font-cairo text-base sm:text-lg md:text-xl font-bold text-gray-800 text-right leading-tight min-w-0"
+              className="text-base sm:text-lg md:text-xl font-bold text-gray-800 text-right leading-tight min-w-0"
               dir="rtl"
+              style={{ fontFamily: 'Cairo, sans-serif' }}
             >
               {siteSettings.site_title}
             </h1>
@@ -83,7 +85,7 @@ const Header = () => {
 
         </div>
 
-        {/* Mobile Menu - Using Cairo */}
+        {/* Mobile Menu - Cairo Only */}
         {isMenuOpen && (
           <div className="md:hidden bg-white py-4 px-4 shadow-lg border-t border-gray-100">
             <div className="flex flex-col space-y-3">
@@ -91,7 +93,8 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="font-cairo text-gray-800 hover:text-[#d78525] font-medium py-3 border-b border-gray-100 last:border-0 text-right"
+                  className="text-gray-800 hover:text-[#d78525] font-medium py-3 border-b border-gray-100 last:border-0 text-right"
+                  style={{ fontFamily: 'Cairo, sans-serif' }}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
