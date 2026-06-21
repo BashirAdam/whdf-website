@@ -10,6 +10,9 @@ import { useAlert } from '../hooks/use-alert';
 import AlertDialog from './ui/alert-dialog';
 import ImageUpload from './ImageUpload';
 import VideoUpload from './VideoUpload';
+import MultiImageUpload from './MultiImageUpload';
+import MultiVideoUpload from './MultiVideoUpload';
+import { collectImages, collectVideos } from '../utils/articleMedia';
 import {
   Shield,
   LogOut,
@@ -57,6 +60,8 @@ const AdminPanel = () => {
     content: '',
     image: '',
     video: '',
+    images: [],
+    videos: [],
     status: 'draft'
   });
   const [loading, setLoading] = useState(false);
@@ -72,7 +77,9 @@ const AdminPanel = () => {
     category: '',
     tags: [],
     image: '',
-    video: '', 
+    video: '',
+    images: [],
+    videos: [],
     status: 'draft'
   });
 
@@ -303,13 +310,19 @@ const AdminPanel = () => {
 
     setLoading(true);
     try {
-      await api.admin.createNews(newsForm);
+      await api.admin.createNews({
+        ...newsForm,
+        images: newsForm.images || [],
+        videos: newsForm.videos || [],
+        image: newsForm.images[0] || null,
+        video: newsForm.videos[0] || null,
+      });
       showAlert({
         title: "Success",
         description: "News article created successfully!",
         variant: "success",
       });
-      setNewsForm({ title: '', content: '', image: '', video: '', status: 'draft' });
+      setNewsForm({ title: '', content: '', image: '', video: '', images: [], videos: [], status: 'draft' });
       setShowNewsForm(false);
       loadNews(); // Reload news list
     } catch (error) {
@@ -340,7 +353,7 @@ const AdminPanel = () => {
         description: "News article updated successfully!",
         variant: "success",
       });
-      setNewsForm({ title: '', content: '', image: '', video: '',  status: 'draft' });
+      setNewsForm({ title: '', content: '', image: '', video: '', images: [], videos: [], status: 'draft' });
       setEditingNews(null);
       loadNews(); // Reload news list
     } catch (error) {
@@ -375,19 +388,22 @@ const AdminPanel = () => {
 
   const startEdit = (newsItem) => {
     setEditingNews(newsItem);
+    const images = collectImages(newsItem);
+    const videos = collectVideos(newsItem);
     setNewsForm({
       title: newsItem.title,
       content: newsItem.content,
-      image: newsItem.image || '',
-      video: newsItem.video || '',
+      images,
+      videos,
+      image: images[0] || '',
+      video: videos[0] || '',
       status: newsItem.status
     });
   };
 
   const cancelEdit = () => {
     setEditingNews(null);
-    setNewsForm({ title: '', content: '', image: '', video: '', status: 'draft' });
-    setShowNewsForm(false);
+    setNewsForm({ title: '', content: '', image: '', video: '', images: [], videos: [], status: 'draft' });
   };
 
   const handleUpdateImpactStats = async () => {
@@ -1306,14 +1322,18 @@ const handleAddBlog = async () => {
 
   const startEditBlog = (blogPost) => {
     setEditingBlog(blogPost);
+    const images = collectImages(blogPost);
+    const videos = collectVideos(blogPost);
     setBlogForm({
       title: blogPost.title,
       excerpt: blogPost.excerpt,
       content: blogPost.content,
       category: blogPost.category,
       tags: blogPost.tags || [],
-      image: blogPost.image || '',
-      video: blogPost.video || '',
+      images,
+      videos,
+      image: images[0] || '',
+      video: videos[0] || '',
       status: blogPost.status
     });
     setShowBlogForm(true);
@@ -1327,8 +1347,8 @@ const handleAddBlog = async () => {
       content: '',
       category: '',
       tags: [],
-      image: '',
-      video: '',
+      images: [],
+      videos: [],
       status: 'draft'
     });
     setShowBlogForm(false);
@@ -2030,16 +2050,24 @@ const handleAddBlog = async () => {
                             required
                           />
                         </div>
-                        <ImageUpload
-  value={newsForm.image}
-  onChange={(url) => setNewsForm({ ...newsForm, image: url })}
-  label="Cover Image"
+                        <MultiImageUpload
+  values={newsForm.images}
+  onChange={(images) => setNewsForm({
+    ...newsForm,
+    images,
+    image: images[0] || ''
+  })}
+  label="Images"
 />
 
-<VideoUpload
-  value={newsForm.video}
-  onChange={(url) => setNewsForm({ ...newsForm, video: url })}
-  label="Cover Video (optional)"
+<MultiVideoUpload
+  values={newsForm.videos}
+  onChange={(videos) => setNewsForm({
+    ...newsForm,
+    videos,
+    video: videos[0] || ''
+  })}
+  label="Videos (optional)"
 />
 
                         <div>
@@ -2215,16 +2243,24 @@ const handleAddBlog = async () => {
                         />
                       </div>
 
-                      <ImageUpload
-  value={blogForm.image}
-  onChange={(url) => setBlogForm({ ...blogForm, image: url })}
-  label="Cover Image"
+                      <MultiImageUpload
+  values={blogForm.images}
+  onChange={(images) => setBlogForm({
+    ...blogForm,
+    images,
+    image: images[0] || ''
+  })}
+  label="Images"
 />
 
-<VideoUpload
-  value={blogForm.video}
-  onChange={(url) => setBlogForm({ ...blogForm, video: url })}
-  label="Cover Video (optional)"
+<MultiVideoUpload
+  values={blogForm.videos}
+  onChange={(videos) => setBlogForm({
+    ...blogForm,
+    videos,
+    video: videos[0] || ''
+  })}
+  label="Videos (optional)"
 />
 
                       <div>

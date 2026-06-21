@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -91,4 +89,18 @@ code {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+}
+
+/* Blog & News article text only */
+.article-content {
+  font-family: 'Cairo', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.9;
+}
+
+.article-content p,
+.article-content li,
+.article-content div {
+  text-align: justify;
 }

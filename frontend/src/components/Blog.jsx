@@ -4,12 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import { Calendar, User, Search, Tag, ChevronRight, BookOpen, Play  } from 'lucide-react';
+import { Calendar, User, Search, Tag, ChevronRight, BookOpen } from 'lucide-react';
 import { api } from '../api';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import { getMediaUrl } from '../utils/mediaUrl';
+import ArticleListThumbnail from './ArticleListThumbnail';
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -34,7 +34,7 @@ const Blog = () => {
   const filteredPosts = publishedPosts.filter((post) => {
     const matchesSearch =
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (post.excerpt && post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())) ||
       post.tags.some((tag) => tag.toLowerCase().includes(searchTerm.toLowerCase()));
     const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
     return matchesSearch && matchesCategory;
@@ -102,21 +102,8 @@ const Blog = () => {
                     className="overflow-hidden hover:shadow-lg transition-shadow duration-300"
                   >
                     <div className="md:flex">
-                    {(post.image || post.video) && (
-  <div className="md:w-1/3">
-    {post.image ? (
-      <img
-        src={getMediaUrl(post.image)}
-        alt={post.title}
-        className="w-full h-48 md:h-full object-cover"
-      />
-    ) : (
-      <div className="w-full h-48 md:h-full bg-gray-900 flex items-center justify-center">
-        <Play className="h-16 w-16 text-white opacity-80" />
-      </div>
-    )}
-  </div>
-)}
+                      <ArticleListThumbnail item={post} alt={post.title} />
+
                       <div className="md:w-2/3">
                         <CardHeader>
                           <div className="flex items-center gap-4 text-sm text-gray-600 mb-2">
@@ -140,7 +127,9 @@ const Blog = () => {
                           </CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <p dir="auto" className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                          <p dir="auto" className="article-content text-gray-600 mb-4 line-clamp-3">
+                            {post.excerpt}
+                          </p>
                           <div className="flex items-center justify-between">
                             <div className="flex gap-2">
                               {post.tags.slice(0, 3).map((tag) => (

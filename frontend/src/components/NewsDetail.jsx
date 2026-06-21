@@ -7,6 +7,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import DOMPurify from 'dompurify';
 import { getMediaUrl } from '../utils/mediaUrl';
+import ArticleMediaGallery from './ArticleMediaGallery';
 
 const NewsDetail = () => {
   const { id } = useParams();
@@ -49,13 +50,10 @@ const NewsDetail = () => {
           to="/news"
           className="flex items-center text-blue-600 hover:text-blue-700 mb-6"
         >
-          <ArrowLeft className="h-4 w-4 mr-2" /> Back to News
+          <ArrowLeft className="h-4 w-4 mr-2" /> الخلف
         </Link>
 
-        <h1
-          dir="auto"
-          className="text-4xl font-bold text-gray-900 mb-4"
-        >
+        <h1 dir="auto" className="text-4xl font-bold text-gray-900 mb-4">
           {news.title}
         </h1>
 
@@ -69,31 +67,16 @@ const NewsDetail = () => {
             {news.author}
           </span>
         </div>
-        
 
-        </div>
+        {/* Media Gallery - New Component */}
+        <ArticleMediaGallery item={news} title={news.title} />
 
-{news.image && (
-  <img
-    src={getMediaUrl(news.image)}
-    alt={news.title}
-    className="w-full h-96 object-cover rounded-lg mb-8"
-  />
-)}
-
-{news.video && (
-  <video
-    src={getMediaUrl(news.video)}
-    controls
-    className="w-full rounded-lg mb-8 bg-black"
-  />
-)}
-
-<div
-  dir="auto"
-  className="prose prose-lg max-w-none"
-  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(news.content) }}
-/>
+        <div
+          dir="auto"
+          className="article-content prose prose-lg max-w-none"
+          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(news.content) }}
+        />
+      </div>
 
       <Footer />
     </div>

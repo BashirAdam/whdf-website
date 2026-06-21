@@ -45,6 +45,20 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+def article_media_fields(item):
+    images = list(item.get("images") or [])
+    videos = list(item.get("videos") or [])
+    if item.get("image") and item.get("image") not in images:
+        images.insert(0, item.get("image"))
+    if item.get("video") and item.get("video") not in videos:
+        videos.insert(0, item.get("video"))
+    return {
+        "image": images[0] if images else item.get("image"),
+        "video": videos[0] if videos else item.get("video"),
+        "images": images,
+        "videos": videos,
+    }
+
 # Initialize database on startup
 @app.on_event("startup")
 async def startup_event():
@@ -124,13 +138,16 @@ async def get_published_news():
     try:
         news_cursor = db.news.find({"status": "published"}).sort("created_at", -1)
         news_list = []
+        
         async for news_item in news_cursor:
+            # Get all media fields at once (image, video, images, videos)
+            media = article_media_fields(news_item)
+            
             news_list.append({
                 "id": news_item.get("id", str(news_item["_id"])),
                 "title": news_item["title"],
                 "content": news_item["content"],
-                "image": news_item.get("image"),
-                "video": news_item.get("video"),
+                **media,                    # This adds: image, video, images, videos
                 "author": news_item.get("author", "Unknown"),
                 "status": news_item["status"],
                 "date": news_item.get("created_at").isoformat() if news_item.get("created_at") else None,
@@ -152,8 +169,7 @@ async def get_news_by_id(news_id: str):
             "id": news_item.get("id", str(news_item["_id"])),
             "title": news_item["title"],
             "content": news_item["content"],
-            "image": news_item.get("image"),
-            "video": news_item.get("video"),
+            **article_media_fields(news_item),
             "author": news_item.get("author", "Unknown"),
             "status": news_item["status"],
             "date": news_item["created_at"].isoformat() if news_item.get("created_at") else None,
@@ -174,24 +190,29 @@ async def get_published_blogs():
     try:
         blogs_cursor = db.blogs.find({"status": "published"}).sort("created_at", -1)
         blogs_list = []
+        
         async for blog_item in blogs_cursor:
+            media = article_media_fields(blog_item)   # Get image, video, images, videos
+            
             blogs_list.append({
-            "id": blog_item.get("id", str(blog_item["_id"])),
-            "title": blog_item["title"],
-            "excerpt": blog_item.get("excerpt", ""),
-            "content": blog_item["content"],
-            "category": blog_item.get("category", ""),
-            "tags": blog_item.get("tags", []),
-            "image": blog_item.get("image"),
-            "video": blog_item.get("video"),
-            "author": blog_item["author"],
-            "publishDate": blog_item["created_at"].isoformat() if blog_item.get("created_at") else None,
-            "status": blog_item["status"]
+                "id": blog_item.get("id", str(blog_item["_id"])),
+                "title": blog_item["title"],
+                "excerpt": blog_item.get("excerpt", ""),
+                "content": blog_item["content"],
+                "category": blog_item.get("category", ""),
+                "tags": blog_item.get("tags", []),
+                **media,                                      # Unpacks image, video, images, videos
+                "author": blog_item["author"],
+                "publishDate": blog_item["created_at"].isoformat() if blog_item.get("created_at") else None,
+                "status": blog_item["status"]
             })
+        
         return blogs_list
+        
     except Exception as e:
         logger.error(f"Failed to fetch blogs: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch blogs")
+
 
 @api_router.get("/blogs/{blog_id}")
 async def get_blog(blog_id: str):
@@ -208,8 +229,7 @@ async def get_blog(blog_id: str):
             "content": blog_item["content"],
             "category": blog_item.get("category", ""),
             "tags": blog_item.get("tags", []),
-            "image": blog_item.get("image"),
-            "video": blog_item.get("video"),
+            **article_media_fields(blog_item),   # Unpacks all media fields at once
             "author": blog_item["author"],
             "publishDate": blog_item["created_at"].isoformat() if blog_item.get("created_at") else None,
             "status": blog_item["status"]
@@ -483,12 +503,12 @@ async def get_all_news(current_user: dict = Depends(admin_required)):
         news_cursor = db.news.find({}).sort("created_at", -1)
         news_list = []
         async for news_item in news_cursor:
+            media = article_media_fields(news_item)
             news_list.append({
             "id": news_item.get("id", str(news_item["_id"])),
             "title": news_item["title"],
             "content": news_item["content"],
-            "image": news_item.get("image"),
-            "video": news_item.get("video"),
+            **media,
             "status": news_item["status"],
             "author": news_item["author"],
             "date": news_item["created_at"].isoformat(),
@@ -563,22 +583,26 @@ async def get_all_blogs(current_user: dict = Depends(admin_required)):
     try:
         blogs_cursor = db.blogs.find({}).sort("created_at", -1)
         blogs_list = []
+        
         async for blog_item in blogs_cursor:
+            media = article_media_fields(blog_item)   # Get all media fields
+            
             blogs_list.append({
-            "id": blog_item.get("id", str(blog_item["_id"])),
-            "title": blog_item["title"],
-            "excerpt": blog_item.get("excerpt", ""),
-            "content": blog_item["content"],
-            "category": blog_item.get("category", ""),
-            "tags": blog_item.get("tags", []),
-            "image": blog_item.get("image"),
-            "video": blog_item.get("video"),
-            "status": blog_item["status"],
-            "author": blog_item["author"],
-            "date": blog_item["created_at"].isoformat(),
-            "updated_at": blog_item.get("updated_at", blog_item["created_at"]).isoformat()
+                "id": blog_item.get("id", str(blog_item["_id"])),
+                "title": blog_item["title"],
+                "excerpt": blog_item.get("excerpt", ""),
+                "content": blog_item["content"],
+                "category": blog_item.get("category", ""),
+                "tags": blog_item.get("tags", []),
+                **media,                                      # Unpacks image, video, images, videos
+                "status": blog_item["status"],
+                "author": blog_item["author"],
+                "date": blog_item["created_at"].isoformat(),
+                "updated_at": blog_item.get("updated_at", blog_item["created_at"]).isoformat()
             })
+        
         return blogs_list
+        
     except Exception as e:
         logger.error(f"Failed to fetch blogs: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch blogs")

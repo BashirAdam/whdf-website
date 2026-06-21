@@ -7,6 +7,7 @@ import Header from './Header';
 import Footer from './Footer';
 import DOMPurify from 'dompurify';
 import { getMediaUrl } from '../utils/mediaUrl';
+import ArticleMediaGallery from './ArticleMediaGallery';
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -47,7 +48,7 @@ const BlogDetail = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Back button */}
         <Link to="/blog" className="flex items-center text-blue-600 hover:underline mb-6">
-          <ArrowLeft className="h-4 w-4 mr-2" /> Back to Blog
+          <ArrowLeft className="h-4 w-4 mr-2" /> الخلف
         </Link>
 
         {/* Title */}
@@ -65,28 +66,13 @@ const BlogDetail = () => {
           </div>
         </div>
 
-        {/* Blog image */}
-        {blog.image && (
-          <img
-            src={getMediaUrl(blog.image)}
-            alt={blog.title}
-            className="w-full h-96 object-cover rounded-lg mb-8"
-          />
-        )}
-
-        {/* Cover video — shown below image if exists */}
-{blog.video && (
-  <video
-    src={getMediaUrl(blog.video)}
-    controls
-    className="w-full rounded-lg mb-8 bg-black"
-  />
-)}
+        {/* Media Gallery - New Component */}
+        <ArticleMediaGallery item={blog} title={blog.title} />
 
         {/* Blog content with formatting */}
         <div
           dir="auto"
-          className="prose prose-lg max-w-none"
+          className="article-content prose prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(blog.content) }}
         />
 

@@ -72,8 +72,8 @@ class NewsCreate(BaseModel):
 class NewsUpdate(BaseModel):
     title: Optional[str] = Field(None, min_length=5, max_length=200)
     content: Optional[str] = Field(None, min_length=20, max_length=5000)
-    image: Optional[str] = None   # ← ADD
-    video: Optional[str] = None   # ← ADD
+    image: Optional[List[str]] = None   # ← ADD
+    video: Optional[List[str]]  = None   # ← ADD
     status: Optional[str] = None
 
     @validator('status')
@@ -86,8 +86,8 @@ class News(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     title: str
     content: str
-    image: Optional[str] = None   # ← ADD
-    video: Optional[str] = None   # ← ADD
+    image: List[str] = []   # ← ADD
+    video: List[str] = []   # ← ADD
     status: str
     author: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
@@ -100,8 +100,8 @@ class BlogCreate(BaseModel):
     excerpt: str = Field(..., min_length=20, max_length=300)
     category: str = Field(..., min_length=3, max_length=50)
     tags: List[str] = []
-    image: Optional[str] = None  # URL of the blog image
-    video: Optional[str] = None   # ← ADD
+    image: List[str] = []   # URL of the blog image
+    video: List[str] = []   # ← ADD
     status: str = Field(default="draft")
 
     @validator('status')
@@ -117,9 +117,9 @@ class BlogUpdate(BaseModel):
     excerpt: Optional[str] = Field(None, min_length=20, max_length=300)
     category: Optional[str] = None
     tags: Optional[List[str]] = None
-    image: Optional[str] = None
+    image: Optional[List[str]] = None
     status: Optional[str] = None
-    video: Optional[str] = None   # ← ADD
+    video: Optional[List[str]] = None   # ← ADD
 
     @validator('status')
     def validate_status(cls, v):
@@ -135,8 +135,8 @@ class Blog(BaseModel):
     excerpt: str
     category: str
     tags: List[str] = []
-    image: Optional[str] = None
-    video: Optional[str] = None   # ← ADD
+    image: List[str] = []
+    video: List[str] = []   # ← ADD
     status: str
     author: str
     created_at: datetime = Field(default_factory=datetime.utcnow)

@@ -667,6 +667,25 @@ const Programs = () => {
             </div>
 
 
+            {/* Figure 7 - Abakar Al Noor Duwai*/}
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="md:w-1/2">
+                <img src="/images/Duwai.jpeg" alt="    ابكر النور ضواي    " className="rounded-lg shadow-xl w-full h-80 object-cover" />
+              </div>
+              <div className="md:w-1/2 text-right">
+  <div className="inline-block border-r-4 border-[#d78525] pr-4 mb-3">
+    <h3 className="text-xl font-bold text-gray-800">  ابكر النور ضواي      </h3>
+  </div>
+  <p className="text-base text-[#d78525] mb-3"> Abakar Al Noor Duwai</p>
+  <p className="text-gray-600 leading-relaxed" style={{
+    textAlign: "justify",
+    textAlignLast: "right"}}>
+      المرحوم ابكر النور ضواي عمدة إدارة كملتي في تشاد
+  </p>
+</div>
+            </div>
+
+
              
 
 
