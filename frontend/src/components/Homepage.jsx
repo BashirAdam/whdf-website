@@ -232,7 +232,7 @@ const Homepage = () => {
 
     {/* الأهداف */}
     <div>
-      <h3 className="text-lg font-semibold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>
+      <h3 className="text-lg font-bold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>
         الأهداف
       </h3>
       
