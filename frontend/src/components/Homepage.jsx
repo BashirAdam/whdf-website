@@ -238,7 +238,7 @@ const Homepage = () => {
       
       {/* أولاً: الحقوق الثقافية والهوية */}
       <div className="mb-6">
-        <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
+        <h4 className="font-medium font-semibold text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           أولًا: الحقوق الثقافية والهوية
         </h4>
         <ul className="list-disc pr-6 space-y-2 text-gray-700 text-justify" style={{ direction: 'rtl' }}>
@@ -250,7 +250,7 @@ const Homepage = () => {
 
       {/* ثانيًا: المركزية الثقافية والسياسية */}
       <div className="mb-6">
-        <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
+        <h4 className="font-medium font-semibold text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           ثانيًا: المركزية الثقافية والسياسية
         </h4>
         <ul className="list-disc pr-6 space-y-2 text-gray-700 text-justify" style={{ direction: 'rtl' }}>
@@ -261,7 +261,7 @@ const Homepage = () => {
 
       {/* ثالثًا: الحقوق اللغوية */}
       <div className="mb-6">
-        <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
+        <h4 className="font-medium font-semibold text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           ثالثًا: الحقوق اللغوية
         </h4>
         <ul className="list-disc pr-6 space-y-2 text-gray-700 text-justify" style={{ direction: 'rtl' }}>
@@ -272,7 +272,7 @@ const Homepage = () => {
 
       {/* رابعًا: التنمية المستدامة */}
       <div>
-        <h4 className="font-medium text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
+        <h4 className="font-medium font-semibold text-gray-800 mb-2 text-right" style={{ direction: 'rtl' }}>
           رابعًا: التنمية المستدامة وإعادة بناء المؤسسات
         </h4>
         <p className="text-gray-700 leading-relaxed text-justify mb-3" style={{ direction: 'rtl' }}>
