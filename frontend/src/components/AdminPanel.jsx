@@ -347,11 +347,12 @@ const AdminPanel = () => {
 
     setLoading(true);
     try {
-      await api.admin.updateNews(editingNews.id, newsForm);
-      showAlert({
-        title: "Success",
-        description: "News article updated successfully!",
-        variant: "success",
+      await api.admin.updateNews(editingNews.id, {
+        ...newsForm,
+        images: newsForm.images || [],
+        videos: newsForm.videos || [],
+        image: newsForm.images[0] || null,
+        video: newsForm.videos[0] || null,
       });
       setNewsForm({ title: '', content: '', image: '', video: '', images: [], videos: [], status: 'draft' });
       setEditingNews(null);
@@ -1226,22 +1227,20 @@ const handleAddBlog = async () => {
     try {
       const payload = {
         ...blogForm,
-        tags: blogForm.tags.filter(tag => tag.trim() !== '')
+        tags: blogForm.tags.filter(tag => tag.trim() !== ''),
+        images: blogForm.images || [],
+        videos: blogForm.videos || [],
+        image: blogForm.images[0] || null,
+        video: blogForm.videos[0] || null,
       };
-
-      // 1. Capture the response from the API call
-      const response = await api.admin.createBlog(payload);
-      
-      // 2. Use the response to add the new post to the top of your existing list
-      setBlogPosts(prevPosts => [response, ...prevPosts]);
-
+      await api.admin.createBlog(payload);
       showAlert({
         title: "Success",
         description: "Blog post created successfully!",
         variant: "success",
       });
-
-      cancelBlogEdit(); // This now correctly happens after the state update
+      cancelBlogEdit();
+      await loadBlogPosts();
 
     } catch (error) {
       showAlert({
@@ -1267,7 +1266,10 @@ const handleAddBlog = async () => {
     try {
       const payload = {
         ...blogForm,
-        tags: blogForm.tags.filter(tag => tag.trim() !== '')
+        images: blogForm.images || [],
+videos: blogForm.videos || [],
+image: blogForm.images[0] || null,
+video: blogForm.videos[0] || null,
       };
 
       // Send the updated blog data to the server
@@ -2330,7 +2332,7 @@ const handleAddBlog = async () => {
                 {/* Blog Posts List */}
                 <div className="space-y-4">
                   {blogPosts.map((post) => (
-                    <Card key={post.id}>
+                    <Card key={post.id || post.title}>
                       <CardContent className="p-6">
                         <div className="flex items-start justify-between">
                           <div className="flex-1">
@@ -2353,7 +2355,7 @@ const handleAddBlog = async () => {
                                 <User className="h-3 w-3 mr-1" />
                                 {post.author}
                               </span>
-                              {post.tags && post.tags.length > 0 && (
+                              {Array.isArray(post.tags) && post.tags.length > 0 && (
                                 <div className="flex items-center gap-1">
                                   <Tag className="h-3 w-3" />
                                   <span>{post.tags.slice(0, 3).join(', ')}</span>

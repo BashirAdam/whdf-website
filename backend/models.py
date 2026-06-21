@@ -59,8 +59,10 @@ class Newsletter(BaseModel):
 class NewsCreate(BaseModel):
     title: str = Field(..., min_length=5, max_length=200)
     content: str = Field(..., min_length=20, max_length=5000)
-    image: Optional[str] = None   # ← ADD
-    video: Optional[str] = None   # ← ADD
+    image: Optional[str] = None
+    video: Optional[str] = None
+    images: List[str] = []
+    videos: List[str] = []
     status: str = Field(default="draft")
 
     @validator('status')
@@ -72,8 +74,10 @@ class NewsCreate(BaseModel):
 class NewsUpdate(BaseModel):
     title: Optional[str] = Field(None, min_length=5, max_length=200)
     content: Optional[str] = Field(None, min_length=20, max_length=5000)
-    image: Optional[List[str]] = None   # ← ADD
-    video: Optional[List[str]]  = None   # ← ADD
+    image: Optional[str] = None
+    video: Optional[str] = None
+    images: Optional[List[str]] = None
+    videos: Optional[List[str]] = None
     status: Optional[str] = None
 
     @validator('status')
@@ -86,8 +90,10 @@ class News(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     title: str
     content: str
-    image: List[str] = []   # ← ADD
-    video: List[str] = []   # ← ADD
+    image: Optional[str] = None
+    video: Optional[str] = None
+    images: List[str] = []
+    videos: List[str] = []
     status: str
     author: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
@@ -100,8 +106,10 @@ class BlogCreate(BaseModel):
     excerpt: str = Field(..., min_length=20, max_length=300)
     category: str = Field(..., min_length=3, max_length=50)
     tags: List[str] = []
-    image: List[str] = []   # URL of the blog image
-    video: List[str] = []   # ← ADD
+    image: Optional[str] = None
+    video: Optional[str] = None
+    images: List[str] = []
+    videos: List[str] = []
     status: str = Field(default="draft")
 
     @validator('status')
@@ -117,10 +125,13 @@ class BlogUpdate(BaseModel):
     excerpt: Optional[str] = Field(None, min_length=20, max_length=300)
     category: Optional[str] = None
     tags: Optional[List[str]] = None
-    image: Optional[List[str]] = None
+    image: Optional[str] = None
+    video: Optional[str] = None
+    images: Optional[List[str]] = None
+    videos: Optional[List[str]] = None
     status: Optional[str] = None
-    video: Optional[List[str]] = None   # ← ADD
 
+    
     @validator('status')
     def validate_status(cls, v):
         if v is not None and v not in ['draft', 'published']:
@@ -135,8 +146,10 @@ class Blog(BaseModel):
     excerpt: str
     category: str
     tags: List[str] = []
-    image: List[str] = []
-    video: List[str] = []   # ← ADD
+    image: Optional[str] = None
+    video: Optional[str] = None
+    images: List[str] = []
+    videos: List[str] = []
     status: str
     author: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
