@@ -11,9 +11,7 @@ import TestimonialsSection from './TestimonialsSection';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  // Site content state
   const [siteContent, setSiteContent] = useState({});
-  // Gallery items state
   const [galleryItems, setGalleryItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -30,12 +28,14 @@ const Gallery = () => {
           setSiteContent({});
         }
 
-        // Load gallery items
+        // Load gallery items from backend
         const galleryData = await getGalleryItems();
+        
         if (galleryData.items && galleryData.items.length > 0) {
           setGalleryItems(galleryData.items);
         } else {
-          // Fallback to hardcoded gallery items
+          // Fallback to hardcoded gallery items (commented for now)
+          /*
           setGalleryItems([
             {
               id: 1,
@@ -92,11 +92,15 @@ const Gallery = () => {
               date: '2024-08-05'
             }
           ]);
+          */
+          setGalleryItems([]); // Empty array when no data from backend
         }
       } catch (error) {
-        console.log('Using empty site content');
+        console.log('Error loading gallery data:', error);
         setSiteContent({});
-        // Set fallback gallery items
+
+        // Fallback items also commented here
+        /*
         setGalleryItems([
           {
             id: 1,
@@ -126,6 +130,8 @@ const Gallery = () => {
             date: '2024-06-20'
           }
         ]);
+        */
+        setGalleryItems([]); // Empty on error
       }
       setLoading(false);
     };
@@ -163,8 +169,6 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
-
 
       {/* Category Filter */}
       <section className="py-12 bg-white">
@@ -244,6 +248,7 @@ const Gallery = () => {
       {/* Testimonials Section */}
       <TestimonialsSection />
 
+      
 
       <Footer />
     </div>
