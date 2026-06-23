@@ -582,6 +582,7 @@ const Homepage = () => {
 {/* Manifesto Section */}
 <section className="py-16 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
     <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-200">
       
       <div className="p-8 text-center" dir="rtl">
@@ -589,17 +590,17 @@ const Homepage = () => {
         <div className="flex justify-center mb-4">
           <FileText className="h-12 w-12 text-[#d78525]" />
         </div>
-
+        
         <h2 className="text-2xl font-bold text-gray-800 mb-3">
           مانيفستو جبهة وادي هور الديمقراطية
         </h2>
-
+        
         <p className="text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
           يمكنك تصفح أو تحميل المانيفستو الرسمي للجبهة الذي يوضح رؤيتنا وأهدافنا ومبادئنا الأساسية.
         </p>
-
+        
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          {/* Open in browser */}
+          {/* View Manifesto */}
           <a
             href="/documents/manifesto.pdf"
             target="_blank"
@@ -609,8 +610,8 @@ const Homepage = () => {
             <FileText className="h-5 w-5" />
             عرض المانيفستو
           </a>
-
-          {/* Download */}
+          
+          {/* Download Manifesto */}
           <a
             href="/documents/manifesto.pdf"
             download="منشور-جبهة-وادي-هور.pdf"
@@ -620,7 +621,6 @@ const Homepage = () => {
             تحميل المانيفستو
           </a>
         </div>
-
       </div>
     </div>
   </div>
