@@ -5,8 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { useToast } from '../hooks/use-toast';
-import { Heart, Users, GraduationCap, Award, Phone, Mail, MapPin, ArrowRight, CheckCircle, Clock ,Flag ,ArrowLeft} from 'lucide-react';
-import { api, getPublicSiteContent } from '../api';
+import { Heart, Users, GraduationCap, Award, Phone, Mail, MapPin, ArrowRight, CheckCircle, Clock, Flag, ArrowLeft, FileText, Download } from 'lucide-react';import { api, getPublicSiteContent } from '../api';
 
 import Header from './Header';
 import Footer from './Footer';
