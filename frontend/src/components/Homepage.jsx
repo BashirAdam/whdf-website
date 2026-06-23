@@ -579,50 +579,62 @@ const Homepage = () => {
 </div>
 
 {/* Manifesto Section */}
-<section className="py-16 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-200">
-      
-      <div className="p-8 text-center" dir="rtl">
-        
-        <div className="flex justify-center mb-4">
-          <FileText className="h-12 w-12 text-[#d78525]" />
-        </div>
+<div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-200">
+  <div className="grid md:grid-cols-2 gap-0">
+    
+    {/* Content */}
+    <div className="p-6 md:p-8 order-2 md:order-1">
+      <h3
+        className="text-xl font-bold text-gray-800 mb-4 text-right"
+        style={{ direction: "rtl" }}
+      >
+        <FileText className="h-6 w-6 inline-block ml-2 text-[#d78525]" />
+        مانيفستو جبهة وادي هور الديمقراطية
+      </h3>
 
-        <h2 className="text-2xl font-bold text-gray-800 mb-3">
-          مانيفستو جبهة وادي هور الديمقراطية
-        </h2>
+      <p
+        className="text-gray-700 leading-relaxed text-justify mb-6"
+        style={{ direction: "rtl" }}
+      >
+        يمكنك تصفح أو تحميل المانيفستو الرسمي للجبهة الذي يوضح رؤيتنا
+        وأهدافنا ومبادئنا الأساسية، ويعرض الأسس الفكرية والسياسية التي
+        تنطلق منها الجبهة في عملها من أجل خدمة الإقليم والدفاع عن حقوق
+        شعبه وتعزيز قيم العدالة والديمقراطية.
+      </p>
 
-        <p className="text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
-          يمكنك تصفح أو تحميل المانيفستو الرسمي للجبهة الذي يوضح رؤيتنا وأهدافنا ومبادئنا الأساسية.
-        </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-end">
+        <a
+          href="/documents/manifesto.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 bg-[#d78525] hover:bg-[#b8681a] text-white px-6 py-3 rounded-lg font-medium transition-colors"
+        >
+          <FileText className="h-5 w-5" />
+          عرض المانيفستو
+        </a>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          {/* Open in browser */}
-          <a
-            href="/documents/manifesto.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-[#d78525] hover:bg-[#b8681a] text-white px-6 py-3 rounded-lg font-medium transition-colors"
-          >
-            <FileText className="h-5 w-5" />
-            عرض المانيفستو
-          </a>
-
-          {/* Download */}
-          <a
-            href="/documents/manifesto.pdf"
-            download="منشور-جبهة-وادي-هور.pdf"
-            className="inline-flex items-center justify-center gap-2 border-2 border-[#d78525] text-[#d78525] hover:bg-[#d78525] hover:text-white px-6 py-3 rounded-lg font-medium transition-colors"
-          >
-            <Download className="h-5 w-5" />
-            تحميل المانيفستو
-          </a>
-        </div>
-
+        <a
+          href="/documents/manifesto.pdf"
+          download="منشور-جبهة-وادي-هور.pdf"
+          className="inline-flex items-center justify-center gap-2 border-2 border-[#d78525] text-[#d78525] hover:bg-[#d78525] hover:text-white px-6 py-3 rounded-lg font-medium transition-colors"
+        >
+          <Download className="h-5 w-5" />
+          تحميل المانيفستو
+        </a>
       </div>
     </div>
+
+    {/* Image / PDF Preview */}
+    <div className="h-64 md:h-auto bg-gray-100 order-1 md:order-2 flex items-center justify-center p-4">
+      <img
+        src="/images/manifesto-cover.jpg"
+        alt="مانيفستو جبهة وادي هور الديمقراطية"
+        className="max-h-full object-contain rounded-lg shadow-lg"
+      />
+    </div>
+
   </div>
+</div>
 </section>
       
         
