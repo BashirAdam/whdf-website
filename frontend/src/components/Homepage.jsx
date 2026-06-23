@@ -580,8 +580,7 @@ const Homepage = () => {
 </div>
 
 {/* Manifesto Section */}
-<section className="py-16 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
     
     <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-200">
       
@@ -624,7 +623,7 @@ const Homepage = () => {
       </div>
     </div>
   </div>
-</section>
+
       
         
         {/* ========== NEW WADI HUR CULTURE SECTIONS END HERE ========== */}
