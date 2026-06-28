@@ -152,15 +152,20 @@ const Homepage = () => {
   
 
   
-  {/* Kingdom Section */}
-  <div className="mb-8">
-    <h2 className="text-xl font-bold text-gray-800 mb-4 text-right border-r-4 border-[#d78525] pr-4" style={{ direction: 'rtl' }}>
-      جبهة وادي هور الديمقراطية
-    </h2>
-    <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-      هي حركة ثقافية ثورية سياسية، تهدف إلى إقامة إقليم وادي هور (دار الزغاوة السودانية)، استنادًا إلى الشرعية التاريخية لمملكة الزغاوة في السودان، وإلى حق الشعوب الأصلية في صون حقوقها، والحفاظ على تراثها، ومكتسباتها الحضارية والثقافية. وتسعى الجبهة إلى ترسيخ مركزية ثقافية وسياسية لمجتمعات الزغاوة في السودان، إلى جانب بقية المكونات الاجتماعية الأخرى على امتداد وادي هور، بما في ذلك جميع كيانات الرحّل في كردفان ودارفور، وذلك في إطار التعايش السلمي، والعدالة، والتنمية المتوازنة، واحترام التنوع الثقافي والاجتماعي.
-    </p>
-  </div>
+{/* YOUR CLEAN CONTENT */}
+<main className="flex-grow p-4 md:p-8">
+  <div className="max-w-5xl mx-auto">
+    
+    <div className="bg-gray-50 rounded-2xl p-6 md:p-8 mb-12 shadow-md border-t-4 border-t-[#d78525] border border-gray-100">   {/* Reduced padding */}
+      
+      <p className="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto text-justify" style={{ direction: 'rtl' }}>
+        هي حركة ثقافية ثورية سياسية، تهدف إلى إقامة إقليم وادي هور (دار الزغاوة السودانية)، استنادًا إلى الشرعية التاريخية لمملكة الزغاوة في السودان، وإلى حق الشعوب الأصلية في صون حقوقها، والحفاظ على تراثها، ومكتسباتها الحضارية والثقافية.
+      </p>
+
+      <p className=" text-lg text-gray-700 leading-relaxed text-justify mb-4 mt-6" style={{ direction: 'rtl' }}>
+        وتسعى الجبهة إلى ترسيخ مركزية ثقافية وسياسية لمجتمعات الزغاوة في السودان، إلى جانب بقية المكونات الاجتماعية الأخرى على امتداد وادي هور، بما في ذلك جميع كيانات الرحّل في كردفان ودارفور، وذلك في إطار التعايش السلمي، والعدالة، والتنمية المتوازنة، واحترام التنوع الثقافي والاجتماعي.
+      </p>
+    </div>
 
 
     {/* Our Story - NOW INSIDE the max-w-5xl container */}
