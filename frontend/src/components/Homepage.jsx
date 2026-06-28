@@ -152,21 +152,25 @@ const Homepage = () => {
   
 
   
-{/* YOUR CLEAN CONTENT */}
-<main className="flex-grow p-4 md:p-8">
-  <div className="max-w-5xl mx-auto">
+{/* Introduction Section - New Design */}
+<div className="mb-12">
+  <h2 
+    className="text-2xl font-bold text-gray-800 mb-6 text-right border-r-4 border-[#d78525] pr-4" 
+    style={{ direction: 'rtl' }}
+  >
+    جبهة وادي هور الديمقراطية
+  </h2>
+  
+  <div className="space-y-6">
+    <p className="text-lg text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+      هي حركة ثقافية ثورية سياسية، تهدف إلى إقامة إقليم وادي هور (دار الزغاوة السودانية)، استنادًا إلى الشرعية التاريخية لمملكة الزغاوة في السودان، وإلى حق الشعوب الأصلية في صون حقوقها، والحفاظ على تراثها، ومكتسباتها الحضارية والثقافية.
+    </p>
     
-    <div className="bg-gray-50 rounded-2xl p-6 md:p-8 mb-12 shadow-md border-t-4 border-t-[#d78525] border border-gray-100">   {/* Reduced padding */}
-      
-      <p className="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto text-justify" style={{ direction: 'rtl' }}>
-        هي حركة ثقافية ثورية سياسية، تهدف إلى إقامة إقليم وادي هور (دار الزغاوة السودانية)، استنادًا إلى الشرعية التاريخية لمملكة الزغاوة في السودان، وإلى حق الشعوب الأصلية في صون حقوقها، والحفاظ على تراثها، ومكتسباتها الحضارية والثقافية.
-      </p>
-
-      <p className=" text-lg text-gray-700 leading-relaxed text-justify mb-4 mt-6" style={{ direction: 'rtl' }}>
-        وتسعى الجبهة إلى ترسيخ مركزية ثقافية وسياسية لمجتمعات الزغاوة في السودان، إلى جانب بقية المكونات الاجتماعية الأخرى على امتداد وادي هور، بما في ذلك جميع كيانات الرحّل في كردفان ودارفور، وذلك في إطار التعايش السلمي، والعدالة، والتنمية المتوازنة، واحترام التنوع الثقافي والاجتماعي.
-      </p>
-    </div>
-
+    <p className="text-lg text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
+      وتسعى الجبهة إلى ترسيخ مركزية ثقافية وسياسية لمجتمعات الزغاوة في السودان، إلى جانب بقية المكونات الاجتماعية الأخرى على امتداد وادي هور، بما في ذلك جميع كيانات الرحّل في كردفان ودارفور، وذلك في إطار التعايش السلمي، والعدالة، والتنمية المتوازنة، واحترام التنوع الثقافي والاجتماعي.
+    </p>
+  </div>
+</div>
 
     {/* Our Story - NOW INSIDE the max-w-5xl container */}
     <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
