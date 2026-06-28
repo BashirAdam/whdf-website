@@ -435,7 +435,7 @@ const Homepage = () => {
     <div className="h-64 md:h-auto bg-gray-200 order-2 md:order-1">
       <img 
         src="/images/reginal.png" 
-        alt="إقليم دار زغاوة" 
+        alt="إقليم وادي هور" 
         className="w-full h-full object-cover" 
       />
     </div>
@@ -443,10 +443,10 @@ const Homepage = () => {
     {/* Content - Right Side */}
     <div className="p-6 md:p-8 order-1 md:order-2">
       <h3 className="text-xl font-bold text-gray-800 mb-4 text-right" style={{ direction: 'rtl' }}>
-        إقليم دار زغاوة
+        إقليم وادي هور
       </h3>
       <p className="text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
-        هو تصور ثقافي وسياسي يهدف إلى إحياء الهوية التاريخية والجغرافية لشعب الزغاوة في السودان، وجعله إقليمًا إداريًا وتنمويًا يُعرف بـ "إقليم دار زغاوة (إقليم بيربي)".
+        هو تصور ثقافي وسياسي يهدف إلى إحياء الهوية التاريخية والجغرافية لشعب الزغاوة في السودان، وجعله إقليمًا إداريًا وتنمويًا يُعرف بـ "إقليم وادي هور (إقليم بيربي)".
         يستند هذا التصور إلى الإرث الحضاري العريق لوادي هور وممالك الزغاوة القديمة، وإلى رغبة الشعب في حماية اللغة والتراث من الاندثار. تعتبر "حاكورة" تاريخية وموطناً رئيسياً لقبائل الزغاوة الأفريقية، وتتميز بخصائص جغرافية وسياسية وثقافية.
       </p>
     </div>
@@ -506,7 +506,7 @@ const Homepage = () => {
 <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-gray-200">
   {/* Map Header */}
   <div className="bg-[#d78525] px-6 py-4">
-    <p className="text-white text-right text-sm" style={{ direction: 'rtl' }}>خريطة توضح موقع إقليم دار زغاوة (إقليم بيربي) في السودان</p>
+    <p className="text-white text-right text-sm" style={{ direction: 'rtl' }}>خريطة توضح موقع إقليم وادي هور  (إقليم بيربي) في السودان</p>
   </div>
   
   {/* Map Content */}
@@ -517,7 +517,7 @@ const Homepage = () => {
       <div className="overflow-hidden bg-gray-100 flex items-center justify-center min-h-[400px]">
         <img 
           src="/images/map.jpg" 
-          alt="خريطة إقليم دار زغاوة" 
+          alt="خريطة إقليم وادي هور" 
           className="w-full h-full object-cover"
         />
       </div>
