@@ -158,12 +158,7 @@ const Homepage = () => {
 
           {/* جبهة وادي هور الديمقراطية - Introduction */}
           <div className="mb-12">
-            <h2 
-              className="text-2xl font-bold text-gray-800 mb-6 text-right border-r-4 border-[#d78525] pr-4" 
-              style={{ direction: 'rtl' }}
-            >
-              جبهة وادي هور الديمقراطية
-            </h2>
+          
             
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed text-justify" style={{ direction: 'rtl' }}>
